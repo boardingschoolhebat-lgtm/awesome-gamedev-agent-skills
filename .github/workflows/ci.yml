@@ -53,25 +53,20 @@ jobs:
       - name: Validate SKILL.md frontmatter and links
         run: python scripts/validate-skills.py
 
+      # Run the whole suite once and fail closed on any skip, so a missing Godot
+      # or .NET toolchain cannot quietly reduce what CI actually checks.
       - name: Run regression tests
-        run: python -m unittest discover -s tests -v
-
-      # Fail closed: an unusable Godot or .NET install must not quietly turn the
-      # example tests into skips again, so assert on results, not on the log.
-      - name: Verify example tests are not skipped
         run: |
           python - <<'PY'
           import sys
           import unittest
 
-          modules = ("tests.test_godot_examples", "tests.test_ai_examples")
-          suite = unittest.TestSuite(
-              unittest.defaultTestLoader.loadTestsFromName(module) for module in modules
+          result = unittest.TextTestRunner(verbosity=2).run(
+              unittest.defaultTestLoader.discover("tests")
           )
-          result = unittest.TextTestRunner(verbosity=2).run(suite)
           skipped = [test.id() for test, _reason in result.skipped]
           if skipped:
-              print(f"::error::Example tests were skipped: {', '.join(skipped)}")
+              print(f"::error::Tests were skipped: {', '.join(skipped)}")
               sys.exit(1)
           if not result.wasSuccessful() or result.testsRun == 0:
               sys.exit(1)
