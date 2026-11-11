@@ -30,11 +30,52 @@ jobs:
       - name: Install asset-helper test dependency
         run: python -m pip install -r skills/disciplines/create-game-assets/scripts/requirements.txt
 
+      # The GDScript examples only run when a Godot binary is available; without
+      # one the suite reports them as skipped. Pin the release and its checksum so
+      # a corrupted or swapped download fails the job instead of skipping again.
+      # Bump the version here together with docs/VERSION-SUPPORT.md.
+      - name: Install Godot
+        env:
+          GODOT_VERSION: 4.7.2
+          GODOT_SHA512: 9aa00f7a605200940bce3027a567b782f49bd8e940dd06ae9e987bd65aee1b1467edd56ed84fcdcbdd44354bf613bdbb4e5d2913e925850368e150c59ed54c65
+        run: |
+          set -euo pipefail
+          asset="Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/$asset" \
+            "https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-stable/$asset"
+          echo "$GODOT_SHA512  $RUNNER_TEMP/$asset" | sha512sum -c -
+          unzip -q "$RUNNER_TEMP/$asset" -d "$RUNNER_TEMP"
+          binary="$RUNNER_TEMP/Godot_v${GODOT_VERSION}-stable_linux.x86_64"
+          chmod +x "$binary"
+          echo "GODOT_BIN=$binary" >> "$GITHUB_ENV"
+          "$binary" --version
+
       - name: Validate SKILL.md frontmatter and links
         run: python scripts/validate-skills.py
 
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
+
+      # Fail closed: an unusable Godot or .NET install must not quietly turn the
+      # example tests into skips again, so assert on results, not on the log.
+      - name: Verify example tests are not skipped
+        run: |
+          python - <<'PY'
+          import sys
+          import unittest
+
+          modules = ("tests.test_godot_examples", "tests.test_ai_examples")
+          suite = unittest.TestSuite(
+              unittest.defaultTestLoader.loadTestsFromName(module) for module in modules
+          )
+          result = unittest.TextTestRunner(verbosity=2).run(suite)
+          skipped = [test.id() for test, _reason in result.skipped]
+          if skipped:
+              print(f"::error::Example tests were skipped: {', '.join(skipped)}")
+              sys.exit(1)
+          if not result.wasSuccessful() or result.testsRun == 0:
+              sys.exit(1)
+          PY
 
       - name: Build the documentation site
         run: python scripts/generate-site.py
