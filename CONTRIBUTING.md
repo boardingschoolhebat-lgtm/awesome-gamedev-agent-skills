@@ -48,6 +48,8 @@ A skill is ready to merge when all of the following are true:
 - [ ] **Links resolve.** Any `references/` links in the skill point at real files.
 - [ ] **Resources verified.** Scripts have `--help`, fail safely, and were exercised;
       templates/JSON parse; any `agents/openai.yaml` names the skill in its default prompt.
+- [ ] **Routing example added.** `PROMPT_CASES` in `tests/test_routing_examples.py` expects
+      the new skill, so the router can still reach it from realistic phrasing.
 - [ ] **Validator passes** (see below).
 - [ ] **No growth/marketing language** anywhere in committed files.
 
@@ -105,11 +107,15 @@ PR:
    [`router/references/engine-detection.md`](router/references/engine-detection.md).
 3. **Composition (genres).** If it's a genre, list the skills it `composes:` so it links out
    instead of re-teaching primitives.
-4. **Re-validate.** Run the validator (it checks `router/SKILL.md` too) and confirm a sample
-   prompt routes to the new skill.
+4. **Re-validate.** Run the validator (it checks `router/SKILL.md` too) and the routing test,
+   which confirms a sample prompt still reaches the new skill.
 5. **Wire distribution.** Add the skill to the complete and category bundles in
    [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json), then update the README
    catalog/count. The validator checks these connections.
+6. **Add a routing example.** Add a realistic prompt and its expected skills to `PROMPT_CASES`
+   in [`tests/test_routing_examples.py`](tests/test_routing_examples.py). The suite fails when
+   any skill has no example prompt, and checks the prompt still matches a documented trigger
+   (or one composition hop from a matched genre, workflow, or discipline).
 
 Keep the router lean: it dispatches by `name` + `description`, so a precise description (see
 [Required frontmatter](docs/SKILL-FORMAT.md#required-frontmatter)) does most of the routing work.

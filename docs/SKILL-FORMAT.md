@@ -157,7 +157,9 @@ A new skill is not complete until it is reachable:
 2. Add it to the complete and category bundles in `.claude-plugin/marketplace.json`.
 3. Update the README catalog and count.
 4. Add `agents/openai.yaml` when a useful display name and starter prompt can be defined.
-5. Run repository validation and tests.
+5. Add a realistic prompt and its expected skills to `PROMPT_CASES` in
+   `tests/test_routing_examples.py`; the suite fails when a skill has no example prompt.
+6. Run repository validation and tests.
 
 ## Validation
 
