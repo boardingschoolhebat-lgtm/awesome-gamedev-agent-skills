@@ -81,6 +81,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `defold-ui` | "Defold GUI", "Defold HUD", menu/dialog/inventory screen, `.gui`, `gui_script`, `gui.new_text_node`, `gui.animate`, `gui.pick_node`, `gui.clone`, layout, anchor, adjust mode; `*.gui`/`*.gui_script` |
 | `defold-tilemap` | "Defold tilemap", paint tiles, tile layers, tile collision, tilesource collision group, `tilemap.get_tile`, `tilemap.set_tile`, `tilemap.get_bounds`, world-to-tile; `*.tilemap`/`*.tilesource` |
 | `defold-collision` | "Defold collision", `.collisionobject`, collision shape, collision group/mask, `collision_response`, `contact_point_response`, `trigger_response`, `physics.raycast`, falls through floor, trigger zone |
+| `defold-sprite` | "Defold sprite", flipbook animation, atlas animation, `sprite.play_flipbook`, `animation_done`, `set_hflip`, pivot, sprite offset, playback rate; `*.sprite`/`*.atlas` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
 | `roblox-datastores` | "DataStore", "save player data", `GetDataStore`; `DataStoreService` |
 | `roblox-ui` | Roblox HUD/menu/inventory/shop, `ScreenGui`, `PlayerGui`, `UDim2`, `AutomaticSize`, `GuiService`, UI clipping/respawn, touch/gamepad focus, generic generated UI |
@@ -163,8 +164,9 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
   scaffold. The Tiled loader is deliberately constrained, not a complete editor importer.
   Networking guidance does not supply transport/matchmaking; native 3D is outside this
   2D skill. Never substitute another engine's API to hide one of these gaps.
-- **Defold has core, GUI, tilemap and collision skills.** Bind movement, input, spawning, level
-  loading and build slots to `defold-core`, HUD/menus to `defold-ui` (+ `game-ui-ux`), tile levels
-  to `defold-tilemap` (+ `level-design`), and collision objects to `defold-collision`
-  (+ `physics-tuning`). There is no Defold sprite skill yet: use `defold-core` and its build
-  reference's sprite pointers, and state the gap.
+- **Defold has core, GUI, tilemap, collision and sprite skills.** Bind movement, input,
+  spawning, level loading and build slots to `defold-core`, HUD/menus to `defold-ui`
+  (+ `game-ui-ux`), tile levels to `defold-tilemap` (+ `level-design`), collision objects to
+  `defold-collision` (+ `physics-tuning`), and flipbooks to `defold-sprite` (+ `game-feel`).
+  These are the documented Defold primitives; movement stays engine-core + `input-systems`,
+  and there is no Defold-specific save or camera skill.

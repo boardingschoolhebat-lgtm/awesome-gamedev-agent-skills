@@ -24,8 +24,9 @@ headless engine. An existing project keeps its Defold version (see [Version](#ve
   `.script`, `.gui_script` files), or when Bob reports a missing resource.
 
 **When *not* to use:** plain Lua or LÖVE projects (`love2d-core`); GUI layout (`defold-ui`),
-tile levels (`defold-tilemap`), sprites and physics depth beyond the pointers in the
-references; engine-agnostic design handled by the related skills below.
+tile levels (`defold-tilemap`), sprites (`defold-sprite`), collision objects
+(`defold-collision`) and physics depth beyond the pointers in the references; engine-agnostic
+design handled by the related skills below.
 
 ## Workflow
 
