@@ -47,6 +47,7 @@ PROMPT_CASES = (
     ("set up tilemap autotiling in Godot", ("godot-tilemap",)),
     ("write a Unity shader for a dissolve effect", ("shader-programming",)),
     ("set up NavMeshAgent patrols in my Unity game", ("unity-navmesh",)),
+    ("add coyote time and a jump buffer to my Unity 2D character controller", ("unity-2d-movement",)),
     ("my Unity game drops to 30 FPS, optimize it", ("performance-optimization",)),
     ("my Godot game stutters when many enemies spawn", ("performance-optimization",)),
     ("make hits feel punchy in my Godot game", ("game-feel", "camera-systems")),

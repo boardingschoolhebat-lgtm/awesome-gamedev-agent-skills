@@ -35,6 +35,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unity-csharp-scripting` | "Unity script", `MonoBehaviour`, `Start`/`Update`, coroutines; `*.cs` + `*.asmdef` |
 | `unity-input-system` | "Input System", `InputAction`, "action map"; `*.inputactions` |
 | `unity-physics` | "Unity physics", `Rigidbody`, "collision layers", "joint" |
+| `unity-2d-movement` | "Unity 2D movement", "2D character controller", `Rigidbody2D` platformer, `linearVelocity`, `MovePosition`, coyote time, jump buffer |
 | `unity-animation` | "Animator", "state machine", "blend tree", "Mecanim"; `*.controller` |
 | `unity-scriptableobjects` | `ScriptableObject`, "SO architecture", "data asset", event channels |
 | `unity-tilemap-2d` | "Unity tilemap", "tile palette", "rule tile" |
@@ -110,7 +111,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Genre skill | `says:` triggers | composes (bind `*` to the detected engine) |
 |-------------|------------------|---------------------------------------------|
-| `platformer` | platformer, jump mechanic, double jump, wall jump, wall slide, Mario-like | `godot-2d-movement` (or engine physics) + `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `camera-systems` + `game-feel` |
+| `platformer` | platformer, jump mechanic, double jump, wall jump, wall slide, Mario-like | `godot-2d-movement`/`unity-2d-movement` (or engine physics) + `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `camera-systems` + `game-feel` |
 | `roguelike` | roguelike, procedural dungeon, permadeath, turn-based grid | `procedural-gen` + `godot-tilemap`/`unity-tilemap-2d` + `game-ai` + `save-systems` + `game-feel` |
 | `rpg` | RPG, stats/leveling, inventory, quest system | `godot-resources`/`unity-scriptableobjects` + `dialogue-systems` + `save-systems` + `game-ui-ux` |
 | `fps-shooter` | FPS, first-person shooter, hitscan, aim/shoot | `godot-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |
@@ -143,9 +144,9 @@ performance (`performance-optimization`) — so those are no longer gaps; bind t
 engine. The remaining true gaps are engine-specific primitives. When a genre binding names a slot
 the detected engine lacks, load the closest skill(s) and **state the gap** plainly:
 
-- **No `*-2d-movement` for Unity / Unreal / web.** For a Unity platformer, bind movement to
-  `unity-csharp-scripting` + `unity-physics`; for Phaser, `phaser-arcade-physics`. Say there is
-  no dedicated `unity-2d-movement` skill.
+- **No `*-2d-movement` for Unreal / web.** For an Unreal character, bind movement to
+  `unreal-cpp-gameplay`; for Phaser, `phaser-arcade-physics`. Say there is no dedicated
+  `unreal-2d-movement` skill.
 - **No dedicated 3D-essentials for Unity.** For a Unity FPS, use `unity-csharp-scripting` +
   `unity-physics` + `unity-navmesh`; only Godot has `godot-3d-essentials` and Unreal has
   `unreal-cpp-gameplay`.
