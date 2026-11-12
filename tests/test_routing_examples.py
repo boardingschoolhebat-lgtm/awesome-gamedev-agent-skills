@@ -49,6 +49,8 @@ PROMPT_CASES = (
      ("unreal-2d-movement",)),
     ("build a first-person Unity 3D controller with mouse look and jumping",
      ("unity-3d-essentials",)),
+    ("load a Tiled tilemap in Phaser and collide with the ground layer",
+     ("phaser-tilemap",)),
     ("rebind gamepad controls in my Defold game", ("defold-core", "input-systems")),
     ("procedural dungeon roguelike in Godot", ("godot-tilemap", "procedural-gen", "roguelike")),
     ("connect a signal from my Godot player to the HUD", ("godot-signals-groups", "game-ui-ux")),

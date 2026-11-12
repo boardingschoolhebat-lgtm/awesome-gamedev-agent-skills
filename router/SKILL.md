@@ -121,8 +121,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused
   input, rendering, text, audio, state/testing and build work. Select only its relevant
   references; generating the starter is optional for an existing project.
-- **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`; `pixijs-rendering`;
-  `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`.
+- **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`;
+  `pixijs-rendering`; `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`.
 - **Other** (`skills/other-engines/`): `bevy-ecs`, `pygame-core`, `love2d-core`; Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
   Bob builds), UI `defold-ui` (GUI scenes, HUD/menus, layouts, input picking) and tilemaps

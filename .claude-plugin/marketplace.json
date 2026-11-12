@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 84 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 85 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -48,6 +48,7 @@
         "./skills/ebitengine/ebitengine-game",
         "./skills/web-engines/phaser-core",
         "./skills/web-engines/phaser-arcade-physics",
+        "./skills/web-engines/phaser-tilemap",
         "./skills/web-engines/pixijs-rendering",
         "./skills/web-engines/threejs-scene-setup",
         "./skills/web-engines/threejs-gltf-loading",
@@ -181,6 +182,7 @@
       "skills": [
         "./skills/web-engines/phaser-core",
         "./skills/web-engines/phaser-arcade-physics",
+        "./skills/web-engines/phaser-tilemap",
         "./skills/web-engines/pixijs-rendering",
         "./skills/web-engines/threejs-scene-setup",
         "./skills/web-engines/threejs-gltf-loading",

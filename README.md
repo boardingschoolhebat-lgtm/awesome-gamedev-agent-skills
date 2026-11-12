@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 84 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 85 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**84 game-dev skills for your AI coding agent — install once, and a router loads the
+**85 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-84%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-85%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **84 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **85 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 84 skills into the right place:
+coding agent you already use and installs the router plus all 85 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-84 skills across 9 categories — each links to its `SKILL.md` below.
+85 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -197,12 +197,13 @@ engine), while disciplines, genres, and workflows are additive on top.
 |-------|-------|
 | [`ebitengine-game`](skills/ebitengine/ebitengine-game/SKILL.md) | Playable Go 2D games: update/draw contracts, input, rendering, text, audio, gameplay tests, optional starter and platform builds |
 
-#### Web engines — 6 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
+#### Web engines — 7 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
 
 | Skill | Scope |
 |-------|-------|
 | [`phaser-core`](skills/web-engines/phaser-core/SKILL.md) | Phaser 4.2 game config, Scene lifecycle, loader, cameras |
 | [`phaser-arcade-physics`](skills/web-engines/phaser-arcade-physics/SKILL.md) | Arcade Physics: bodies, velocity, colliders/overlap, groups |
+| [`phaser-tilemap`](skills/web-engines/phaser-tilemap/SKILL.md) | Tiled JSON/CSV maps, layers, tile collision, runtime tile edits, world bounds |
 | [`pixijs-rendering`](skills/web-engines/pixijs-rendering/SKILL.md) | PixiJS v8 scene graph: `Application`, `Container`, `Sprite`, events |
 | [`threejs-scene-setup`](skills/web-engines/threejs-scene-setup/SKILL.md) | Three.js scene/camera/renderer/animation-loop, resizing, controls |
 | [`threejs-gltf-loading`](skills/web-engines/threejs-gltf-loading/SKILL.md) | Loading glTF/GLB + skinned animation (`GLTFLoader`/`AnimationMixer`) |
@@ -349,7 +350,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        84 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        85 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

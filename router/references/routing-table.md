@@ -67,6 +67,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------|--------------|
 | `phaser-core` | "Phaser", "Phaser scene", `preload`/`create`/`update`; dep `phaser` |
 | `phaser-arcade-physics` | "Arcade Physics", "collider", "overlap", world bounds |
+| `phaser-tilemap` | "Phaser tilemap", Tiled map, `createLayer`, `setCollisionByProperty`, tile collision, `addTilesetImage`, `putTileAt`; `*.json` Tiled maps |
 | `pixijs-rendering` | "PixiJS", "Pixi sprite", "stage", `Container`; dep `pixi.js` |
 | `threejs-scene-setup` | "three.js", `THREE.Scene`, `WebGLRenderer`, render loop; dep `three` |
 | `threejs-gltf-loading` | "load gltf", `GLTFLoader`, `AnimationMixer`; `*.gltf`/`*.glb` |
@@ -156,8 +157,9 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **3D essentials exist for Godot, Unity and Unreal.** Unity 3D characters and cameras use
   `unity-3d-essentials`; Unreal FPS work binds to `unreal-cpp-gameplay`; Godot uses
   `godot-3d-essentials`. No other engine has a dedicated 3D-essentials skill.
-- **No `*-tilemap` for web / Bevy / pygame / Roblox / LÖVE.** Use `level-design` for the concept
-  and the engine's rendering skill for drawing; note the missing engine tilemap skill.
+- **No `*-tilemap` for Bevy / pygame / Roblox / LÖVE.** Phaser tile levels use
+  `phaser-tilemap`; for the others use `level-design` for the concept and the engine's rendering
+  skill for drawing, and note the missing engine tilemap skill.
 - **No engine-specific save skill except Roblox.** `save-systems` owns the concept and cites
   Godot IO; `roblox-datastores` is the one engine-specific persistence skill.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
