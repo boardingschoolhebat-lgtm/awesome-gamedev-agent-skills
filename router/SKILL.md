@@ -125,7 +125,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Other** (`skills/other-engines/`): `bevy-ecs`, `pygame-core`, `love2d-core`; Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
   Bob builds), UI `defold-ui` (GUI scenes, HUD/menus, layouts, input picking) and tilemaps
-  `defold-tilemap` (tile sources, collision groups, runtime tile edits); Roblox foundation
+  `defold-tilemap` (tile sources, collision groups, runtime tile edits) and collisions
+  `defold-collision` (body types, groups/masks, physics messages, raycasts); Roblox foundation
   `roblox-luau`, persistence `roblox-datastores`, UI `roblox-ui`, remotes/security
   `roblox-networking`, character lifecycle `roblox-characters`, simulation/queries
   `roblox-physics`, in-Studio operation `roblox-studio-workflow`, and simulator/tycoon/idle
@@ -168,9 +169,10 @@ ready-made network backend are not supplied by this 2D skill; state those gaps w
 For Defold, bind engine-specific slots (movement, input, spawning, level loading, build) to
 `defold-core` and add only the needed disciplines, e.g. "add player movement to my Defold
 game" → `defold-core` + `input-systems` (+ `platformer` for a platformer). HUD, menus and
-dialogs use `defold-ui` (+ `game-ui-ux` for design), and tile levels use `defold-tilemap`
-(+ `level-design`). Defold has no dedicated physics/collision skill yet; use `defold-core`
-and its build reference's pointers, and state the gap.
+dialogs use `defold-ui` (+ `game-ui-ux` for design), tile levels use `defold-tilemap`
+(+ `level-design`), and collision objects use `defold-collision` (+ `physics-tuning`).
+Defold has no dedicated sprite skill yet; use `defold-core` and its build reference's
+pointers for sprites, and state the gap.
 
 ### 3c. Genres — **compose** engine + disciplines (bind `*` to the detected engine)
 

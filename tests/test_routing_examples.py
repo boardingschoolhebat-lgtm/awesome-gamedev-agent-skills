@@ -43,6 +43,7 @@ PROMPT_CASES = (
     ("add player movement to my Defold game", ("defold-core",)),
     ("build a Defold HUD with a health bar and a pause menu", ("defold-ui",)),
     ("paint a Defold tilemap with collision groups for hazards", ("defold-tilemap",)),
+    ("add collision detection to my Defold enemies with a trigger zone", ("defold-collision",)),
     ("rebind gamepad controls in my Defold game", ("defold-core", "input-systems")),
     ("procedural dungeon roguelike in Godot", ("godot-tilemap", "procedural-gen", "roguelike")),
     ("connect a signal from my Godot player to the HUD", ("godot-signals-groups", "game-ui-ux")),

@@ -23,9 +23,9 @@ and — when a collision image is set — the collision shapes and groups for ea
 - Use when a project contains `.tilemap` or `.tilesource` files, or when level geometry must
   change at runtime (doors, breakables, dug tiles).
 
-**When *not* to use:** the level's layout and pacing → `level-design`; collision handling and
-physics tuning on game objects → `physics-tuning` and `defold-core`; GUI → `defold-ui`;
-procedural map generation → `procedural-gen`; camera bounds → `camera-systems`.
+**When *not* to use:** the level's layout and pacing → `level-design`; collision objects, groups
+and physics messages → `defold-collision` (+ `physics-tuning`); GUI → `defold-ui`; procedural
+map generation → `procedural-gen`; camera bounds → `camera-systems`.
 
 ## Core workflow
 
