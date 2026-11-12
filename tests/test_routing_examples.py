@@ -42,6 +42,7 @@ PROMPT_CASES = (
     ("build a 2D puzzle game in Go with Ebitengine", ("ebitengine-game", "puzzle")),
     ("add player movement to my Defold game", ("defold-core",)),
     ("build a Defold HUD with a health bar and a pause menu", ("defold-ui",)),
+    ("paint a Defold tilemap with collision groups for hazards", ("defold-tilemap",)),
     ("rebind gamepad controls in my Defold game", ("defold-core", "input-systems")),
     ("procedural dungeon roguelike in Godot", ("godot-tilemap", "procedural-gen", "roguelike")),
     ("connect a signal from my Godot player to the HUD", ("godot-signals-groups", "game-ui-ux")),
