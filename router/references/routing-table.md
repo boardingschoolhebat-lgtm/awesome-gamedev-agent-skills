@@ -78,6 +78,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
 | `love2d-core` | "LÖVE", "love2d", `love.draw`, `love.update(dt)`; `main.lua`/`conf.lua`/`*.love` |
 | `defold-core` | "Defold", collection/game object/component, `msg.post`, `on_message`, `on_input`, `acquire_input_focus`, `go.property`, `factory.create`, collection proxy, `bob.jar`, Defold build error; `game.project` + `*.collection`/`*.go`/`*.script` (target Defold 1.14.0) |
+| `defold-ui` | "Defold GUI", "Defold HUD", menu/dialog/inventory screen, `.gui`, `gui_script`, `gui.new_text_node`, `gui.animate`, `gui.pick_node`, `gui.clone`, layout, anchor, adjust mode; `*.gui`/`*.gui_script` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
 | `roblox-datastores` | "DataStore", "save player data", `GetDataStore`; `DataStoreService` |
 | `roblox-ui` | Roblox HUD/menu/inventory/shop, `ScreenGui`, `PlayerGui`, `UDim2`, `AutomaticSize`, `GuiService`, UI clipping/respawn, touch/gamepad focus, generic generated UI |
@@ -160,7 +161,8 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
   scaffold. The Tiled loader is deliberately constrained, not a complete editor importer.
   Networking guidance does not supply transport/matchmaking; native 3D is outside this
   2D skill. Never substitute another engine's API to hide one of these gaps.
-- **Defold has one core skill.** Bind movement, input, spawning, level loading and build slots
-  to `defold-core`. There is no Defold GUI, sprite/tilemap or collision skill yet: use
-  `defold-core` (its build reference links the official manuals for those subsystems) plus
-  `game-ui-ux` / `level-design` / `physics-tuning`, and state the gap.
+- **Defold has core and GUI skills.** Bind movement, input, spawning, level loading and build
+  slots to `defold-core`, and HUD/menus to `defold-ui` (+ `game-ui-ux` for design). There is
+  no Defold sprite/tilemap or collision skill yet: use `defold-core` (its build reference links
+  the official manuals for those subsystems) plus `level-design` / `physics-tuning`, and state
+  the gap.

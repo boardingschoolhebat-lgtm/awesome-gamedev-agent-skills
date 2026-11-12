@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 78 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 79 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -54,6 +54,7 @@
         "./skills/other-engines/pygame-core",
         "./skills/other-engines/love2d-core",
         "./skills/other-engines/defold-core",
+        "./skills/other-engines/defold-ui",
         "./skills/other-engines/roblox-luau",
         "./skills/other-engines/roblox-datastores",
         "./skills/other-engines/roblox-ui",
@@ -189,6 +190,7 @@
         "./skills/other-engines/pygame-core",
         "./skills/other-engines/love2d-core",
         "./skills/other-engines/defold-core",
+        "./skills/other-engines/defold-ui",
         "./skills/other-engines/roblox-luau",
         "./skills/other-engines/roblox-datastores",
         "./skills/other-engines/roblox-ui",

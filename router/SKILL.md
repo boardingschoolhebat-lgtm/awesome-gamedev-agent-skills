@@ -124,7 +124,7 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`.
 - **Other** (`skills/other-engines/`): `bevy-ecs`, `pygame-core`, `love2d-core`; Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
-  Bob builds); Roblox foundation
+  Bob builds) and UI `defold-ui` (GUI scenes, HUD/menus, layouts, input picking); Roblox foundation
   `roblox-luau`, persistence `roblox-datastores`, UI `roblox-ui`, remotes/security
   `roblox-networking`, character lifecycle `roblox-characters`, simulation/queries
   `roblox-physics`, in-Studio operation `roblox-studio-workflow`, and simulator/tycoon/idle
@@ -166,9 +166,9 @@ ready-made network backend are not supplied by this 2D skill; state those gaps w
 
 For Defold, bind engine-specific slots (movement, input, spawning, level loading, build) to
 `defold-core` and add only the needed disciplines, e.g. "add player movement to my Defold
-game" → `defold-core` + `input-systems` (+ `platformer` for a platformer). Defold has no
-dedicated GUI, tilemap or physics skill yet; use `defold-core` and its build reference's
-pointers, and state the gap.
+game" → `defold-core` + `input-systems` (+ `platformer` for a platformer). HUD, menus and
+dialogs use `defold-ui` (+ `game-ui-ux` for design). Defold has no dedicated tilemap or
+physics skill yet; use `defold-core` and its build reference's pointers, and state the gap.
 
 ### 3c. Genres — **compose** engine + disciplines (bind `*` to the detected engine)
 
