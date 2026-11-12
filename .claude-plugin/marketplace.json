@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 82 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 83 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -39,6 +39,7 @@
         "./skills/unity/unity-build-pipeline",
         "./skills/unreal/unreal-blueprints",
         "./skills/unreal/unreal-cpp-gameplay",
+        "./skills/unreal/unreal-2d-movement",
         "./skills/unreal/unreal-enhanced-input",
         "./skills/unreal/unreal-behavior-trees",
         "./skills/unreal/unreal-niagara",
@@ -150,10 +151,11 @@
       "name": "unreal",
       "source": "./",
       "strict": false,
-      "description": "Unreal Engine 5.8 skills (Blueprints, C++ gameplay, input, AI, Niagara, packaging).",
+      "description": "Unreal Engine 5.8 skills (Blueprints, C++ gameplay, 2D movement, input, AI, Niagara, packaging).",
       "skills": [
         "./skills/unreal/unreal-blueprints",
         "./skills/unreal/unreal-cpp-gameplay",
+        "./skills/unreal/unreal-2d-movement",
         "./skills/unreal/unreal-enhanced-input",
         "./skills/unreal/unreal-behavior-trees",
         "./skills/unreal/unreal-niagara",

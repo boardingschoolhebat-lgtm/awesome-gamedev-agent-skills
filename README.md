@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 82 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 83 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**82 game-dev skills for your AI coding agent — install once, and a router loads the
+**83 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-82%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-83%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **82 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **83 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 82 skills into the right place:
+coding agent you already use and installs the router plus all 83 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-82 skills across 9 categories — each links to its `SKILL.md` below.
+83 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -178,11 +178,12 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unity-navmesh`](skills/unity/unity-navmesh/SKILL.md) | AI navigation: NavMesh bake, `NavMeshAgent` |
 | [`unity-build-pipeline`](skills/unity/unity-build-pipeline/SKILL.md) | Build/player/quality settings, code stripping, Addressables |
 
-#### Unreal — 6 ([`skills/unreal/`](skills/unreal/)) · Unreal Engine 5.8
+#### Unreal — 7 ([`skills/unreal/`](skills/unreal/)) · Unreal Engine 5.8
 
 | Skill | Scope |
 |-------|-------|
 | [`unreal-blueprints`](skills/unreal/unreal-blueprints/SKILL.md) | Blueprint visual scripting: classes, graphs, comms, common nodes |
+| [`unreal-2d-movement`](skills/unreal/unreal-2d-movement/SKILL.md) | Paper2D 2D characters: `PaperCharacter`, plane constraint, flipbook states, facing |
 | [`unreal-cpp-gameplay`](skills/unreal/unreal-cpp-gameplay/SKILL.md) | C++ gameplay + Gameplay Framework (GameMode, Pawn, Controller) |
 | [`unreal-enhanced-input`](skills/unreal/unreal-enhanced-input/SKILL.md) | Enhanced Input: Input Actions, Mapping Contexts, Modifiers, Triggers |
 | [`unreal-behavior-trees`](skills/unreal/unreal-behavior-trees/SKILL.md) | AI Behavior Trees + Blackboard, tasks/decorators/services |
@@ -347,7 +348,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        82 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        83 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

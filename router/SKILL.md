@@ -115,8 +115,9 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   movement `unity-2d-movement`, tilemaps `unity-tilemap-2d`; AI nav `unity-navmesh`; ship
   `unity-build-pipeline`.
 - **Unreal** (`skills/unreal/`): visual scripting `unreal-blueprints`; C++ gameplay
-  `unreal-cpp-gameplay`; input `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX
-  `unreal-niagara`; ship `unreal-packaging`.
+  `unreal-cpp-gameplay`; 2D Paper2D characters `unreal-2d-movement`; input
+  `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX `unreal-niagara`; ship
+  `unreal-packaging`.
 - **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused
   input, rendering, text, audio, state/testing and build work. Select only its relevant
   references; generating the starter is optional for an existing project.

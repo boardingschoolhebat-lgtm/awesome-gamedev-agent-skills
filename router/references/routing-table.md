@@ -48,6 +48,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------|--------------|
 | `unreal-blueprints` | "Blueprint", "BP graph", "event graph"; Blueprint `*.uasset` |
 | `unreal-cpp-gameplay` | "Unreal C++", `GameMode`, `Pawn`, `ACharacter`; `Source/**/*.cpp` + `*.Build.cs` |
+| `unreal-2d-movement` | "Unreal 2D", "Paper2D", `PaperCharacter`, `PaperFlipbook`, plane constraint, 2D platformer/top-down character in Unreal; Paper 2D assets |
 | `unreal-enhanced-input` | "Enhanced Input", "Input Mapping Context", `IA_`/`IMC_` |
 | `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
@@ -148,13 +149,13 @@ performance (`performance-optimization`) — so those are no longer gaps; bind t
 engine. The remaining true gaps are engine-specific primitives. When a genre binding names a slot
 the detected engine lacks, load the closest skill(s) and **state the gap** plainly:
 
-- **No `*-2d-movement` for Unreal / web.** For an Unreal character, bind movement to
-  `unreal-cpp-gameplay`; for Phaser, `phaser-arcade-physics`. Say there is no dedicated
-  `unreal-2d-movement` skill.
+- **No `*-2d-movement` for web.** A 2D Unreal character uses `unreal-2d-movement`; for Phaser,
+  bind movement to `phaser-arcade-physics` and say there is no dedicated `phaser-2d-movement`
+  skill.
 - **No dedicated 3D-essentials for Unity.** For a Unity FPS, use `unity-csharp-scripting` +
   `unity-physics` + `unity-navmesh`; only Godot has `godot-3d-essentials` and Unreal has
   `unreal-cpp-gameplay`.
-- **No `*-tilemap` for web / Bevy / pygame / Roblox / LÖVE / Defold.** Use `level-design` for the concept
+- **No `*-tilemap` for web / Bevy / pygame / Roblox / LÖVE.** Use `level-design` for the concept
   and the engine's rendering skill for drawing; note the missing engine tilemap skill.
 - **No engine-specific save skill except Roblox.** `save-systems` owns the concept and cites
   Godot IO; `roblox-datastores` is the one engine-specific persistence skill.
