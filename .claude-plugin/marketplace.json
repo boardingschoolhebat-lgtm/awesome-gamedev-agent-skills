@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 83 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 84 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -29,6 +29,7 @@
         "./skills/godot/godot-csharp",
         "./skills/godot/godot-gdscript-headless-testing",
         "./skills/unity/unity-csharp-scripting",
+        "./skills/unity/unity-3d-essentials",
         "./skills/unity/unity-2d-movement",
         "./skills/unity/unity-input-system",
         "./skills/unity/unity-physics",
@@ -134,9 +135,10 @@
       "name": "unity",
       "source": "./",
       "strict": false,
-      "description": "Unity 6.3 LTS engine skills (C#, input, physics, 2D movement, animation, build).",
+      "description": "Unity 6.3 LTS engine skills (C#, 3D characters, input, physics, 2D movement, animation, build).",
       "skills": [
         "./skills/unity/unity-csharp-scripting",
+        "./skills/unity/unity-3d-essentials",
         "./skills/unity/unity-2d-movement",
         "./skills/unity/unity-input-system",
         "./skills/unity/unity-physics",

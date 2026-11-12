@@ -33,6 +33,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | Skill | Pick it when |
 |-------|--------------|
 | `unity-csharp-scripting` | "Unity script", `MonoBehaviour`, `Start`/`Update`, coroutines; `*.cs` + `*.asmdef` |
+| `unity-3d-essentials` | "Unity 3D", first-person/third-person controller, 3D character controller, `CharacterController`, mouse look, orbit camera, slope/stair handling |
 | `unity-input-system` | "Input System", `InputAction`, "action map"; `*.inputactions` |
 | `unity-physics` | "Unity physics", `Rigidbody`, "collision layers", "joint" |
 | `unity-2d-movement` | "Unity 2D movement", "2D character controller", `Rigidbody2D` platformer, `linearVelocity`, `MovePosition`, coyote time, jump buffer |
@@ -119,7 +120,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `platformer` | platformer, jump mechanic, double jump, wall jump, wall slide, Mario-like | `godot-2d-movement`/`unity-2d-movement` (or engine physics) + `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `camera-systems` + `game-feel` |
 | `roguelike` | roguelike, procedural dungeon, permadeath, turn-based grid | `procedural-gen` + `godot-tilemap`/`unity-tilemap-2d` + `game-ai` + `save-systems` + `game-feel` |
 | `rpg` | RPG, stats/leveling, inventory, quest system | `godot-resources`/`unity-scriptableobjects` + `dialogue-systems` + `save-systems` + `game-ui-ux` |
-| `fps-shooter` | FPS, first-person shooter, hitscan, aim/shoot | `godot-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |
+| `fps-shooter` | FPS, first-person shooter, hitscan, aim/shoot | `godot-3d-essentials`/`unity-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |
 | `tower-defense` | tower defense, wave spawner, enemy path, tower targeting | `game-ai` + `godot-2d-movement`/engine movement + `level-design` + `game-ui-ux` |
 | `card-game` | card game, deckbuilder, hand/deck/discard, TCG | `godot-resources`/`unity-scriptableobjects` + `game-ui-ux` + `godot-ui-control` (engine UI) |
 | `visual-novel` | visual novel, VN, branching story, choice menu, Ren'Py; `*.ink`/`*.yarn`/`*.rpy` | `dialogue-systems` + `save-systems` + `game-ui-ux` |
@@ -152,9 +153,9 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **No `*-2d-movement` for web.** A 2D Unreal character uses `unreal-2d-movement`; for Phaser,
   bind movement to `phaser-arcade-physics` and say there is no dedicated `phaser-2d-movement`
   skill.
-- **No dedicated 3D-essentials for Unity.** For a Unity FPS, use `unity-csharp-scripting` +
-  `unity-physics` + `unity-navmesh`; only Godot has `godot-3d-essentials` and Unreal has
-  `unreal-cpp-gameplay`.
+- **3D essentials exist for Godot, Unity and Unreal.** Unity 3D characters and cameras use
+  `unity-3d-essentials`; Unreal FPS work binds to `unreal-cpp-gameplay`; Godot uses
+  `godot-3d-essentials`. No other engine has a dedicated 3D-essentials skill.
 - **No `*-tilemap` for web / Bevy / pygame / Roblox / LÖVE.** Use `level-design` for the concept
   and the engine's rendering skill for drawing; note the missing engine tilemap skill.
 - **No engine-specific save skill except Roblox.** `save-systems` owns the concept and cites

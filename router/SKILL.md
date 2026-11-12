@@ -110,10 +110,10 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `godot-animation`; shaders `godot-shaders`; data `godot-resources`; audio `godot-audio`;
   netcode `godot-multiplayer`; headless CLI tests `godot-gdscript-headless-testing`; ship
   `godot-export`.
-- **Unity** (`skills/unity/`): scripting `unity-csharp-scripting`; input `unity-input-system`;
-  physics `unity-physics`; animation `unity-animation`; data `unity-scriptableobjects`; 2D
-  movement `unity-2d-movement`, tilemaps `unity-tilemap-2d`; AI nav `unity-navmesh`; ship
-  `unity-build-pipeline`.
+- **Unity** (`skills/unity/`): scripting `unity-csharp-scripting`; 3D characters and cameras
+  `unity-3d-essentials`; input `unity-input-system`; physics `unity-physics`; animation
+  `unity-animation`; data `unity-scriptableobjects`; 2D movement `unity-2d-movement`, tilemaps
+  `unity-tilemap-2d`; AI nav `unity-navmesh`; ship `unity-build-pipeline`.
 - **Unreal** (`skills/unreal/`): visual scripting `unreal-blueprints`; C++ gameplay
   `unreal-cpp-gameplay`; 2D Paper2D characters `unreal-2d-movement`; input
   `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX `unreal-niagara`; ship
@@ -183,7 +183,7 @@ primitive gaps; movement still binds to `defold-core` + `input-systems`.
 | platformer, jump, double jump | `godot-2d-movement`/`unity-2d-movement` (or engine physics) + `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `camera-systems` + `game-feel` |
 | roguelike, procedural dungeon, permadeath | `procedural-gen` + `godot-tilemap`/`unity-tilemap-2d` + `game-ai` + `save-systems` + `game-feel` |
 | RPG, stats, inventory, quests | `godot-resources`/`unity-scriptableobjects` + `dialogue-systems` + `save-systems` + `game-ui-ux` |
-| FPS, first-person, hitscan | `godot-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |
+| FPS, first-person, hitscan | `godot-3d-essentials`/`unity-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |
 | tower defense, waves, lanes | `game-ai` + engine movement + `level-design` + `game-ui-ux` |
 | card game, deckbuilder, TCG | `godot-resources`/`unity-scriptableobjects` + `game-ui-ux` (+ engine UI) |
 | visual novel, branching story | `dialogue-systems` + `save-systems` + `game-ui-ux` |
