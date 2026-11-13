@@ -55,6 +55,8 @@ PROMPT_CASES = (
      ("godot-save",)),
     ("save player progress to a JSON file in Unity with persistentDataPath",
      ("unity-save",)),
+    ("save the game to a slot with SaveGameToSlot in Unreal",
+     ("unreal-save",)),
     ("rebind gamepad controls in my Defold game", ("defold-core", "input-systems")),
     ("procedural dungeon roguelike in Godot", ("godot-tilemap", "procedural-gen", "roguelike")),
     ("connect a signal from my Godot player to the HUD", ("godot-signals-groups", "game-ui-ux")),

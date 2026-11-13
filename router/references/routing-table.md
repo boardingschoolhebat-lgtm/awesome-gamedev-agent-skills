@@ -55,6 +55,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-enhanced-input` | "Enhanced Input", "Input Mapping Context", `IA_`/`IMC_` |
 | `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
+| `unreal-save` | "Unreal save", save slot, `USaveGame`, `SaveGameToSlot`, `LoadGameFromSlot`, `DoesSaveGameExist`, `AsyncSaveGameToSlot`, `.sav` |
 | `unreal-packaging` | "package Unreal", "cook content", "shipping build" |
 
 ### Ebitengine (`skills/ebitengine/`, target v2.10.5 / Go 1.25+)
@@ -162,9 +163,10 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **No `*-tilemap` for Bevy / pygame / Roblox / LÖVE.** Phaser tile levels use
   `phaser-tilemap`; for the others use `level-design` for the concept and the engine's rendering
   skill for drawing, and note the missing engine tilemap skill.
-- **Engine-specific save skills exist for Godot, Unity and Roblox.** `godot-save` covers
-  `user://` and FileAccess formats, `unity-save` covers `persistentDataPath` and JsonUtility,
-  and `roblox-datastores` covers DataStores; `save-systems` owns the design for other engines.
+- **Engine-specific save skills exist for Godot, Unity, Unreal and Roblox.** `godot-save`
+  covers `user://` and FileAccess formats, `unity-save` covers `persistentDataPath` and
+  JsonUtility, `unreal-save` covers `USaveGame` slots, and `roblox-datastores` covers
+  DataStores; `save-systems` owns the design for other engines.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
   collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
   open only the matching reference. A puzzle/card request does not require a platformer

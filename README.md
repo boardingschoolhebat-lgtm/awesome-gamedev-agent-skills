@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 87 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 88 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**87 game-dev skills for your AI coding agent — install once, and a router loads the
+**88 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-87%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-88%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **87 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **88 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 87 skills into the right place:
+coding agent you already use and installs the router plus all 88 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-87 skills across 9 categories — each links to its `SKILL.md` below.
+88 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -181,7 +181,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unity-navmesh`](skills/unity/unity-navmesh/SKILL.md) | AI navigation: NavMesh bake, `NavMeshAgent` |
 | [`unity-build-pipeline`](skills/unity/unity-build-pipeline/SKILL.md) | Build/player/quality settings, code stripping, Addressables |
 
-#### Unreal — 7 ([`skills/unreal/`](skills/unreal/)) · Unreal Engine 5.8
+#### Unreal — 8 ([`skills/unreal/`](skills/unreal/)) · Unreal Engine 5.8
 
 | Skill | Scope |
 |-------|-------|
@@ -192,6 +192,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unreal-behavior-trees`](skills/unreal/unreal-behavior-trees/SKILL.md) | AI Behavior Trees + Blackboard, tasks/decorators/services |
 | [`unreal-niagara`](skills/unreal/unreal-niagara/SKILL.md) | Niagara VFX: systems, emitters, modules, parameters |
 | [`unreal-packaging`](skills/unreal/unreal-packaging/SKILL.md) | Packaging/cooking projects, build configs, shipping builds |
+| [`unreal-save`](skills/unreal/unreal-save/SKILL.md) | `USaveGame` slots, sync/async saves, loading and migrations, raw byte slots |
 
 #### Ebitengine — 1 ([`skills/ebitengine/`](skills/ebitengine/)) · Ebitengine v2.10.5 · Go 1.25+
 
@@ -352,7 +353,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        87 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        88 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template
