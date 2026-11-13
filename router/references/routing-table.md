@@ -44,6 +44,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unity-tilemap-2d` | "Unity tilemap", "tile palette", "rule tile" |
 | `unity-navmesh` | `NavMesh`, `NavMeshAgent`, "pathfinding in Unity" |
 | `unity-build-pipeline` | "build Unity", "player settings", "IL2CPP", "Addressables" |
+| `unity-ui` | "Unity UI", Canvas, CanvasScaler, uGUI, UI Toolkit, HUD, health bar, safe area, `EventSystem` |
 
 ### Unreal (`skills/unreal/`, target UE 5.8)
 
@@ -55,6 +56,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-enhanced-input` | "Enhanced Input", "Input Mapping Context", `IA_`/`IMC_` |
 | `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
+| `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, HUD, pause menu, `BindWidget` |
 | `unreal-save` | "Unreal save", save slot, `USaveGame`, `SaveGameToSlot`, `LoadGameFromSlot`, `DoesSaveGameExist`, `AsyncSaveGameToSlot`, `.sav` |
 | `unreal-packaging` | "package Unreal", "cook content", "shipping build" |
 
@@ -82,6 +84,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------|--------------|
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `bevy-save` | "Bevy save", save file, save slots, serde, RON, save migration, corrupt save; `*.json`/`*.ron` save files |
+| `bevy-tilemap` | "Bevy tilemap", texture atlas, `TextureAtlasLayout`, grid level, tile collision, sprite sheet, chunk |
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
 | `pygame-tilemap` | "pygame tilemap", "blitting tiles", "tileset", tile collision, layer surface, camera offset, `subsurface`, `pytmx` |
 | `pygame-save` | "pygame save", save file, save slots, JSON save, settings file, save migration, corrupt save |
@@ -166,16 +169,21 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **3D essentials exist for Godot, Unity and Unreal.** Unity 3D characters and cameras use
   `unity-3d-essentials`; Unreal FPS work binds to `unreal-cpp-gameplay`; Godot uses
   `godot-3d-essentials`. No other engine has a dedicated 3D-essentials skill.
-- **No `*-tilemap` for Bevy.** Tile levels are covered by `godot-tilemap`,
+- **Tilemap coverage spans the catalogued 2D engines.** `godot-tilemap`,
   `unity-tilemap-2d`, `defold-tilemap`, `phaser-tilemap`, `love2d-tilemap`,
-  `pygame-tilemap` and `roblox-tilemap`; for Bevy use `level-design` for the concept and
-  `bevy-ecs` for rendering the grid, and note the missing engine tilemap skill.
+  `pygame-tilemap`, `roblox-tilemap` and `bevy-tilemap` each own their engine's grid level.
+  Unreal's Paper 2D tile maps have no dedicated skill: pair `unreal-2d-movement` with
+  `level-design` and state that gap.
 - **Engine-specific save skills exist for Godot, Unity, Unreal, LÖVE, pygame, Bevy and
   Roblox.** `godot-save` covers `user://` and FileAccess formats, `unity-save` covers
   `persistentDataPath` and JsonUtility, `unreal-save` covers `USaveGame` slots, `love2d-save`
   covers `love.filesystem` identity and backups, `pygame-save` covers atomic JSON saves,
   `bevy-save` covers serde and `std::fs`, and `roblox-datastores` covers DataStores;
   `save-systems` owns the design for the remaining engines.
+- **Engine UI skills exist for Godot, Unity, Unreal, Defold and Roblox.** `godot-ui-control`,
+  `unity-ui` (uGUI and UI Toolkit), `unreal-ui` (UMG), `defold-ui` and `roblox-ui` own their
+  engine's screens; for Phaser, PixiJS, three.js and the lightweight engines use `game-ui-ux`
+  plus the framework's own DOM/canvas UI.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
   collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
   open only the matching reference. A puzzle/card request does not require a platformer
