@@ -124,8 +124,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   references; generating the starter is optional for an existing project.
 - **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`;
   `pixijs-rendering`; `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`.
-- **Other** (`skills/other-engines/`): `bevy-ecs`, `pygame-core` (+ `pygame-tilemap`),
-  `love2d-core` (+ `love2d-tilemap`, `love2d-save`); Defold
+- **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`), `pygame-core`
+  (+ `pygame-tilemap`, `pygame-save`), `love2d-core` (+ `love2d-tilemap`, `love2d-save`); Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
   Bob builds), UI `defold-ui` (GUI scenes, HUD/menus, layouts, input picking) and tilemaps
   `defold-tilemap` (tile sources, collision groups, runtime tile edits) and collisions
@@ -133,8 +133,9 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `defold-sprite` (atlas flipbooks, playback, pivots); Roblox foundation
   `roblox-luau`, persistence `roblox-datastores`, UI `roblox-ui`, remotes/security
   `roblox-networking`, character lifecycle `roblox-characters`, simulation/queries
-  `roblox-physics`, in-Studio operation `roblox-studio-workflow`, and simulator/tycoon/idle
-  economy balancing `roblox-simulator-economy`.
+  `roblox-physics`, grid levels `roblox-tilemap`, in-Studio operation
+  `roblox-studio-workflow`, and simulator/tycoon/idle economy balancing
+  `roblox-simulator-economy`.
 
 ### 3b. Disciplines — load **with** the engine skill (concept ↔ engine API)
 
