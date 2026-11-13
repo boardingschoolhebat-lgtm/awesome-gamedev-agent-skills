@@ -1,6 +1,6 @@
 # Web engine skills
 
-Seven Agent Skills for browser games: Phaser 4.2 core, Arcade Physics and tilemaps,
+Eight Agent Skills for browser games: Phaser 4.2 core, Arcade Physics, tilemaps and UI,
 PixiJS 8.22 rendering, and three.js r187 scene, glTF, material, and lighting workflows.
 
 Each subdirectory is one skill. Existing projects keep their locked dependency

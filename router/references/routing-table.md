@@ -45,6 +45,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unity-navmesh` | `NavMesh`, `NavMeshAgent`, "pathfinding in Unity" |
 | `unity-build-pipeline` | "build Unity", "player settings", "IL2CPP", "Addressables" |
 | `unity-ui` | "Unity UI", Canvas, CanvasScaler, uGUI, UI Toolkit, HUD, health bar, safe area, `EventSystem` |
+| `unity-audio` | "Unity audio", AudioSource, AudioMixer, mixer group, exposed volume, snapshot, spatial audio, music crossfade |
 
 ### Unreal (`skills/unreal/`, target UE 5.8)
 
@@ -57,6 +58,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
 | `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, HUD, pause menu, `BindWidget` |
+| `unreal-tilemap` | "Unreal tilemap", Paper2D, tile set, tile map, `SetTile`, `CreateNewTileMap`, `RebuildCollision`, tile collision |
 | `unreal-save` | "Unreal save", save slot, `USaveGame`, `SaveGameToSlot`, `LoadGameFromSlot`, `DoesSaveGameExist`, `AsyncSaveGameToSlot`, `.sav` |
 | `unreal-packaging` | "package Unreal", "cook content", "shipping build" |
 
@@ -73,6 +75,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `phaser-core` | "Phaser", "Phaser scene", `preload`/`create`/`update`; dep `phaser` |
 | `phaser-arcade-physics` | "Arcade Physics", "collider", "overlap", world bounds |
 | `phaser-tilemap` | "Phaser tilemap", Tiled map, `createLayer`, `setCollisionByProperty`, tile collision, `addTilesetImage`, `putTileAt`; `*.json` Tiled maps |
+| `phaser-ui` | "Phaser UI", HUD, health bar, scroll factor, DOM element, container, menu, `setScrollFactor`, NineSlice |
 | `pixijs-rendering` | "PixiJS", "Pixi sprite", "stage", `Container`; dep `pixi.js` |
 | `threejs-scene-setup` | "three.js", `THREE.Scene`, `WebGLRenderer`, render loop; dep `three` |
 | `threejs-gltf-loading` | "load gltf", `GLTFLoader`, `AnimationMixer`; `*.gltf`/`*.glb` |
@@ -170,10 +173,9 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
   `unity-3d-essentials`; Unreal FPS work binds to `unreal-cpp-gameplay`; Godot uses
   `godot-3d-essentials`. No other engine has a dedicated 3D-essentials skill.
 - **Tilemap coverage spans the catalogued 2D engines.** `godot-tilemap`,
-  `unity-tilemap-2d`, `defold-tilemap`, `phaser-tilemap`, `love2d-tilemap`,
-  `pygame-tilemap`, `roblox-tilemap` and `bevy-tilemap` each own their engine's grid level.
-  Unreal's Paper 2D tile maps have no dedicated skill: pair `unreal-2d-movement` with
-  `level-design` and state that gap.
+  `unity-tilemap-2d`, `unreal-tilemap` (Paper 2D), `defold-tilemap`, `phaser-tilemap`,
+  `love2d-tilemap`, `pygame-tilemap`, `roblox-tilemap` and `bevy-tilemap` each own their
+  engine's grid level; no engine-specific tilemap gap remains.
 - **Engine-specific save skills exist for Godot, Unity, Unreal, LÖVE, pygame, Bevy and
   Roblox.** `godot-save` covers `user://` and FileAccess formats, `unity-save` covers
   `persistentDataPath` and JsonUtility, `unreal-save` covers `USaveGame` slots, `love2d-save`
@@ -182,8 +184,8 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
   `save-systems` owns the design for the remaining engines.
 - **Engine UI skills exist for Godot, Unity, Unreal, Defold and Roblox.** `godot-ui-control`,
   `unity-ui` (uGUI and UI Toolkit), `unreal-ui` (UMG), `defold-ui` and `roblox-ui` own their
-  engine's screens; for Phaser, PixiJS, three.js and the lightweight engines use `game-ui-ux`
-  plus the framework's own DOM/canvas UI.
+  engine's screens; `phaser-ui` covers Phaser HUDs and DOM overlays, while PixiJS, three.js
+  and the lightweight engines use `game-ui-ux` plus the framework's own DOM/canvas UI.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
   collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
   open only the matching reference. A puzzle/card request does not require a platformer

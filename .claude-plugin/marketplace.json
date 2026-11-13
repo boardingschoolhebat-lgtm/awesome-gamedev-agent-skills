@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 97 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 100 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -40,6 +40,7 @@
         "./skills/unity/unity-tilemap-2d",
         "./skills/unity/unity-navmesh",
         "./skills/unity/unity-ui",
+        "./skills/unity/unity-audio",
         "./skills/unity/unity-build-pipeline",
         "./skills/unreal/unreal-blueprints",
         "./skills/unreal/unreal-cpp-gameplay",
@@ -47,6 +48,7 @@
         "./skills/unreal/unreal-enhanced-input",
         "./skills/unreal/unreal-behavior-trees",
         "./skills/unreal/unreal-ui",
+        "./skills/unreal/unreal-tilemap",
         "./skills/unreal/unreal-niagara",
         "./skills/unreal/unreal-save",
         "./skills/unreal/unreal-packaging",
@@ -54,6 +56,7 @@
         "./skills/web-engines/phaser-core",
         "./skills/web-engines/phaser-arcade-physics",
         "./skills/web-engines/phaser-tilemap",
+        "./skills/web-engines/phaser-ui",
         "./skills/web-engines/pixijs-rendering",
         "./skills/web-engines/threejs-scene-setup",
         "./skills/web-engines/threejs-gltf-loading",
@@ -162,6 +165,7 @@
         "./skills/unity/unity-tilemap-2d",
         "./skills/unity/unity-navmesh",
         "./skills/unity/unity-ui",
+        "./skills/unity/unity-audio",
         "./skills/unity/unity-build-pipeline"
       ]
     },
@@ -177,6 +181,7 @@
         "./skills/unreal/unreal-enhanced-input",
         "./skills/unreal/unreal-behavior-trees",
         "./skills/unreal/unreal-ui",
+        "./skills/unreal/unreal-tilemap",
         "./skills/unreal/unreal-niagara",
         "./skills/unreal/unreal-save",
         "./skills/unreal/unreal-packaging"
@@ -200,6 +205,7 @@
         "./skills/web-engines/phaser-core",
         "./skills/web-engines/phaser-arcade-physics",
         "./skills/web-engines/phaser-tilemap",
+        "./skills/web-engines/phaser-ui",
         "./skills/web-engines/pixijs-rendering",
         "./skills/web-engines/threejs-scene-setup",
         "./skills/web-engines/threejs-gltf-loading",

@@ -113,17 +113,19 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Unity** (`skills/unity/`): scripting `unity-csharp-scripting`; 3D characters and cameras
   `unity-3d-essentials`; input `unity-input-system`; physics `unity-physics`; animation
   `unity-animation`; data `unity-scriptableobjects`; saves `unity-save`; 2D movement
-  `unity-2d-movement`, tilemaps `unity-tilemap-2d`; UI `unity-ui` (uGUI/UI Toolkit); AI nav
-  `unity-navmesh`; ship `unity-build-pipeline`.
+  `unity-2d-movement`, tilemaps `unity-tilemap-2d`; UI `unity-ui` (uGUI/UI Toolkit); audio
+  `unity-audio`; AI nav `unity-navmesh`; ship `unity-build-pipeline`.
 - **Unreal** (`skills/unreal/`): visual scripting `unreal-blueprints`; C++ gameplay
   `unreal-cpp-gameplay`; 2D Paper2D characters `unreal-2d-movement`; input
   `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX `unreal-niagara`; UI `unreal-ui`
-  (UMG); saves `unreal-save`; ship `unreal-packaging`.
+  (UMG); Paper 2D tile levels `unreal-tilemap`; saves `unreal-save`; ship
+  `unreal-packaging`.
 - **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused
   input, rendering, text, audio, state/testing and build work. Select only its relevant
   references; generating the starter is optional for an existing project.
-- **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`;
-  `pixijs-rendering`; `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`.
+- **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`,
+  `phaser-ui`; `pixijs-rendering`; `threejs-scene-setup`, `threejs-gltf-loading`,
+  `threejs-materials-lighting`.
 - **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`), `pygame-core`
   (+ `pygame-tilemap`, `pygame-save`), `love2d-core` (+ `love2d-tilemap`, `love2d-save`); Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
