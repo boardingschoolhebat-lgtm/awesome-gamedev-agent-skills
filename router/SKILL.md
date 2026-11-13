@@ -87,7 +87,8 @@ After the engine, read the request for task signals (three **additive** categori
 
 - **disciplines** (cross-engine concepts): `create-game-assets`, `game-ai`, `ai-behavior-trees-utility-ai`, `procedural-gen`, `dialogue-systems`,
   `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
-  `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `performance-optimization`.
+  `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
+  `performance-optimization`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
   "optimize/low FPS").
@@ -114,12 +115,13 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `unity-3d-essentials`; input `unity-input-system`; physics `unity-physics`; animation
   `unity-animation`; data `unity-scriptableobjects`; saves `unity-save`; 2D movement
   `unity-2d-movement`, tilemaps `unity-tilemap-2d`; UI `unity-ui` (uGUI/UI Toolkit); audio
-  `unity-audio`; AI nav `unity-navmesh`; ship `unity-build-pipeline`.
+  `unity-audio`; networking `unity-networking`; AI nav `unity-navmesh`; ship
+  `unity-build-pipeline`.
 - **Unreal** (`skills/unreal/`): visual scripting `unreal-blueprints`; C++ gameplay
   `unreal-cpp-gameplay`; 2D Paper2D characters `unreal-2d-movement`; input
   `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX `unreal-niagara`; UI `unreal-ui`
-  (UMG); Paper 2D tile levels `unreal-tilemap`; saves `unreal-save`; ship
-  `unreal-packaging`.
+  (UMG); Paper 2D tile levels `unreal-tilemap`; replication `unreal-replication`; saves
+  `unreal-save`; ship `unreal-packaging`.
 - **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused
   input, rendering, text, audio, state/testing and build work. Select only its relevant
   references; generating the starter is optional for an existing project.
@@ -148,6 +150,7 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 | BT runtime, blackboard, decorator, selector/sequence, utility AI, response curve, consideration | `ai-behavior-trees-utility-ai` | `game-ai` (model choice) / `unreal-behavior-trees` (engine assets) |
 | procedural, noise, seed, dungeon generator, WFC | `procedural-gen` | engine tilemap/grid skill |
 | dialogue, Yarn, Ink, conversation tree | `dialogue-systems` | engine UI skill |
+| localization, translate, i18n, locale, string table, plural rules, RTL | `localization` | engine UI + string tables: `unity-ui` / `unreal-ui` / `godot-ui-control` / `phaser-ui` |
 | save/load, slots, persistence | `save-systems` | `roblox-datastores` / engine IO |
 | adaptive music, mixer, ducking, SFX | `audio-design` | `godot-audio` / Unity AudioMixer |
 | shader, fragment, dissolve/outline | `shader-programming` | `godot-shaders` / engine material |

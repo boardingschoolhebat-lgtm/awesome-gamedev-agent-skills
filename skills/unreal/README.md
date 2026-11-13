@@ -1,8 +1,8 @@
 # Unreal Engine skills
 
-Ten Agent Skills targeting Unreal Engine 5.8—Blueprints, C++ gameplay, Paper 2D
-character movement and tile maps, Enhanced Input, behavior trees, Niagara, UMG UI, saves,
-and packaging.
+Eleven Agent Skills targeting Unreal Engine 5.8—Blueprints, C++ gameplay, Paper 2D
+character movement and tile maps, Enhanced Input, behavior trees, Niagara, UMG UI,
+replication, saves, and packaging.
 
 Each subdirectory is one skill. Existing projects keep the version in their
 `.uproject`; see [`VERSION-SUPPORT.md`](../../docs/VERSION-SUPPORT.md).

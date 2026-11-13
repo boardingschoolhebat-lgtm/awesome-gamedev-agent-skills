@@ -46,6 +46,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unity-build-pipeline` | "build Unity", "player settings", "IL2CPP", "Addressables" |
 | `unity-ui` | "Unity UI", Canvas, CanvasScaler, uGUI, UI Toolkit, HUD, health bar, safe area, `EventSystem` |
 | `unity-audio` | "Unity audio", AudioSource, AudioMixer, mixer group, exposed volume, snapshot, spatial audio, music crossfade |
+| `unity-networking` | "Unity networking", multiplayer, netcode, `NetworkVariable`, `ServerRpc`, `NetworkObject`, `NetworkManager`, client authority |
 
 ### Unreal (`skills/unreal/`, target UE 5.8)
 
@@ -59,6 +60,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
 | `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, HUD, pause menu, `BindWidget` |
 | `unreal-tilemap` | "Unreal tilemap", Paper2D, tile set, tile map, `SetTile`, `CreateNewTileMap`, `RebuildCollision`, tile collision |
+| `unreal-replication` | "Unreal replication", `DOREPLIFETIME`, `RepNotify`, Server RPC, `Replicated`, authority, net relevancy |
 | `unreal-save` | "Unreal save", save slot, `USaveGame`, `SaveGameToSlot`, `LoadGameFromSlot`, `DoesSaveGameExist`, `AsyncSaveGameToSlot`, `.sav` |
 | `unreal-packaging` | "package Unreal", "cook content", "shipping build" |
 
@@ -119,6 +121,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `procedural-gen` | procedural generation, perlin/simplex noise, random seed, dungeon generator, wave function collapse (WFC) | engine tilemap/grid: `godot-tilemap` / `unity-tilemap-2d` / `godot-3d-essentials` |
 | `dialogue-systems` | dialogue system, branching dialogue, Yarn Spinner, Ink, conversation tree; `*.yarn`/`*.ink` | engine UI: `godot-ui-control` / Unity UI |
 | `save-systems` | save system, save/load, persistence, save slots; `save*.json`/`*.sav` | `roblox-datastores` / Godot IO / engine serialization |
+| `localization` | localization, translate, i18n, locale, string table, RTL, plural rules, text expansion | engine UI + string table: `unity-ui` / `unreal-ui` / `godot-ui-control` / `phaser-ui` |
 | `audio-design` | audio design, adaptive music, audio mixer, ducking, SFX | `godot-audio` / Unity AudioMixer |
 | `shader-programming` | shader, fragment shader, dissolve/outline effect, GLSL/HLSL; `*.gdshader`/`*.shader`/`*.hlsl` | `godot-shaders` / engine material docs |
 | `physics-tuning` | physics feel, jitter/tunneling, fixed timestep, collision tuning | `godot-physics` / `unity-physics` |
@@ -182,6 +185,10 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
   covers `love.filesystem` identity and backups, `pygame-save` covers atomic JSON saves,
   `bevy-save` covers serde and `std::fs`, and `roblox-datastores` covers DataStores;
   `save-systems` owns the design for the remaining engines.
+- **Networking skills exist for Godot, Unity, Unreal and Roblox.** `godot-multiplayer`,
+  `unity-networking` (Netcode for GameObjects), `unreal-replication` and
+  `roblox-networking` own their engine's authority model; Phaser and the lightweight engines
+  have no dedicated netcode skill and must state that gap.
 - **Engine UI skills exist for Godot, Unity, Unreal, Defold and Roblox.** `godot-ui-control`,
   `unity-ui` (uGUI and UI Toolkit), `unreal-ui` (UMG), `defold-ui` and `roblox-ui` own their
   engine's screens; `phaser-ui` covers Phaser HUDs and DOM overlays, while PixiJS, three.js
