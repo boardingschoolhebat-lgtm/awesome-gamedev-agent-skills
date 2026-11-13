@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 103 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 106 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -63,6 +63,7 @@
         "./skills/web-engines/threejs-scene-setup",
         "./skills/web-engines/threejs-gltf-loading",
         "./skills/web-engines/threejs-materials-lighting",
+        "./skills/web-engines/threejs-ui",
         "./skills/other-engines/bevy-ecs",
         "./skills/other-engines/bevy-save",
         "./skills/other-engines/bevy-tilemap",
@@ -77,6 +78,7 @@
         "./skills/other-engines/defold-tilemap",
         "./skills/other-engines/defold-collision",
         "./skills/other-engines/defold-sprite",
+        "./skills/other-engines/defold-save",
         "./skills/other-engines/roblox-luau",
         "./skills/other-engines/roblox-datastores",
         "./skills/other-engines/roblox-ui",
@@ -92,6 +94,7 @@
         "./skills/disciplines/dialogue-systems",
         "./skills/disciplines/save-systems",
         "./skills/disciplines/localization",
+        "./skills/disciplines/accessibility",
         "./skills/disciplines/audio-design",
         "./skills/disciplines/shader-programming",
         "./skills/disciplines/physics-tuning",
@@ -214,7 +217,8 @@
         "./skills/web-engines/pixijs-rendering",
         "./skills/web-engines/threejs-scene-setup",
         "./skills/web-engines/threejs-gltf-loading",
-        "./skills/web-engines/threejs-materials-lighting"
+        "./skills/web-engines/threejs-materials-lighting",
+        "./skills/web-engines/threejs-ui"
       ]
     },
     {
@@ -237,6 +241,7 @@
         "./skills/other-engines/defold-tilemap",
         "./skills/other-engines/defold-collision",
         "./skills/other-engines/defold-sprite",
+        "./skills/other-engines/defold-save",
         "./skills/other-engines/roblox-luau",
         "./skills/other-engines/roblox-datastores",
         "./skills/other-engines/roblox-ui",
@@ -260,6 +265,7 @@
         "./skills/disciplines/dialogue-systems",
         "./skills/disciplines/save-systems",
         "./skills/disciplines/localization",
+        "./skills/disciplines/accessibility",
         "./skills/disciplines/audio-design",
         "./skills/disciplines/shader-programming",
         "./skills/disciplines/physics-tuning",

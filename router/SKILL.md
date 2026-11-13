@@ -88,7 +88,7 @@ After the engine, read the request for task signals (three **additive** categori
 - **disciplines** (cross-engine concepts): `create-game-assets`, `game-ai`, `ai-behavior-trees-utility-ai`, `procedural-gen`, `dialogue-systems`,
   `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
-  `performance-optimization`.
+  `accessibility`, `performance-optimization`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
   "optimize/low FPS").
@@ -181,8 +181,9 @@ For Defold, bind engine-specific slots (movement, input, spawning, level loading
 game" → `defold-core` + `input-systems` (+ `platformer` for a platformer). HUD, menus and
 dialogs use `defold-ui` (+ `game-ui-ux` for design), tile levels use `defold-tilemap`
 (+ `level-design`), collision objects use `defold-collision` (+ `physics-tuning`), and
-sprite animation uses `defold-sprite` (+ `game-feel`). That covers the documented Defold
-primitive gaps; movement still binds to `defold-core` + `input-systems`.
+sprite animation uses `defold-sprite` (+ `game-feel`), and saves use `defold-save`
+(`sys.save`/`sys.load`). That covers the documented Defold primitive gaps; movement still
+binds to `defold-core` + `input-systems`.
 
 ### 3c. Genres — **compose** engine + disciplines (bind `*` to the detected engine)
 
