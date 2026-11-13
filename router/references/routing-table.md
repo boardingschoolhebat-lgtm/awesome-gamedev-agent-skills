@@ -21,6 +21,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `godot-animation` | `AnimationPlayer`, `AnimationTree`, "blend", `Tween` |
 | `godot-shaders` | "Godot shader", "gdshader", fragment/vertex, screen-reading; `*.gdshader` |
 | `godot-3d-essentials` | "3D", `Camera3D`, `WorldEnvironment`, `GridMap`; `Node3D` |
+| `godot-save` | "Godot save", save game/progress/settings, `FileAccess`, `user://`, `JSON.stringify`, `ConfigFile`, `ResourceSaver`, save migration |
 | `godot-resources` | "custom Resource", "data resource", `.tres`, `ResourceLoader` |
 | `godot-audio` | "Godot audio", "audio bus", "play sound/music", sync-to-beat |
 | `godot-multiplayer` | "multiplayer", "RPC", "networked", `MultiplayerSpawner`; `@rpc` |
@@ -160,8 +161,9 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **No `*-tilemap` for Bevy / pygame / Roblox / LÖVE.** Phaser tile levels use
   `phaser-tilemap`; for the others use `level-design` for the concept and the engine's rendering
   skill for drawing, and note the missing engine tilemap skill.
-- **No engine-specific save skill except Roblox.** `save-systems` owns the concept and cites
-  Godot IO; `roblox-datastores` is the one engine-specific persistence skill.
+- **Engine-specific save skills exist for Godot and Roblox.** `godot-save` covers `user://`,
+  FileAccess, JSON/ConfigFile/Resource formats and migrations; `roblox-datastores` covers
+  DataStores; `save-systems` owns the format and slot design for every other engine.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
   collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
   open only the matching reference. A puzzle/card request does not require a platformer

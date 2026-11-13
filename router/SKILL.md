@@ -107,9 +107,9 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Godot** (`skills/godot/`): language `godot-gdscript` / `godot-csharp`; structure
   `godot-nodes-scenes`, `godot-signals-groups`; 2D `godot-2d-movement`, `godot-tilemap`; 3D
   `godot-3d-essentials`; physics `godot-physics`; UI `godot-ui-control`; animation
-  `godot-animation`; shaders `godot-shaders`; data `godot-resources`; audio `godot-audio`;
-  netcode `godot-multiplayer`; headless CLI tests `godot-gdscript-headless-testing`; ship
-  `godot-export`.
+  `godot-animation`; shaders `godot-shaders`; data `godot-resources`; saves `godot-save`;
+  audio `godot-audio`; netcode `godot-multiplayer`; headless CLI tests
+  `godot-gdscript-headless-testing`; ship `godot-export`.
 - **Unity** (`skills/unity/`): scripting `unity-csharp-scripting`; 3D characters and cameras
   `unity-3d-essentials`; input `unity-input-system`; physics `unity-physics`; animation
   `unity-animation`; data `unity-scriptableobjects`; 2D movement `unity-2d-movement`, tilemaps

@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 85 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 86 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**85 game-dev skills for your AI coding agent — install once, and a router loads the
+**86 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-85%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-86%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **85 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **86 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 85 skills into the right place:
+coding agent you already use and installs the router plus all 86 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,11 +139,11 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-85 skills across 9 categories — each links to its `SKILL.md` below.
+86 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
-#### Godot — 16 ([`skills/godot/`](skills/godot/)) · Godot 4.7
+#### Godot — 17 ([`skills/godot/`](skills/godot/)) · Godot 4.7
 
 | Skill | Scope |
 |-------|-------|
@@ -158,6 +158,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`godot-shaders`](skills/godot/godot-shaders/SKILL.md) | Godot shading language: 2D `canvas_item` + 3D `spatial` shaders |
 | [`godot-3d-essentials`](skills/godot/godot-3d-essentials/SKILL.md) | 3D nodes, cameras, lighting, environment/post, `GridMap` |
 | [`godot-resources`](skills/godot/godot-resources/SKILL.md) | Custom `Resource` classes, `.tres`, data-driven design |
+| [`godot-save`](skills/godot/godot-save/SKILL.md) | `user://` saves: FileAccess, JSON versioning/migrations, ConfigFile, atomic writes |
 | [`godot-audio`](skills/godot/godot-audio/SKILL.md) | `AudioStreamPlayer`, buses, effects, sync-to-beat |
 | [`godot-multiplayer`](skills/godot/godot-multiplayer/SKILL.md) | High-level multiplayer: `MultiplayerAPI`, RPCs, spawner/sync |
 | [`godot-export`](skills/godot/godot-export/SKILL.md) | Export presets/templates, platform builds, headless CLI export |
@@ -350,7 +351,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        85 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        86 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

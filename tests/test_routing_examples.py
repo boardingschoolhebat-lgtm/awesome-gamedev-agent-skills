@@ -51,6 +51,8 @@ PROMPT_CASES = (
      ("unity-3d-essentials",)),
     ("load a Tiled tilemap in Phaser and collide with the ground layer",
      ("phaser-tilemap",)),
+    ("save and load player progress in Godot with FileAccess and user://",
+     ("godot-save",)),
     ("rebind gamepad controls in my Defold game", ("defold-core", "input-systems")),
     ("procedural dungeon roguelike in Godot", ("godot-tilemap", "procedural-gen", "roguelike")),
     ("connect a signal from my Godot player to the HUD", ("godot-signals-groups", "game-ui-ux")),
