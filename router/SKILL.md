@@ -120,14 +120,14 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Unreal** (`skills/unreal/`): visual scripting `unreal-blueprints`; C++ gameplay
   `unreal-cpp-gameplay`; 2D Paper2D characters `unreal-2d-movement`; input
   `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX `unreal-niagara`; UI `unreal-ui`
-  (UMG); Paper 2D tile levels `unreal-tilemap`; replication `unreal-replication`; saves
-  `unreal-save`; ship `unreal-packaging`.
+  (UMG); audio `unreal-audio`; Paper 2D tile levels `unreal-tilemap`; replication
+  `unreal-replication`; saves `unreal-save`; ship `unreal-packaging`.
 - **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused
   input, rendering, text, audio, state/testing and build work. Select only its relevant
   references; generating the starter is optional for an existing project.
 - **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`,
-  `phaser-ui`; `pixijs-rendering`; `threejs-scene-setup`, `threejs-gltf-loading`,
-  `threejs-materials-lighting`.
+  `phaser-ui`; `pixijs-rendering` (+ `pixijs-ui`); `threejs-scene-setup`, `threejs-gltf-loading`,
+  `threejs-materials-lighting`, `threejs-ui`.
 - **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`), `pygame-core`
   (+ `pygame-tilemap`, `pygame-save`), `love2d-core` (+ `love2d-tilemap`, `love2d-save`); Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
@@ -181,9 +181,9 @@ For Defold, bind engine-specific slots (movement, input, spawning, level loading
 game" → `defold-core` + `input-systems` (+ `platformer` for a platformer). HUD, menus and
 dialogs use `defold-ui` (+ `game-ui-ux` for design), tile levels use `defold-tilemap`
 (+ `level-design`), collision objects use `defold-collision` (+ `physics-tuning`), and
-sprite animation uses `defold-sprite` (+ `game-feel`), and saves use `defold-save`
-(`sys.save`/`sys.load`). That covers the documented Defold primitive gaps; movement still
-binds to `defold-core` + `input-systems`.
+sprite animation uses `defold-sprite` (+ `game-feel`), saves use `defold-save`
+(`sys.save`/`sys.load`), and camera follow/zoom/shake uses `defold-camera`. That covers the
+documented Defold primitive gaps; movement still binds to `defold-core` + `input-systems`.
 
 ### 3c. Genres — **compose** engine + disciplines (bind `*` to the detected engine)
 

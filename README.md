@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 106 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 109 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**106 game-dev skills for your AI coding agent — install once, and a router loads the
+**109 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-106%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-109%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **106 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **109 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 106 skills into the right place:
+coding agent you already use and installs the router plus all 109 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-106 skills across 9 categories — each links to its `SKILL.md` below.
+109 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -184,7 +184,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unity-audio`](skills/unity/unity-audio/SKILL.md) | AudioSource/AudioMixer routing, dB volume, snapshots, spatial sound, pooled one-shots, crossfades |
 | [`unity-networking`](skills/unity/unity-networking/SKILL.md) | Netcode for GameObjects: NetworkObject spawning, NetworkVariable permissions, Server/Client RPCs |
 
-#### Unreal — 11 ([`skills/unreal/`](skills/unreal/)) · Unreal Engine 5.8
+#### Unreal — 12 ([`skills/unreal/`](skills/unreal/)) · Unreal Engine 5.8
 
 | Skill | Scope |
 |-------|-------|
@@ -195,6 +195,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unreal-behavior-trees`](skills/unreal/unreal-behavior-trees/SKILL.md) | AI Behavior Trees + Blackboard, tasks/decorators/services |
 | [`unreal-niagara`](skills/unreal/unreal-niagara/SKILL.md) | Niagara VFX: systems, emitters, modules, parameters |
 | [`unreal-ui`](skills/unreal/unreal-ui/SKILL.md) | UMG: widget blueprints + C++ UUserWidget, CreateWidget/AddToViewport, BindWidget, input modes |
+| [`unreal-audio`](skills/unreal/unreal-audio/SKILL.md) | Audio: 2D/3D playback, UAudioComponent loops, attenuation, concurrency, sound classes/mixes, MetaSounds |
 | [`unreal-tilemap`](skills/unreal/unreal-tilemap/SKILL.md) | Paper 2D tilemaps: tile sets, layers, `CreateNewTileMap`/`SetTile`, collision rebuilds |
 | [`unreal-replication`](skills/unreal/unreal-replication/SKILL.md) | Replication: `Replicated` props, `DOREPLIFETIME`, RepNotify, Server/Client/Multicast RPCs, relevancy |
 | [`unreal-packaging`](skills/unreal/unreal-packaging/SKILL.md) | Packaging/cooking projects, build configs, shipping builds |
@@ -206,7 +207,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 |-------|-------|
 | [`ebitengine-game`](skills/ebitengine/ebitengine-game/SKILL.md) | Playable Go 2D games: update/draw contracts, input, rendering, text, audio, gameplay tests, optional starter and platform builds |
 
-#### Web engines — 9 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
+#### Web engines — 10 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
 
 | Skill | Scope |
 |-------|-------|
@@ -215,12 +216,13 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`phaser-tilemap`](skills/web-engines/phaser-tilemap/SKILL.md) | Tiled JSON/CSV maps, layers, tile collision, runtime tile edits, world bounds |
 | [`phaser-ui`](skills/web-engines/phaser-ui/SKILL.md) | Phaser HUDs/menus: Containers, fixed scroll factor, NineSlice, UI camera, DOM overlays |
 | [`pixijs-rendering`](skills/web-engines/pixijs-rendering/SKILL.md) | PixiJS v8 scene graph: `Application`, `Container`, `Sprite`, events |
+| [`pixijs-ui`](skills/web-engines/pixijs-ui/SKILL.md) | PixiJS v8 UI: menus/HUD, Graphics panels, Text/BitmapText, eventMode, hitArea, modal blocking |
 | [`threejs-scene-setup`](skills/web-engines/threejs-scene-setup/SKILL.md) | Three.js scene/camera/renderer/animation-loop, resizing, controls |
 | [`threejs-gltf-loading`](skills/web-engines/threejs-gltf-loading/SKILL.md) | Loading glTF/GLB + skinned animation (`GLTFLoader`/`AnimationMixer`) |
 | [`threejs-materials-lighting`](skills/web-engines/threejs-materials-lighting/SKILL.md) | Materials (PBR), lights, shadows, environment maps |
 | [`threejs-ui`](skills/web-engines/threejs-ui/SKILL.md) | HTML HUD overlays, CSS2D/CSS3D renderers, raycasted 3D buttons, responsive layering |
 
-#### Other engines — 24 ([`skills/other-engines/`](skills/other-engines/)) · Bevy · pygame · LÖVE · Defold · Roblox
+#### Other engines — 25 ([`skills/other-engines/`](skills/other-engines/)) · Bevy · pygame · LÖVE · Defold · Roblox
 
 | Skill | Scope |
 |-------|-------|
@@ -239,6 +241,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`defold-collision`](skills/other-engines/defold-collision/SKILL.md) | Defold collision objects, groups/masks, `collision_response`/`contact_point_response`, triggers, raycasts |
 | [`defold-sprite`](skills/other-engines/defold-sprite/SKILL.md) | Defold sprites and flipbooks: atlas animations, `sprite.play_flipbook`, pivots, facing flips |
 | [`defold-save`](skills/other-engines/defold-save/SKILL.md) | Defold persistence: `sys.save`/`sys.load`, save paths, migrations, safe overwrite with backups |
+| [`defold-camera`](skills/other-engines/defold-camera/SKILL.md) | Defold cameras: follow with dead zone, zoom, screen shake, `screen_to_world` picking |
 | [`roblox-luau`](skills/other-engines/roblox-luau/SKILL.md) | Roblox Luau scripting: services, instances, client/server model |
 | [`roblox-datastores`](skills/other-engines/roblox-datastores/SKILL.md) | Persistent data with `DataStoreService`: sessions, limits, ordered stores |
 | [`roblox-ui`](skills/other-engines/roblox-ui/SKILL.md) | Roblox UI: `ScreenGui` layout, responsive scaling, safe areas, gamepad/touch navigation |
@@ -371,7 +374,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        106 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        109 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

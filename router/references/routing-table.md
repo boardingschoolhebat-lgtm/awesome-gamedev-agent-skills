@@ -58,6 +58,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-enhanced-input` | "Enhanced Input", "Input Mapping Context", `IA_`/`IMC_` |
 | `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
+| `unreal-audio` | "Unreal audio", MetaSounds, `PlaySoundAtLocation`, sound class, sound mix, attenuation, audio component |
 | `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, HUD, pause menu, `BindWidget` |
 | `unreal-tilemap` | "Unreal tilemap", Paper2D, tile set, tile map, `SetTile`, `CreateNewTileMap`, `RebuildCollision`, tile collision |
 | `unreal-replication` | "Unreal replication", `DOREPLIFETIME`, `RepNotify`, Server RPC, `Replicated`, authority, net relevancy |
@@ -78,6 +79,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `phaser-arcade-physics` | "Arcade Physics", "collider", "overlap", world bounds |
 | `phaser-tilemap` | "Phaser tilemap", Tiled map, `createLayer`, `setCollisionByProperty`, tile collision, `addTilesetImage`, `putTileAt`; `*.json` Tiled maps |
 | `phaser-ui` | "Phaser UI", HUD, health bar, scroll factor, DOM element, container, menu, `setScrollFactor`, NineSlice |
+| `pixijs-ui` | "PixiJS UI", menu, HUD, clickable button, `eventMode`, `hitArea`, `pointertap`, modal |
 | `pixijs-rendering` | "PixiJS", "Pixi sprite", "stage", `Container`; dep `pixi.js` |
 | `threejs-scene-setup` | "three.js", `THREE.Scene`, `WebGLRenderer`, render loop; dep `three` |
 | `threejs-gltf-loading` | "load gltf", `GLTFLoader`, `AnimationMixer`; `*.gltf`/`*.glb` |
@@ -101,6 +103,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `defold-ui` | "Defold GUI", "Defold HUD", menu/dialog/inventory screen, `.gui`, `gui_script`, `gui.new_text_node`, `gui.animate`, `gui.pick_node`, `gui.clone`, layout, anchor, adjust mode; `*.gui`/`*.gui_script` |
 | `defold-tilemap` | "Defold tilemap", paint tiles, tile layers, tile collision, tilesource collision group, `tilemap.get_tile`, `tilemap.set_tile`, `tilemap.get_bounds`, world-to-tile; `*.tilemap`/`*.tilesource` |
 | `defold-collision` | "Defold collision", `.collisionobject`, collision shape, collision group/mask, `collision_response`, `contact_point_response`, `trigger_response`, `physics.raycast`, falls through floor, trigger zone |
+| `defold-camera` | "Defold camera", follow camera, dead zone, camera shake, zoom, `screen_to_world`, `world_to_screen` |
 | `defold-save` | "Defold save", `sys.save`, `sys.load`, `get_save_file`, save file, corrupt save, migrate save |
 | `defold-sprite` | "Defold sprite", flipbook animation, atlas animation, `sprite.play_flipbook`, `animation_done`, `set_hflip`, pivot, sprite offset, playback rate; `*.sprite`/`*.atlas` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
