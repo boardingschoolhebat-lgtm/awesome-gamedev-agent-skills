@@ -53,6 +53,8 @@ PROMPT_CASES = (
      ("phaser-tilemap",)),
     ("save and load player progress in Godot with FileAccess and user://",
      ("godot-save",)),
+    ("save player progress to a JSON file in Unity with persistentDataPath",
+     ("unity-save",)),
     ("rebind gamepad controls in my Defold game", ("defold-core", "input-systems")),
     ("procedural dungeon roguelike in Godot", ("godot-tilemap", "procedural-gen", "roguelike")),
     ("connect a signal from my Godot player to the HUD", ("godot-signals-groups", "game-ui-ux")),

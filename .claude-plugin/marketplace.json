@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 86 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 87 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -36,6 +36,7 @@
         "./skills/unity/unity-physics",
         "./skills/unity/unity-animation",
         "./skills/unity/unity-scriptableobjects",
+        "./skills/unity/unity-save",
         "./skills/unity/unity-tilemap-2d",
         "./skills/unity/unity-navmesh",
         "./skills/unity/unity-build-pipeline",
@@ -138,7 +139,7 @@
       "name": "unity",
       "source": "./",
       "strict": false,
-      "description": "Unity 6.3 LTS engine skills (C#, 3D characters, input, physics, 2D movement, animation, build).",
+      "description": "Unity 6.3 LTS engine skills (C#, 3D characters, input, physics, saves, 2D movement, animation, build).",
       "skills": [
         "./skills/unity/unity-csharp-scripting",
         "./skills/unity/unity-3d-essentials",
@@ -147,6 +148,7 @@
         "./skills/unity/unity-physics",
         "./skills/unity/unity-animation",
         "./skills/unity/unity-scriptableobjects",
+        "./skills/unity/unity-save",
         "./skills/unity/unity-tilemap-2d",
         "./skills/unity/unity-navmesh",
         "./skills/unity/unity-build-pipeline"

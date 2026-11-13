@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 86 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 87 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**86 game-dev skills for your AI coding agent — install once, and a router loads the
+**87 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-86%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-87%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **86 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **87 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 86 skills into the right place:
+coding agent you already use and installs the router plus all 87 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-86 skills across 9 categories — each links to its `SKILL.md` below.
+87 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -165,7 +165,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`godot-csharp`](skills/godot/godot-csharp/SKILL.md) | C#/.NET in Godot: bindings, signals as events, GDScript interop |
 | [`godot-gdscript-headless-testing`](skills/godot/godot-gdscript-headless-testing/SKILL.md) | Run GDScript tests via `godot --headless`, exit codes for CI |
 
-#### Unity — 10 ([`skills/unity/`](skills/unity/)) · Unity 6.3 LTS (6000.3)
+#### Unity — 11 ([`skills/unity/`](skills/unity/)) · Unity 6.3 LTS (6000.3)
 
 | Skill | Scope |
 |-------|-------|
@@ -175,6 +175,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unity-physics`](skills/unity/unity-physics/SKILL.md) | Rigidbody, colliders, layers, joints |
 | [`unity-animation`](skills/unity/unity-animation/SKILL.md) | Animator Controllers, state machines, blend trees, humanoid IK |
 | [`unity-scriptableobjects`](skills/unity/unity-scriptableobjects/SKILL.md) | Data architecture with `ScriptableObject` |
+| [`unity-save`](skills/unity/unity-save/SKILL.md) | `persistentDataPath` saves: JsonUtility limits, atomic writes, migrations, PlayerPrefs, WebGL |
 | [`unity-2d-movement`](skills/unity/unity-2d-movement/SKILL.md) | `Rigidbody2D` platformer/top-down controllers, ground checks, coyote time, `MovePosition` |
 | [`unity-tilemap-2d`](skills/unity/unity-tilemap-2d/SKILL.md) | 2D Tilemap/Tile Palette, rule tiles, tilemap colliders |
 | [`unity-navmesh`](skills/unity/unity-navmesh/SKILL.md) | AI navigation: NavMesh bake, `NavMeshAgent` |
@@ -351,7 +352,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        86 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        87 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

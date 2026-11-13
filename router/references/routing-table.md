@@ -39,6 +39,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unity-physics` | "Unity physics", `Rigidbody`, "collision layers", "joint" |
 | `unity-2d-movement` | "Unity 2D movement", "2D character controller", `Rigidbody2D` platformer, `linearVelocity`, `MovePosition`, coyote time, jump buffer |
 | `unity-animation` | "Animator", "state machine", "blend tree", "Mecanim"; `*.controller` |
+| `unity-save` | "Unity save", save game/progress, `Application.persistentDataPath`, `JsonUtility`, `PlayerPrefs`, save migration, WebGL IndexedDB save |
 | `unity-scriptableobjects` | `ScriptableObject`, "SO architecture", "data asset", event channels |
 | `unity-tilemap-2d` | "Unity tilemap", "tile palette", "rule tile" |
 | `unity-navmesh` | `NavMesh`, `NavMeshAgent`, "pathfinding in Unity" |
@@ -161,9 +162,9 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **No `*-tilemap` for Bevy / pygame / Roblox / LÖVE.** Phaser tile levels use
   `phaser-tilemap`; for the others use `level-design` for the concept and the engine's rendering
   skill for drawing, and note the missing engine tilemap skill.
-- **Engine-specific save skills exist for Godot and Roblox.** `godot-save` covers `user://`,
-  FileAccess, JSON/ConfigFile/Resource formats and migrations; `roblox-datastores` covers
-  DataStores; `save-systems` owns the format and slot design for every other engine.
+- **Engine-specific save skills exist for Godot, Unity and Roblox.** `godot-save` covers
+  `user://` and FileAccess formats, `unity-save` covers `persistentDataPath` and JsonUtility,
+  and `roblox-datastores` covers DataStores; `save-systems` owns the design for other engines.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
   collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
   open only the matching reference. A puzzle/card request does not require a platformer
