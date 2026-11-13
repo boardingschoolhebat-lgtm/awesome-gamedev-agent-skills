@@ -124,7 +124,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   references; generating the starter is optional for an existing project.
 - **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`;
   `pixijs-rendering`; `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`.
-- **Other** (`skills/other-engines/`): `bevy-ecs`, `pygame-core`, `love2d-core`; Defold
+- **Other** (`skills/other-engines/`): `bevy-ecs`, `pygame-core` (+ `pygame-tilemap`),
+  `love2d-core` (+ `love2d-tilemap`, `love2d-save`); Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
   Bob builds), UI `defold-ui` (GUI scenes, HUD/menus, layouts, input picking) and tilemaps
   `defold-tilemap` (tile sources, collision groups, runtime tile edits) and collisions

@@ -82,7 +82,10 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------|--------------|
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
+| `pygame-tilemap` | "pygame tilemap", "blitting tiles", "tileset", tile collision, layer surface, camera offset, `subsurface`, `pytmx` |
 | `love2d-core` | "LÖVE", "love2d", `love.draw`, `love.update(dt)`; `main.lua`/`conf.lua`/`*.love` |
+| `love2d-tilemap` | "LÖVE tilemap", "sprite batch", "quad", "tileset", tile layers, tile collision, scrolling tile level, `newSpriteBatch`, `newQuad`; `*.lua` + tileset image |
+| `love2d-save` | "LÖVE save", save file, save slots, `love.filesystem`, `getSaveDirectory`, settings file, save migration, corrupt save |
 | `defold-core` | "Defold", collection/game object/component, `msg.post`, `on_message`, `on_input`, `acquire_input_focus`, `go.property`, `factory.create`, collection proxy, `bob.jar`, Defold build error; `game.project` + `*.collection`/`*.go`/`*.script` (target Defold 1.14.0) |
 | `defold-ui` | "Defold GUI", "Defold HUD", menu/dialog/inventory screen, `.gui`, `gui_script`, `gui.new_text_node`, `gui.animate`, `gui.pick_node`, `gui.clone`, layout, anchor, adjust mode; `*.gui`/`*.gui_script` |
 | `defold-tilemap` | "Defold tilemap", paint tiles, tile layers, tile collision, tilesource collision group, `tilemap.get_tile`, `tilemap.set_tile`, `tilemap.get_bounds`, world-to-tile; `*.tilemap`/`*.tilesource` |
@@ -160,13 +163,15 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **3D essentials exist for Godot, Unity and Unreal.** Unity 3D characters and cameras use
   `unity-3d-essentials`; Unreal FPS work binds to `unreal-cpp-gameplay`; Godot uses
   `godot-3d-essentials`. No other engine has a dedicated 3D-essentials skill.
-- **No `*-tilemap` for Bevy / pygame / Roblox / LÖVE.** Phaser tile levels use
-  `phaser-tilemap`; for the others use `level-design` for the concept and the engine's rendering
-  skill for drawing, and note the missing engine tilemap skill.
-- **Engine-specific save skills exist for Godot, Unity, Unreal and Roblox.** `godot-save`
+- **No `*-tilemap` for Bevy or Roblox.** Tile levels are covered by `godot-tilemap`,
+  `unity-tilemap-2d`, `defold-tilemap`, `phaser-tilemap`, `love2d-tilemap` and
+  `pygame-tilemap`; for Bevy and Roblox use `level-design` for the concept and the engine's
+  rendering skill for drawing, and note the missing engine tilemap skill.
+- **Engine-specific save skills exist for Godot, Unity, Unreal, LÖVE and Roblox.** `godot-save`
   covers `user://` and FileAccess formats, `unity-save` covers `persistentDataPath` and
-  JsonUtility, `unreal-save` covers `USaveGame` slots, and `roblox-datastores` covers
-  DataStores; `save-systems` owns the design for other engines.
+  JsonUtility, `unreal-save` covers `USaveGame` slots, `love2d-save` covers `love.filesystem`
+  identity and backups, and `roblox-datastores` covers DataStores; `save-systems` owns the design
+  for other engines, including pygame.
 - **Ebitengine uses one engine skill with focused references.** Bind engine movement,
   collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
   open only the matching reference. A puzzle/card request does not require a platformer
