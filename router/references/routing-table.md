@@ -69,7 +69,10 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
-| `ebitengine-game` | "Ebitengine", "Ebiten", "2D game in Go", `Update`/`Draw`/`Layout`, action input, sprites, text, audio, scenes, testing or builds in an Ebitengine game; `go.mod` requiring `github.com/hajimehoshi/ebiten/v2` plus game imports |
+| `ebitengine-game` | "Ebitengine", "Ebiten", "2D game in Go", `Update`/`Draw`/`Layout`, action input, sprites, text, scenes, testing or builds in an Ebitengine game; `go.mod` requiring `github.com/hajimehoshi/ebiten/v2` plus game imports |
+| `ebitengine-ui` | "Ebitengine UI", menu, HUD, clickable button, `text/v2`, `CursorPositionF`, focus ring, modal |
+| `ebitengine-audio` | "Ebitengine audio", music, SFX, `audio.NewPlayerFromBytes`, `NewInfiniteLoopF32`, `vorbis.DecodeF32`, volume slider |
+| `ebitengine-save` | "Ebitengine save", `os.UserConfigDir`, JSON save, atomic write, save slot, migrate save |
 
 ### Web engines (`skills/web-engines/`) — detected from `package.json` + imports
 
@@ -199,10 +202,11 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
   `unity-ui` (uGUI and UI Toolkit), `unreal-ui` (UMG), `defold-ui` and `roblox-ui` own their
   engine's screens; `phaser-ui` covers Phaser HUDs and DOM overlays, while PixiJS, three.js
   and the lightweight engines use `game-ui-ux` plus the framework's own DOM/canvas UI.
-- **Ebitengine uses one engine skill with focused references.** Bind engine movement,
-  collision, rendering/camera, UI, audio, data/save and build slots to `ebitengine-game`;
-  open only the matching reference. A puzzle/card request does not require a platformer
-  scaffold. The Tiled loader is deliberately constrained, not a complete editor importer.
+- **Ebitengine has one core skill plus focused UI, audio and save skills.** Bind movement,
+  collision, rendering/camera, gameplay and build slots to `ebitengine-game`; menus/HUD go to
+  `ebitengine-ui`, SFX/music to `ebitengine-audio`, persistence to `ebitengine-save`. A puzzle/card
+  request does not require a platformer scaffold. The Tiled loader is deliberately constrained,
+  not a complete editor importer.
   Networking guidance does not supply transport/matchmaking; native 3D is outside this
   2D skill. Never substitute another engine's API to hide one of these gaps.
 - **Defold has core, GUI, tilemap, collision and sprite skills.** Bind movement, input,

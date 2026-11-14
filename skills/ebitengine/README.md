@@ -1,8 +1,10 @@
 # Ebitengine skills
 
-One Agent Skill for creating, improving and packaging playable 2D games in Go
-with Ebitengine. It includes an optional starter, project helpers and references
-for input, rendering, text, audio, gameplay, testing and distribution.
+Four Agent Skills for creating, improving and packaging playable 2D games in Go
+with Ebitengine. `ebitengine-game` covers the core loop and includes an optional starter
+plus references for input, rendering, text, gameplay, testing and distribution;
+`ebitengine-ui`, `ebitengine-audio` and `ebitengine-save` cover menus/HUD, sound and
+persistence.
 
 The starter and API examples target Ebitengine v2.10.5 / Go 1.25+. Existing
 projects keep their `go.mod` version and any workspace/replacement configuration;

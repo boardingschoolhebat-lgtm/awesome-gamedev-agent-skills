@@ -122,9 +122,10 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `unreal-enhanced-input`; AI `unreal-behavior-trees`; VFX `unreal-niagara`; UI `unreal-ui`
   (UMG); audio `unreal-audio`; Paper 2D tile levels `unreal-tilemap`; replication
   `unreal-replication`; saves `unreal-save`; ship `unreal-packaging`.
-- **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused
-  input, rendering, text, audio, state/testing and build work. Select only its relevant
-  references; generating the starter is optional for an existing project.
+- **Ebitengine** (`skills/ebitengine/`): `ebitengine-game` for Go 2D games and focused input,
+  rendering, text, state/testing and build work; `ebitengine-ui` for menus/HUD, `ebitengine-audio`
+  for SFX/music, `ebitengine-save` for persistence. Generating the starter is optional for an
+  existing project.
 - **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`,
   `phaser-ui`; `pixijs-rendering` (+ `pixijs-ui`); `threejs-scene-setup`, `threejs-gltf-loading`,
   `threejs-materials-lighting`, `threejs-ui`.
@@ -172,9 +173,10 @@ costs, rebirths, offline earnings, big numbers, paid eggs/crates odds) use
 editing also uses `roblox-studio-workflow`.
 
 For Ebitengine, bind engine-specific slots to `ebitengine-game` and its relevant reference
-(input, rendering, text/UI, audio, gameplay, tilemaps or state/testing). Add only the needed
+(input, rendering, text, gameplay, tilemaps or state/testing); menus/HUD use `ebitengine-ui`,
+audio uses `ebitengine-audio`, and persistence uses `ebitengine-save`. Add only the needed
 disciplines; do not load Godot or Unity APIs from a genre's example bindings. Native 3D and a
-ready-made network backend are not supplied by this 2D skill; state those gaps when relevant.
+ready-made network backend are not supplied by these 2D skills; state those gaps when relevant.
 
 For Defold, bind engine-specific slots (movement, input, spawning, level loading, build) to
 `defold-core` and add only the needed disciplines, e.g. "add player movement to my Defold

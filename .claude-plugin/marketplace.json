@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 109 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 112 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -56,6 +56,9 @@
         "./skills/unreal/unreal-save",
         "./skills/unreal/unreal-packaging",
         "./skills/ebitengine/ebitengine-game",
+        "./skills/ebitengine/ebitengine-ui",
+        "./skills/ebitengine/ebitengine-audio",
+        "./skills/ebitengine/ebitengine-save",
         "./skills/web-engines/phaser-core",
         "./skills/web-engines/phaser-arcade-physics",
         "./skills/web-engines/phaser-tilemap",
@@ -205,7 +208,10 @@
       "strict": false,
       "description": "Ebitengine v2.10.5 skills for 2D games in Go: input, rendering, audio, testing and builds.",
       "skills": [
-        "./skills/ebitengine/ebitengine-game"
+        "./skills/ebitengine/ebitengine-game",
+        "./skills/ebitengine/ebitengine-ui",
+        "./skills/ebitengine/ebitengine-audio",
+        "./skills/ebitengine/ebitengine-save"
       ]
     },
     {

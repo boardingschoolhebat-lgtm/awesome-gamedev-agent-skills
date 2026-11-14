@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 109 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 112 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**109 game-dev skills for your AI coding agent — install once, and a router loads the
+**112 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-109%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-112%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **109 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **112 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 109 skills into the right place:
+coding agent you already use and installs the router plus all 112 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-109 skills across 9 categories — each links to its `SKILL.md` below.
+112 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -201,11 +201,14 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`unreal-packaging`](skills/unreal/unreal-packaging/SKILL.md) | Packaging/cooking projects, build configs, shipping builds |
 | [`unreal-save`](skills/unreal/unreal-save/SKILL.md) | `USaveGame` slots, sync/async saves, loading and migrations, raw byte slots |
 
-#### Ebitengine — 1 ([`skills/ebitengine/`](skills/ebitengine/)) · Ebitengine v2.10.5 · Go 1.25+
+#### Ebitengine — 4 ([`skills/ebitengine/`](skills/ebitengine/)) · Ebitengine v2.10.5 · Go 1.25+
 
 | Skill | Scope |
 |-------|-------|
 | [`ebitengine-game`](skills/ebitengine/ebitengine-game/SKILL.md) | Playable Go 2D games: update/draw contracts, input, rendering, text, audio, gameplay tests, optional starter and platform builds |
+| [`ebitengine-ui`](skills/ebitengine/ebitengine-ui/SKILL.md) | Immediate-mode menus/HUD: `vector` panels, `text/v2`, `inpututil` hit testing, focus and modals |
+| [`ebitengine-audio`](skills/ebitengine/ebitengine-audio/SKILL.md) | Audio: `audio.Context`, F32 decoders, one-shot SFX, infinite-loop music, volume groups and fades |
+| [`ebitengine-save`](skills/ebitengine/ebitengine-save/SKILL.md) | Persistence: `os.UserConfigDir`, JSON structs + migrations, atomic temp/rename saves, WASM caveat |
 
 #### Web engines — 10 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
 
@@ -374,7 +377,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        109 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        112 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template
