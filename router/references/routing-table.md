@@ -152,6 +152,9 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |
 | `game-ui-ux` | HUD, health bar, main/pause/settings menu, UI layout, anchors, UI scaling, aspect ratio, safe area, controller/keyboard menu nav | `godot-ui-control` / Unity UI (UGUI/UI Toolkit) |
 | `performance-optimization` | performance, optimize, low/dropping FPS, frame drops, stutter, lag, frame budget, draw calls, batching, GC spikes, object pooling, profiler | engine profiler (Godot Monitors / Unity Profiler / Unreal `stat unit`) + `physics-tuning` |
+| `animation-systems` | animation state machine, blend tree/blend space, animation layer/mask, root motion, animation event/notify, foot sliding, retarget | `godot-animation` / `unity-animation` / `unreal-animation` / `roblox-animation` |
+| `multiplayer-netcode` | netcode, client prediction, server reconciliation, interpolation, lag compensation, desync, rubber-banding, authoritative server, rollback | `godot-multiplayer` / `unity-networking` / `unreal-replication` / `roblox-networking` |
+| `game-economy` | game economy, faucet/sink, currency sink, upgrade cost curve, inflation, idle income, reward schedule, prestige, premium currency | `roblox-simulator-economy` / `save-systems` + `game-ui-ux` |
 
 ## Genres (`skills/genres/`) — whole-game templates, **compose** engine + disciplines
 

@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 127 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 130 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -123,6 +123,9 @@
         "./skills/disciplines/camera-systems",
         "./skills/disciplines/performance-optimization",
         "./skills/disciplines/ai-behavior-trees-utility-ai",
+        "./skills/disciplines/animation-systems",
+        "./skills/disciplines/multiplayer-netcode",
+        "./skills/disciplines/game-economy",
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
         "./skills/genres/rpg",
@@ -314,7 +317,10 @@
         "./skills/disciplines/game-ui-ux",
         "./skills/disciplines/camera-systems",
         "./skills/disciplines/performance-optimization",
-        "./skills/disciplines/ai-behavior-trees-utility-ai"
+        "./skills/disciplines/ai-behavior-trees-utility-ai",
+        "./skills/disciplines/animation-systems",
+        "./skills/disciplines/multiplayer-netcode",
+        "./skills/disciplines/game-economy"
       ]
     },
     {

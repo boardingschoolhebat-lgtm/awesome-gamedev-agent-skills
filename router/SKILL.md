@@ -88,10 +88,11 @@ After the engine, read the request for task signals (three **additive** categori
 - **disciplines** (cross-engine concepts): `create-game-assets`, `game-ai`, `ai-behavior-trees-utility-ai`, `procedural-gen`, `dialogue-systems`,
   `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
-  `accessibility`, `performance-optimization`.
+  `accessibility`, `performance-optimization`, `animation-systems`, `multiplayer-netcode`,
+  `game-economy`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
-  "optimize/low FPS").
+  "optimize/low FPS", "animation state machine", "netcode/prediction", "economy/sinks").
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
   `racing-game`, `fighting-game`. Triggered by genre words ("make a roguelike", "deckbuilder").
