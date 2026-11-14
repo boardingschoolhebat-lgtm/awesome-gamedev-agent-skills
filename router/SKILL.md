@@ -93,8 +93,8 @@ After the engine, read the request for task signals (three **additive** categori
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
   "optimize/low FPS").
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
-  `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`. Triggered by genre
-  words ("make a roguelike", "deckbuilder").
+  `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
+  `racing-game`, `fighting-game`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
   `itch-publish`. Triggered by process words ("publish on Steam", "vertical slice").
 

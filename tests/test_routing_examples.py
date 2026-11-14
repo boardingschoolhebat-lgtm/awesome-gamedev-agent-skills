@@ -77,6 +77,9 @@ PROMPT_CASES = (
     # fails when a new genre or workflow is added without one.
     ("build a first-person shooter with hitscan weapons", ("fps-shooter",)),
     ("add tower defense waves and tower targeting to my game", ("tower-defense",)),
+    ("build a rhythm game with beat-synced notes and judgement windows", ("rhythm-game",)),
+    ("make an arcade racing game with lap timing and checkpoints", ("racing-game",)),
+    ("add a fighting game combo system with frame data and hitboxes", ("fighting-game",)),
     ("make a deckbuilder card game in Godot", ("card-game",)),
     ("write a branching story with a choice menu", ("visual-novel",)),
     ("add a crafting system and resource gathering to my survival game", ("survival-crafting",)),
