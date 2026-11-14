@@ -89,7 +89,7 @@ After the engine, read the request for task signals (three **additive** categori
   `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
   `accessibility`, `performance-optimization`, `animation-systems`, `multiplayer-netcode`,
-  `game-economy`.
+  `game-economy`, `quest-design`, `procedural-audio`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
   "optimize/low FPS", "animation state machine", "netcode/prediction", "economy/sinks").
@@ -97,7 +97,8 @@ After the engine, read the request for task signals (three **additive** categori
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
   `racing-game`, `fighting-game`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
-  `itch-publish`. Triggered by process words ("publish on Steam", "vertical slice").
+  `itch-publish`, `playtest-qa`. Triggered by process words ("publish on Steam", "vertical
+  slice", "playtest", "bug triage").
 
 File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel`; `steam_appid.txt`
 → `steam-publish`; `*.inputactions` → `unity-input-system`.

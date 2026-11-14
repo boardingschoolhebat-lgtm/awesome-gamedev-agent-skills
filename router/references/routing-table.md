@@ -155,6 +155,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `animation-systems` | animation state machine, blend tree/blend space, animation layer/mask, root motion, animation event/notify, foot sliding, retarget | `godot-animation` / `unity-animation` / `unreal-animation` / `roblox-animation` |
 | `multiplayer-netcode` | netcode, client prediction, server reconciliation, interpolation, lag compensation, desync, rubber-banding, authoritative server, rollback | `godot-multiplayer` / `unity-networking` / `unreal-replication` / `roblox-networking` |
 | `game-economy` | game economy, faucet/sink, currency sink, upgrade cost curve, inflation, idle income, reward schedule, prestige, premium currency | `roblox-simulator-economy` / `save-systems` + `game-ui-ux` |
+| `quest-design` | quest system, objective tracking, quest journal, quest state machine, quest reward, side quest, mission objective | `dialogue-systems` + `save-systems` + `game-ui-ux` |
+| `procedural-audio` | procedural audio, audio synthesis, synthesize SFX, oscillator, ADSR envelope, AudioStreamGenerator, OnAudioFilterRead | `audio-design` + `godot-audio` / `phaser-audio` |
 
 ## Genres (`skills/genres/`) — whole-game templates, **compose** engine + disciplines
 
@@ -181,6 +183,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `prototype-fast` | prototype fast, vertical slice, MVP game, greybox |
 | `steam-publish` | publish on Steam, Steamworks, store page, depot/build upload, Steam Deck compatibility review; `steam_appid.txt` |
 | `itch-publish` | publish on itch, itch.io page, `butler push`, upload build; `.itch.toml` |
+| `playtest-qa` | playtest, QA pass, bug report, repro steps, bug triage, release smoke test, regression |
 
 ## Binding gaps (be honest; do not fabricate a skill)
 

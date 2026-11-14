@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 130 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 133 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -126,6 +126,8 @@
         "./skills/disciplines/animation-systems",
         "./skills/disciplines/multiplayer-netcode",
         "./skills/disciplines/game-economy",
+        "./skills/disciplines/quest-design",
+        "./skills/disciplines/procedural-audio",
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
         "./skills/genres/rpg",
@@ -141,7 +143,8 @@
         "./skills/workflows/game-jam",
         "./skills/workflows/prototype-fast",
         "./skills/workflows/steam-publish",
-        "./skills/workflows/itch-publish"
+        "./skills/workflows/itch-publish",
+        "./skills/workflows/playtest-qa"
       ]
     },
     {
@@ -299,7 +302,7 @@
       "name": "disciplines",
       "source": "./",
       "strict": false,
-      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio, shaders, physics, level design, and input.",
+      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, and quests.",
       "skills": [
         "./skills/disciplines/create-game-assets",
         "./skills/disciplines/game-ai",
@@ -320,7 +323,9 @@
         "./skills/disciplines/ai-behavior-trees-utility-ai",
         "./skills/disciplines/animation-systems",
         "./skills/disciplines/multiplayer-netcode",
-        "./skills/disciplines/game-economy"
+        "./skills/disciplines/game-economy",
+        "./skills/disciplines/quest-design",
+        "./skills/disciplines/procedural-audio"
       ]
     },
     {
@@ -347,12 +352,13 @@
       "name": "workflows",
       "source": "./",
       "strict": false,
-      "description": "Process and shipping skills: game jam, fast prototyping, Steam, itch.io.",
+      "description": "Process, QA and shipping skills: game jam, fast prototyping, playtesting, Steam, itch.io.",
       "skills": [
         "./skills/workflows/game-jam",
         "./skills/workflows/prototype-fast",
         "./skills/workflows/steam-publish",
-        "./skills/workflows/itch-publish"
+        "./skills/workflows/itch-publish",
+        "./skills/workflows/playtest-qa"
       ]
     }
   ]
