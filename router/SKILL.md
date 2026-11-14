@@ -108,8 +108,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Godot** (`skills/godot/`): language `godot-gdscript` / `godot-csharp`; structure
   `godot-nodes-scenes`, `godot-signals-groups`; 2D `godot-2d-movement`, `godot-tilemap`; 3D
   `godot-3d-essentials`; physics `godot-physics`; UI `godot-ui-control`; animation
-  `godot-animation`; shaders `godot-shaders`; data `godot-resources`; saves `godot-save`;
-  audio `godot-audio`; netcode `godot-multiplayer`; headless CLI tests
+  `godot-animation`; cameras `godot-camera`; shaders `godot-shaders`; data `godot-resources`;
+  saves `godot-save`; audio `godot-audio`; netcode `godot-multiplayer`; headless CLI tests
   `godot-gdscript-headless-testing`; ship `godot-export`.
 - **Unity** (`skills/unity/`): scripting `unity-csharp-scripting`; 3D characters and cameras
   `unity-3d-essentials`; input `unity-input-system`; physics `unity-physics`; animation
@@ -129,15 +129,15 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`,
   `phaser-ui`; `pixijs-rendering` (+ `pixijs-ui`); `threejs-scene-setup`, `threejs-gltf-loading`,
   `threejs-materials-lighting`, `threejs-ui`.
-- **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`), `pygame-core`
+- **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`), `pygame-core`
   (+ `pygame-tilemap`, `pygame-save`), `love2d-core` (+ `love2d-tilemap`, `love2d-save`); Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,
   Bob builds), UI `defold-ui` (GUI scenes, HUD/menus, layouts, input picking) and tilemaps
   `defold-tilemap` (tile sources, collision groups, runtime tile edits) and collisions
   `defold-collision` (body types, groups/masks, physics messages, raycasts) and sprites
   `defold-sprite` (atlas flipbooks, playback, pivots); Roblox foundation
-  `roblox-luau`, persistence `roblox-datastores`, UI `roblox-ui`, remotes/security
-  `roblox-networking`, character lifecycle `roblox-characters`, simulation/queries
+  `roblox-luau`, persistence `roblox-datastores`, UI `roblox-ui`, audio `roblox-audio`,
+  remotes/security `roblox-networking`, character lifecycle `roblox-characters`, simulation/queries
   `roblox-physics`, grid levels `roblox-tilemap`, in-Studio operation
   `roblox-studio-workflow`, and simulator/tycoon/idle economy balancing
   `roblox-simulator-economy`.

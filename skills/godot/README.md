@@ -1,7 +1,7 @@
 # Godot skills
 
-Seventeen Agent Skills targeting Godot 4.7—GDScript and C#, scenes, movement,
-tilemaps, physics, UI, animation, shaders, 3D, resources, saves, audio, multiplayer,
+Eighteen Agent Skills targeting Godot 4.7—GDScript and C#, scenes, movement,
+tilemaps, physics, UI, animation, cameras, shaders, 3D, resources, saves, audio, multiplayer,
 and export.
 
 Each subdirectory is one skill. Existing projects keep the version declared by

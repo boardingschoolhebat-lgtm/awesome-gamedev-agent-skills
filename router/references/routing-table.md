@@ -23,6 +23,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `godot-3d-essentials` | "3D", `Camera3D`, `WorldEnvironment`, `GridMap`; `Node3D` |
 | `godot-save` | "Godot save", save game/progress/settings, `FileAccess`, `user://`, `JSON.stringify`, `ConfigFile`, `ResourceSaver`, save migration |
 | `godot-resources` | "custom Resource", "data resource", `.tres`, `ResourceLoader` |
+| `godot-camera` | "Godot camera", `Camera2D`, follow camera, drag margin, camera limits, screen shake, camera zoom |
 | `godot-audio` | "Godot audio", "audio bus", "play sound/music", sync-to-beat |
 | `godot-multiplayer` | "multiplayer", "RPC", "networked", `MultiplayerSpawner`; `@rpc` |
 | `godot-export` | "export Godot", "build for web/windows", `export_presets.cfg` |
@@ -95,6 +96,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------|--------------|
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `bevy-save` | "Bevy save", save file, save slots, serde, RON, save migration, corrupt save; `*.json`/`*.ron` save files |
+| `bevy-ui` | "Bevy UI", menu, HUD, `Node`, `ui_widgets`, `Activate`, `Interaction`, `TabIndex`, flex layout |
 | `bevy-tilemap` | "Bevy tilemap", texture atlas, `TextureAtlasLayout`, grid level, tile collision, sprite sheet, chunk |
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
 | `pygame-tilemap` | "pygame tilemap", "blitting tiles", "tileset", tile collision, layer surface, camera offset, `subsurface`, `pytmx` |
@@ -111,6 +113,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `defold-sprite` | "Defold sprite", flipbook animation, atlas animation, `sprite.play_flipbook`, `animation_done`, `set_hflip`, pivot, sprite offset, playback rate; `*.sprite`/`*.atlas` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
 | `roblox-datastores` | "DataStore", "save player data", `GetDataStore`; `DataStoreService` |
+| `roblox-audio` | "Roblox audio", `Sound`, `SoundGroup`, `PlayLocalSound`, RollOff, music, SFX volume |
 | `roblox-ui` | Roblox HUD/menu/inventory/shop, `ScreenGui`, `PlayerGui`, `UDim2`, `AutomaticSize`, `GuiService`, UI clipping/respawn, touch/gamepad focus, generic generated UI |
 | `roblox-tilemap` | "Roblox tilemap", grid level, parts, `Terrain`, `FillBlock`, chunk, streaming, Tiled map, `PivotTo` |
 | `roblox-networking` | Roblox remotes/security/replication, `RemoteEvent`, `RemoteFunction`, `UnreliableRemoteEvent`, exploit, request spam, server authority, desync |
