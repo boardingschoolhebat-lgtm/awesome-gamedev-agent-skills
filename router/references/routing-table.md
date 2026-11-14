@@ -164,6 +164,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `liveops` | live ops, season pass, battle pass, seasonal event, login reward, daily quest, content cadence, sunset | `game-economy` + `analytics` + `playtest-qa` |
 | `analytics` | game analytics, telemetry event, funnel, cohort, retention metric, KPI, A/B test, consent | `playtest-qa` + `liveops` + `game-economy` |
 | `co-op-design` | co-op, cooperative mode, player scaling, revive/downed, friendly fire, shared loot, drop-in co-op | `multiplayer-netcode` + `game-ai` + `ui-architecture` |
+| `localization-qa` | localization QA, pseudo-localization, translation QA, string freeze, text expansion, missing glyph/tofu, RTL mirroring, LQA | `localization` + `ui-architecture` + `playtest-qa` |
+| `accessibility-testing` | accessibility audit, contrast ratio, colorblind check, caption check, screen reader test, input-only, photosensitivity | `accessibility` + `game-ui-ux` + `input-systems` |
 
 ## Genres (`skills/genres/`) — whole-game templates, **compose** engine + disciplines
 
@@ -182,6 +184,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `fighting-game` | fighting game, frame data, hitbox/hurtbox, combo, rollback, motion input | `input-systems` + `game-feel` + `game-ai` + `godot-multiplayer`/`unity-networking` |
 | `battle-royale` | battle royale, shrinking zone, storm circle, last player standing, drop/loot, backfill bots | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `level-design` + `ui-architecture` |
 | `extraction-shooter` | extraction shooter, raid, stash, loot loss on death, extract point, insurance, wipe season | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `quest-design` + `save-systems` |
+| `sports-game` | sports game, soccer, football, basketball, hockey, ball physics, team AI, match rules, replay | `physics-tuning` + `game-ai` + `multiplayer-netcode` + `camera-systems` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 
 ## Workflows (`skills/workflows/`) — process & shipping, engine-independent

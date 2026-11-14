@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 142 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 145 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -135,6 +135,8 @@
         "./skills/disciplines/liveops",
         "./skills/disciplines/analytics",
         "./skills/disciplines/co-op-design",
+        "./skills/disciplines/localization-qa",
+        "./skills/disciplines/accessibility-testing",
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
         "./skills/genres/rpg",
@@ -145,6 +147,7 @@
         "./skills/genres/fighting-game",
         "./skills/genres/battle-royale",
         "./skills/genres/extraction-shooter",
+        "./skills/genres/sports-game",
         "./skills/genres/card-game",
         "./skills/genres/visual-novel",
         "./skills/genres/survival-crafting",
@@ -311,7 +314,7 @@
       "name": "disciplines",
       "source": "./",
       "strict": false,
-      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, mod support, live ops, analytics, and co-op.",
+      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
       "skills": [
         "./skills/disciplines/create-game-assets",
         "./skills/disciplines/game-ai",
@@ -341,14 +344,16 @@
         "./skills/disciplines/modding-and-tools",
         "./skills/disciplines/liveops",
         "./skills/disciplines/analytics",
-        "./skills/disciplines/co-op-design"
+        "./skills/disciplines/co-op-design",
+        "./skills/disciplines/localization-qa",
+        "./skills/disciplines/accessibility-testing"
       ]
     },
     {
       "name": "genres",
       "source": "./",
       "strict": false,
-      "description": "Compositional genre templates: platformer, roguelike, RPG, FPS, tower defense, card, visual novel, survival, puzzle, rhythm, racing, fighting, battle royale, extraction.",
+      "description": "Compositional genre templates: platformer, roguelike, RPG, FPS, tower defense, card, visual novel, survival, puzzle, rhythm, racing, fighting, battle royale, extraction, sports.",
       "skills": [
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
@@ -360,6 +365,7 @@
         "./skills/genres/fighting-game",
         "./skills/genres/battle-royale",
         "./skills/genres/extraction-shooter",
+        "./skills/genres/sports-game",
         "./skills/genres/card-game",
         "./skills/genres/visual-novel",
         "./skills/genres/survival-crafting",
