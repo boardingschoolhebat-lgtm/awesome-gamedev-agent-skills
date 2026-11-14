@@ -102,9 +102,11 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `bevy-tilemap` | "Bevy tilemap", texture atlas, `TextureAtlasLayout`, grid level, tile collision, sprite sheet, chunk |
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
 | `pygame-tilemap` | "pygame tilemap", "blitting tiles", "tileset", tile collision, layer surface, camera offset, `subsurface`, `pytmx` |
+| `pygame-camera` | "pygame camera", follow camera, camera offset, world to screen, parallax, camera shake, camera zoom |
 | `pygame-save` | "pygame save", save file, save slots, JSON save, settings file, save migration, corrupt save |
 | `love2d-core` | "LÖVE", "love2d", `love.draw`, `love.update(dt)`; `main.lua`/`conf.lua`/`*.love` |
 | `love2d-tilemap` | "LÖVE tilemap", "sprite batch", "quad", "tileset", tile layers, tile collision, scrolling tile level, `newSpriteBatch`, `newQuad`; `*.lua` + tileset image |
+| `love2d-camera` | "love2d camera", LÖVE camera, `love.graphics.translate`, parallax, camera shake, world coordinates |
 | `love2d-save` | "LÖVE save", save file, save slots, `love.filesystem`, `getSaveDirectory`, settings file, save migration, corrupt save |
 | `defold-core` | "Defold", collection/game object/component, `msg.post`, `on_message`, `on_input`, `acquire_input_focus`, `go.property`, `factory.create`, collection proxy, `bob.jar`, Defold build error; `game.project` + `*.collection`/`*.go`/`*.script` (target Defold 1.14.0) |
 | `defold-ui` | "Defold GUI", "Defold HUD", menu/dialog/inventory screen, `.gui`, `gui_script`, `gui.new_text_node`, `gui.animate`, `gui.pick_node`, `gui.clone`, layout, anchor, adjust mode; `*.gui`/`*.gui_script` |
@@ -115,6 +117,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `defold-sprite` | "Defold sprite", flipbook animation, atlas animation, `sprite.play_flipbook`, `animation_done`, `set_hflip`, pivot, sprite offset, playback rate; `*.sprite`/`*.atlas` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
 | `roblox-datastores` | "DataStore", "save player data", `GetDataStore`; `DataStoreService` |
+| `roblox-camera` | "Roblox camera", `CurrentCamera`, `CameraType`, `CFrame`, cutscene, `ScreenPointToRay`, camera shake |
 | `roblox-animation` | "Roblox animation", `Animator`, `AnimationTrack`, `LoadAnimation`, animation priority, marker event |
 | `roblox-audio` | "Roblox audio", `Sound`, `SoundGroup`, `PlayLocalSound`, RollOff, music, SFX volume |
 | `roblox-ui` | Roblox HUD/menu/inventory/shop, `ScreenGui`, `PlayerGui`, `UDim2`, `AutomaticSize`, `GuiService`, UI clipping/respawn, touch/gamepad focus, generic generated UI |

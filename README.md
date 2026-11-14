@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 118 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 121 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**118 game-dev skills for your AI coding agent — install once, and a router loads the
+**121 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-118%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-121%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **118 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **121 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 118 skills into the right place:
+coding agent you already use and installs the router plus all 121 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-118 skills across 9 categories — each links to its `SKILL.md` below.
+121 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -227,7 +227,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`threejs-materials-lighting`](skills/web-engines/threejs-materials-lighting/SKILL.md) | Materials (PBR), lights, shadows, environment maps |
 | [`threejs-ui`](skills/web-engines/threejs-ui/SKILL.md) | HTML HUD overlays, CSS2D/CSS3D renderers, raycasted 3D buttons, responsive layering |
 
-#### Other engines — 29 ([`skills/other-engines/`](skills/other-engines/)) · Bevy · pygame · LÖVE · Defold · Roblox
+#### Other engines — 32 ([`skills/other-engines/`](skills/other-engines/)) · Bevy · pygame · LÖVE · Defold · Roblox
 
 | Skill | Scope |
 |-------|-------|
@@ -239,9 +239,11 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`pygame-core`](skills/other-engines/pygame-core/SKILL.md) | pygame loop, `Surface`/`Rect`, sprites/groups, events (pygame-ce 2.5.8) |
 | [`pygame-tilemap`](skills/other-engines/pygame-tilemap/SKILL.md) | pygame tile levels: sliced tilesets, cached layer surfaces, camera culling, grid collision, pytmx |
 | [`pygame-save`](skills/other-engines/pygame-save/SKILL.md) | pygame saves: per-OS data dirs, atomic JSON writes, backups, migrations, corrupt-save recovery |
+| [`pygame-camera`](skills/other-engines/pygame-camera/SKILL.md) | pygame camera: world↔screen offset/zoom, damped follow, level clamp, culling, parallax, shake |
 | [`love2d-core`](skills/other-engines/love2d-core/SKILL.md) | LÖVE `load/update/draw` loop, dt-driven motion, input, states (LÖVE 11.5) |
 | [`love2d-tilemap`](skills/other-engines/love2d-tilemap/SKILL.md) | LÖVE tile levels: tileset quads, `SpriteBatch` layers, camera culling, grid collision, Tiled imports |
 | [`love2d-save`](skills/other-engines/love2d-save/SKILL.md) | LÖVE saves: `love.filesystem`, versioned tables and migrations, backup writes, slot listing |
+| [`love2d-camera`](skills/other-engines/love2d-camera/SKILL.md) | LÖVE camera: transform stack, inverse picking, damped follow, clamp, parallax, shake |
 | [`defold-core`](skills/other-engines/defold-core/SKILL.md) | Defold collections, game objects, script lifecycle, input, messages, factories, proxies, Bob build checks (Defold 1.14.0) |
 | [`defold-ui`](skills/other-engines/defold-ui/SKILL.md) | Defold GUI scenes: HUD/menus, node types, `gui.animate`, input picking, layouts and resolution scaling |
 | [`defold-tilemap`](skills/other-engines/defold-tilemap/SKILL.md) | Defold tile levels: tile sources, collision groups, `tilemap.get_tile`/`set_tile`, layer visibility |
@@ -254,6 +256,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`roblox-ui`](skills/other-engines/roblox-ui/SKILL.md) | Roblox UI: `ScreenGui` layout, responsive scaling, safe areas, gamepad/touch navigation |
 | [`roblox-audio`](skills/other-engines/roblox-audio/SKILL.md) | Roblox audio: `Sound`/`SoundGroup`, 3D roll-off, `PlayLocalSound`, music and volume settings |
 | [`roblox-animation`](skills/other-engines/roblox-animation/SKILL.md) | Roblox animation: `Animator`/`AnimationTrack`, priority layering, markers, custom rigs, replication |
+| [`roblox-camera`](skills/other-engines/roblox-camera/SKILL.md) | Roblox camera: `CurrentCamera`/`CFrame`, Scriptable follow, tween cutscenes, shake, screen rays |
 | [`roblox-tilemap`](skills/other-engines/roblox-tilemap/SKILL.md) | Roblox grid levels: parts vs `Terrain`/`FillBlock`, `PivotTo`, chunk streaming, Tiled JSON imports |
 | [`roblox-networking`](skills/other-engines/roblox-networking/SKILL.md) | Remotes, server-authoritative validation, rate limiting, replication boundaries |
 | [`roblox-characters`](skills/other-engines/roblox-characters/SKILL.md) | Character lifecycle: spawn/respawn scopes, `Humanoid`, rigs, `Animator` tracks |
@@ -383,7 +386,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        118 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        121 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template
