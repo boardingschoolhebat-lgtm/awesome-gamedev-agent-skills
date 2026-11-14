@@ -59,6 +59,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-enhanced-input` | "Enhanced Input", "Input Mapping Context", `IA_`/`IMC_` |
 | `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
+| `unreal-animation` | "Unreal animation", AnimBP, `UAnimInstance`, montage, `PlayAnimMontage`, blend space, AnimNotify, root motion |
 | `unreal-audio` | "Unreal audio", MetaSounds, `PlaySoundAtLocation`, sound class, sound mix, attenuation, audio component |
 | `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, HUD, pause menu, `BindWidget` |
 | `unreal-tilemap` | "Unreal tilemap", Paper2D, tile set, tile map, `SetTile`, `CreateNewTileMap`, `RebuildCollision`, tile collision |
@@ -96,6 +97,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------|--------------|
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `bevy-save` | "Bevy save", save file, save slots, serde, RON, save migration, corrupt save; `*.json`/`*.ron` save files |
+| `bevy-audio` | "Bevy audio", `AudioPlayer`, `PlaybackSettings`, `AudioSink`, spatial audio, `AudioListener`, music |
 | `bevy-ui` | "Bevy UI", menu, HUD, `Node`, `ui_widgets`, `Activate`, `Interaction`, `TabIndex`, flex layout |
 | `bevy-tilemap` | "Bevy tilemap", texture atlas, `TextureAtlasLayout`, grid level, tile collision, sprite sheet, chunk |
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
@@ -113,6 +115,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `defold-sprite` | "Defold sprite", flipbook animation, atlas animation, `sprite.play_flipbook`, `animation_done`, `set_hflip`, pivot, sprite offset, playback rate; `*.sprite`/`*.atlas` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
 | `roblox-datastores` | "DataStore", "save player data", `GetDataStore`; `DataStoreService` |
+| `roblox-animation` | "Roblox animation", `Animator`, `AnimationTrack`, `LoadAnimation`, animation priority, marker event |
 | `roblox-audio` | "Roblox audio", `Sound`, `SoundGroup`, `PlayLocalSound`, RollOff, music, SFX volume |
 | `roblox-ui` | Roblox HUD/menu/inventory/shop, `ScreenGui`, `PlayerGui`, `UDim2`, `AutomaticSize`, `GuiService`, UI clipping/respawn, touch/gamepad focus, generic generated UI |
 | `roblox-tilemap` | "Roblox tilemap", grid level, parts, `Terrain`, `FillBlock`, chunk, streaming, Tiled map, `PivotTo` |
