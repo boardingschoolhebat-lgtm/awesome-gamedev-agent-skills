@@ -185,6 +185,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `battle-royale` | battle royale, shrinking zone, storm circle, last player standing, drop/loot, backfill bots | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `level-design` + `ui-architecture` |
 | `extraction-shooter` | extraction shooter, raid, stash, loot loss on death, extract point, insurance, wipe season | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `quest-design` + `save-systems` |
 | `sports-game` | sports game, soccer, football, basketball, hockey, ball physics, team AI, match rules, replay | `physics-tuning` + `game-ai` + `multiplayer-netcode` + `camera-systems` |
+| `mmorpg` | MMORPG, MMO, shard, persistent world, guild, auction house, chat moderation, group finder | `multiplayer-netcode` + `game-economy` + `quest-design` + `liveops` |
+| `idle-incremental` | idle game, incremental, clicker, tycoon, offline earnings, prestige, automation, big numbers | `game-economy` + `save-systems` + `game-ui-ux` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 
 ## Workflows (`skills/workflows/`) — process & shipping, engine-independent
@@ -196,6 +198,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `steam-publish` | publish on Steam, Steamworks, store page, depot/build upload, Steam Deck compatibility review; `steam_appid.txt` |
 | `itch-publish` | publish on itch, itch.io page, `butler push`, upload build; `.itch.toml` |
 | `playtest-qa` | playtest, QA pass, bug report, repro steps, bug triage, release smoke test, regression |
+| `platform-cert` | platform certification, console certification, cert submission, TRC, XR, lotcheck, Xbox certification, age rating | `playtest-qa` + `localization-qa` + `accessibility-testing` |
 
 ## Binding gaps (be honest; do not fabricate a skill)
 

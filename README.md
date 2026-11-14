@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 145 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 148 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**145 game-dev skills for your AI coding agent — install once, and a router loads the
+**148 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-145%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-148%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **145 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **148 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 145 skills into the right place:
+coding agent you already use and installs the router plus all 148 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-145 skills across 9 categories — each links to its `SKILL.md` below.
+148 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -305,7 +305,7 @@ Cross-engine concepts that load alongside the detected engine skill.
 | [`localization-qa`](skills/disciplines/localization-qa/SKILL.md) | String freeze/context, ICU plurals, pseudo-loc, expansion, fonts, RTL, LQA severity |
 | [`accessibility-testing`](skills/disciplines/accessibility-testing/SKILL.md) | Contrast math, colorblind/motion checks, captions, input-only audit, screen-reader limits |
 
-### Genres — 15 ([`skills/genres/`](skills/genres/))
+### Genres — 17 ([`skills/genres/`](skills/genres/))
 
 Compositional templates that orchestrate engine + discipline skills; they never re-teach
 primitives.
@@ -327,8 +327,10 @@ primitives.
 | [`battle-royale`](skills/genres/battle-royale/SKILL.md) | Drop/loot, shrinking zone phases, placement, spectate, bots/backfill, server authority |
 | [`extraction-shooter`](skills/genres/extraction-shooter/SKILL.md) | Stash/loadout, raid risk/reward, loot value, extraction points, insurance, wipes |
 | [`sports-game`](skills/genres/sports-game/SKILL.md) | Ball physics, rules engine/officials, team AI roles, match clock, broadcast camera, replays |
+| [`mmorpg`](skills/genres/mmorpg/SKILL.md) | Shards/zones, persistence, interest management, chat/moderation, guilds, auction, cadence |
+| [`idle-incremental`](skills/genres/idle-incremental/SKILL.md) | Generators/multipliers, cost curves, offline earnings, prestige, automation, big numbers |
 
-### Workflows — 5 ([`skills/workflows/`](skills/workflows/))
+### Workflows — 6 ([`skills/workflows/`](skills/workflows/))
 
 | Skill | Scope |
 |-------|-------|
@@ -337,6 +339,7 @@ primitives.
 | [`steam-publish`](skills/workflows/steam-publish/SKILL.md) | Steamworks onboarding: app/depots, store page, builds, release checklist |
 | [`itch-publish`](skills/workflows/itch-publish/SKILL.md) | Publish/update on itch.io: project page, channels, `butler` uploads |
 | [`playtest-qa`](skills/workflows/playtest-qa/SKILL.md) | Playtest scripts, observation metrics, bug reports/triage, regression and release smoke test |
+| [`platform-cert`](skills/workflows/platform-cert/SKILL.md) | Console cert plan, requirement mapping, age ratings, test bench, submission triage |
 
 ## Agent compatibility
 
@@ -410,7 +413,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        145 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        148 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

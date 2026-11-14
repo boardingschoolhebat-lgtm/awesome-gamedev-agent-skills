@@ -97,10 +97,10 @@ After the engine, read the request for task signals (three **additive** categori
   "optimize/low FPS", "animation state machine", "netcode/prediction", "economy/sinks").
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
-  `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`, `sports-game`. Triggered by genre words ("make a roguelike", "deckbuilder").
+  `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`, `sports-game`, `mmorpg`, `idle-incremental`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
-  `itch-publish`, `playtest-qa`. Triggered by process words ("publish on Steam", "vertical
-  slice", "playtest", "bug triage").
+  `itch-publish`, `playtest-qa`, `platform-cert`. Triggered by process words ("publish on Steam",
+  "vertical slice", "playtest", "bug triage", "console certification").
 
 File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel`; `steam_appid.txt`
 → `steam-publish`; `*.inputactions` → `unity-input-system`.
