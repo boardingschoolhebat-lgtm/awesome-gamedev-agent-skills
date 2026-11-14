@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 121 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 124 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**121 game-dev skills for your AI coding agent — install once, and a router loads the
+**124 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-121%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-124%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **121 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **124 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 121 skills into the right place:
+coding agent you already use and installs the router plus all 124 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-121 skills across 9 categories — each links to its `SKILL.md` below.
+124 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -212,7 +212,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`ebitengine-audio`](skills/ebitengine/ebitengine-audio/SKILL.md) | Audio: `audio.Context`, F32 decoders, one-shot SFX, infinite-loop music, volume groups and fades |
 | [`ebitengine-save`](skills/ebitengine/ebitengine-save/SKILL.md) | Persistence: `os.UserConfigDir`, JSON structs + migrations, atomic temp/rename saves, WASM caveat |
 
-#### Web engines — 10 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
+#### Web engines — 13 ([`skills/web-engines/`](skills/web-engines/)) · Phaser 4.2 · PixiJS 8.22 · three.js r187
 
 | Skill | Scope |
 |-------|-------|
@@ -220,8 +220,11 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`phaser-arcade-physics`](skills/web-engines/phaser-arcade-physics/SKILL.md) | Arcade Physics: bodies, velocity, colliders/overlap, groups |
 | [`phaser-tilemap`](skills/web-engines/phaser-tilemap/SKILL.md) | Tiled JSON/CSV maps, layers, tile collision, runtime tile edits, world bounds |
 | [`phaser-ui`](skills/web-engines/phaser-ui/SKILL.md) | Phaser HUDs/menus: Containers, fixed scroll factor, NineSlice, UI camera, DOM overlays |
+| [`phaser-animation`](skills/web-engines/phaser-animation/SKILL.md) | Phaser anims: spritesheet/atlas frames, play/chain, events, repeat/yoyo, timeScale |
+| [`phaser-audio`](skills/web-engines/phaser-audio/SKILL.md) | Phaser sound: `this.sound`, instances, markers/audio sprites, volume/pan, Web Audio unlock |
 | [`pixijs-rendering`](skills/web-engines/pixijs-rendering/SKILL.md) | PixiJS v8 scene graph: `Application`, `Container`, `Sprite`, events |
 | [`pixijs-ui`](skills/web-engines/pixijs-ui/SKILL.md) | PixiJS v8 UI: menus/HUD, Graphics panels, Text/BitmapText, eventMode, hitArea, modal blocking |
+| [`pixijs-animation`](skills/web-engines/pixijs-animation/SKILL.md) | PixiJS v8 animation: `AnimatedSprite`, spritesheet animations, frame callbacks, pooling |
 | [`threejs-scene-setup`](skills/web-engines/threejs-scene-setup/SKILL.md) | Three.js scene/camera/renderer/animation-loop, resizing, controls |
 | [`threejs-gltf-loading`](skills/web-engines/threejs-gltf-loading/SKILL.md) | Loading glTF/GLB + skinned animation (`GLTFLoader`/`AnimationMixer`) |
 | [`threejs-materials-lighting`](skills/web-engines/threejs-materials-lighting/SKILL.md) | Materials (PBR), lights, shadows, environment maps |
@@ -386,7 +389,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        121 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        124 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

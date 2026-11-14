@@ -128,8 +128,9 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   for SFX/music, `ebitengine-save` for persistence. Generating the starter is optional for an
   existing project.
 - **Web** (`skills/web-engines/`): `phaser-core`, `phaser-arcade-physics`, `phaser-tilemap`,
-  `phaser-ui`; `pixijs-rendering` (+ `pixijs-ui`); `threejs-scene-setup`, `threejs-gltf-loading`,
-  `threejs-materials-lighting`, `threejs-ui`.
+  `phaser-ui`, `phaser-animation`, `phaser-audio`; `pixijs-rendering` (+ `pixijs-ui`,
+  `pixijs-animation`); `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`,
+  `threejs-ui`.
 - **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`,
   `bevy-audio`), `pygame-core` (+ `pygame-tilemap`, `pygame-save`, `pygame-camera`), `love2d-core`
   (+ `love2d-tilemap`, `love2d-save`, `love2d-camera`); Defold

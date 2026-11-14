@@ -83,7 +83,10 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `phaser-core` | "Phaser", "Phaser scene", `preload`/`create`/`update`; dep `phaser` |
 | `phaser-arcade-physics` | "Arcade Physics", "collider", "overlap", world bounds |
 | `phaser-tilemap` | "Phaser tilemap", Tiled map, `createLayer`, `setCollisionByProperty`, tile collision, `addTilesetImage`, `putTileAt`; `*.json` Tiled maps |
+| `phaser-animation` | "Phaser animation", sprite animation, `this.anims`, `generateFrameNumbers`, `play`, `animationcomplete`, `chain` |
+| `phaser-audio` | "Phaser audio", `this.sound`, sound effect, music loop, audio sprite, sound marker, mute |
 | `phaser-ui` | "Phaser UI", HUD, health bar, scroll factor, DOM element, container, menu, `setScrollFactor`, NineSlice |
+| `pixijs-animation` | "PixiJS animation", `AnimatedSprite`, spritesheet animation, animationSpeed, frame callback |
 | `pixijs-ui` | "PixiJS UI", menu, HUD, clickable button, `eventMode`, `hitArea`, `pointertap`, modal |
 | `pixijs-rendering` | "PixiJS", "Pixi sprite", "stage", `Container`; dep `pixi.js` |
 | `threejs-scene-setup` | "three.js", `THREE.Scene`, `WebGLRenderer`, render loop; dep `three` |
