@@ -2,7 +2,7 @@
 
 Cross-engine Agent Skills organized by game genre — for example platformers,
 RPGs, shooters, puzzles, tower defense, roguelikes, card games, visual novels, survival,
-rhythm, racing, and fighting games—covering the
+rhythm, racing, fighting, and battle royale games—covering the
 mechanics and systems characteristic of each.
 
 Each subdirectory is one skill: a folder containing a `SKILL.md` (and optional
