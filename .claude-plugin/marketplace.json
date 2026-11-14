@@ -8,7 +8,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 139 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 142 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -132,6 +132,9 @@
         "./skills/disciplines/ui-architecture",
         "./skills/disciplines/matchmaking",
         "./skills/disciplines/modding-and-tools",
+        "./skills/disciplines/liveops",
+        "./skills/disciplines/analytics",
+        "./skills/disciplines/co-op-design",
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
         "./skills/genres/rpg",
@@ -308,7 +311,7 @@
       "name": "disciplines",
       "source": "./",
       "strict": false,
-      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, and mod support.",
+      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, mod support, live ops, analytics, and co-op.",
       "skills": [
         "./skills/disciplines/create-game-assets",
         "./skills/disciplines/game-ai",
@@ -335,7 +338,10 @@
         "./skills/disciplines/editor-tooling",
         "./skills/disciplines/ui-architecture",
         "./skills/disciplines/matchmaking",
-        "./skills/disciplines/modding-and-tools"
+        "./skills/disciplines/modding-and-tools",
+        "./skills/disciplines/liveops",
+        "./skills/disciplines/analytics",
+        "./skills/disciplines/co-op-design"
       ]
     },
     {

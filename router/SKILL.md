@@ -90,7 +90,7 @@ After the engine, read the request for task signals (three **additive** categori
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
   `accessibility`, `performance-optimization`, `animation-systems`, `multiplayer-netcode`,
   `game-economy`, `quest-design`, `procedural-audio`, `editor-tooling`, `ui-architecture`,
-  `matchmaking`, `modding-and-tools`.
+  `matchmaking`, `modding-and-tools`, `liveops`, `analytics`, `co-op-design`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
   "optimize/low FPS", "animation state machine", "netcode/prediction", "economy/sinks").

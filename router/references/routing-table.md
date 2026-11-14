@@ -161,6 +161,9 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `ui-architecture` | screen stack, UI routing, data binding, virtualized list, theme tokens, menu focus/navigation, UI performance | `game-ui-ux` + `localization` + engine UI skill |
 | `matchmaking` | matchmaking, MMR/ELO/Glicko, skill rating, queue time, ranked match, party matchmaking, backfill, placement matches | `multiplayer-netcode` + session service + `game-economy` |
 | `modding-and-tools` | mod support, modding API, mod manifest, load order, Steam Workshop, UGC, modded saves, sandboxed scripts | `save-systems` + `steam-publish` + engine asset loading |
+| `liveops` | live ops, season pass, battle pass, seasonal event, login reward, daily quest, content cadence, sunset | `game-economy` + `analytics` + `playtest-qa` |
+| `analytics` | game analytics, telemetry event, funnel, cohort, retention metric, KPI, A/B test, consent | `playtest-qa` + `liveops` + `game-economy` |
+| `co-op-design` | co-op, cooperative mode, player scaling, revive/downed, friendly fire, shared loot, drop-in co-op | `multiplayer-netcode` + `game-ai` + `ui-architecture` |
 
 ## Genres (`skills/genres/`) — whole-game templates, **compose** engine + disciplines
 
