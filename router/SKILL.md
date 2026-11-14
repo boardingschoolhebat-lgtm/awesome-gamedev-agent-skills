@@ -89,13 +89,14 @@ After the engine, read the request for task signals (three **additive** categori
   `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
   `accessibility`, `performance-optimization`, `animation-systems`, `multiplayer-netcode`,
-  `game-economy`, `quest-design`, `procedural-audio`, `editor-tooling`, `ui-architecture`.
+  `game-economy`, `quest-design`, `procedural-audio`, `editor-tooling`, `ui-architecture`,
+  `matchmaking`, `modding-and-tools`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
   "save slots", "fragment shader", "screen shake", "camera follow", "HUD/menu",
   "optimize/low FPS", "animation state machine", "netcode/prediction", "economy/sinks").
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
-  `racing-game`, `fighting-game`, `battle-royale`. Triggered by genre words ("make a roguelike", "deckbuilder").
+  `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
   `itch-publish`, `playtest-qa`. Triggered by process words ("publish on Steam", "vertical
   slice", "playtest", "bug triage").

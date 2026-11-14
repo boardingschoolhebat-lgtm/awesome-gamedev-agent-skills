@@ -159,6 +159,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `procedural-audio` | procedural audio, audio synthesis, synthesize SFX, oscillator, ADSR envelope, AudioStreamGenerator, OnAudioFilterRead | `audio-design` + `godot-audio` / `phaser-audio` |
 | `editor-tooling` | editor tool, custom inspector, gizmo/handle, editor window, undo/redo, asset validator, build script automation | engine editor APIs (`unity-ui`/`godot-nodes-scenes`) + `godot-resources`/`unity-scriptableobjects` |
 | `ui-architecture` | screen stack, UI routing, data binding, virtualized list, theme tokens, menu focus/navigation, UI performance | `game-ui-ux` + `localization` + engine UI skill |
+| `matchmaking` | matchmaking, MMR/ELO/Glicko, skill rating, queue time, ranked match, party matchmaking, backfill, placement matches | `multiplayer-netcode` + session service + `game-economy` |
+| `modding-and-tools` | mod support, modding API, mod manifest, load order, Steam Workshop, UGC, modded saves, sandboxed scripts | `save-systems` + `steam-publish` + engine asset loading |
 
 ## Genres (`skills/genres/`) — whole-game templates, **compose** engine + disciplines
 
@@ -176,6 +178,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `racing-game` | racing game, car handling, lap time, checkpoint, drift, racing AI | `physics-tuning` + `camera-systems` + `game-ui-ux` + `level-design` |
 | `fighting-game` | fighting game, frame data, hitbox/hurtbox, combo, rollback, motion input | `input-systems` + `game-feel` + `game-ai` + `godot-multiplayer`/`unity-networking` |
 | `battle-royale` | battle royale, shrinking zone, storm circle, last player standing, drop/loot, backfill bots | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `level-design` + `ui-architecture` |
+| `extraction-shooter` | extraction shooter, raid, stash, loot loss on death, extract point, insurance, wipe season | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `quest-design` + `save-systems` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 
 ## Workflows (`skills/workflows/`) — process & shipping, engine-independent
