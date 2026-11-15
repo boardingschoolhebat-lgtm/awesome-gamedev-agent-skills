@@ -156,6 +156,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `animation-systems` | animation state machine, blend tree/blend space, animation layer/mask, root motion, animation event/notify, foot sliding, retarget | `godot-animation` / `unity-animation` / `unreal-animation` / `roblox-animation` |
 | `multiplayer-netcode` | netcode, client prediction, server reconciliation, interpolation, lag compensation, desync, rubber-banding, authoritative server, rollback | `godot-multiplayer` / `unity-networking` / `unreal-replication` / `roblox-networking` |
 | `game-economy` | game economy, faucet/sink, currency sink, upgrade cost curve, inflation, idle income, reward schedule, prestige, premium currency | `roblox-simulator-economy` / `save-systems` + `game-ui-ux` |
+| `game-balance` | game balance, balance weapon damage, TTK, time to kill, DPS, effective HP, armor curve, counter matrix, win rate, power creep | `game-economy` + `playtest-qa` + `analytics` |
 | `quest-design` | quest system, objective tracking, quest journal, quest state machine, quest reward, side quest, mission objective | `dialogue-systems` + `save-systems` + `game-ui-ux` |
 | `procedural-audio` | procedural audio, audio synthesis, synthesize SFX, oscillator, ADSR envelope, AudioStreamGenerator, OnAudioFilterRead | `audio-design` + `godot-audio` / `phaser-audio` |
 | `editor-tooling` | editor tool, custom inspector, gizmo/handle, editor window, undo/redo, asset validator, build script automation | engine editor APIs (`unity-ui`/`godot-nodes-scenes`) + `godot-resources`/`unity-scriptableobjects` |
@@ -190,6 +191,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `idle-incremental` | idle game, incremental, clicker, tycoon, offline earnings, prestige, automation, big numbers | `game-economy` + `save-systems` + `game-ui-ux` |
 | `stealth-game` | stealth, stealth game, vision cone, detection meter, suspicion, patrol AI, takedown, hiding | `game-ai` + `level-design` + `audio-design` + `game-ui-ux` |
 | `horror-game` | horror game, survival horror, monster chase, hide, jumpscare, resource scarcity, atmosphere | `audio-design` + `level-design` + `game-ai` + `accessibility-testing` |
+| `rts-game` | RTS, real-time strategy, unit selection, control group, fog of war, build order, base building, lockstep | `game-ai` + `multiplayer-netcode` + `level-design` + `game-balance` + `ui-architecture` |
+| `management-sim` | management sim, tycoon, city builder, colony sim, simulation tick, needs, budget, zoning, park management | `game-economy` + `game-ui-ux` + `save-systems` + `game-ai` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 
 ## Workflows (`skills/workflows/`) — process & shipping, engine-independent
