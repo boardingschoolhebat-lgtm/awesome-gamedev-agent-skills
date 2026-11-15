@@ -2,7 +2,7 @@
 name: router
 description: >
   Routes any game-development request to the right specialized skill(s): it detects the engine
-  (Godot, Unity, Unreal, Ebitengine, Bevy, Phaser, PixiJS, three.js, Defold, LÖVE, pygame, Roblox) and the task, then
+  (Godot, Unity, Unreal, Ebitengine, Bevy, Phaser, PixiJS, three.js, Defold, LÖVE, pygame, Roblox, GameMaker, MonoGame) and the task, then
   reads the chosen skill before acting. Use to make a game or to decide which skill applies — for
   players, levels, enemies, shaders, art direction, sprites, tiles, textures, 3D assets, UI/UX,
   cameras, game feel, physics, input, audio, saving, multiplayer, AI, dialogue, procedural
@@ -71,6 +71,8 @@ Check the target's build and runtime entry point before treating a bundled libra
 | 10 | LÖVE | `conf.lua` / `main.lua` calling `love.*` | `skills/other-engines/love2d-core/` |
 | 11 | pygame | `*.py` with `import pygame` | `skills/other-engines/pygame-core/` |
 | 12 | Roblox | `*.rbxl(x)` / `*.project.json` (Rojo) | `skills/other-engines/roblox-*` |
+| 13 | GameMaker | `*.yyp` | `skills/other-engines/gamemaker-core/` |
+| 14 | MonoGame | `.csproj` referencing `MonoGame.Framework.*` | `skills/other-engines/monogame-core/` |
 
 For secondary signals, the Godot-C#/Unity/Bevy, Defold/LÖVE/Lua and multi-web disambiguation
 rules, monorepos, and plain-text engine mentions, read `references/engine-detection.md`.
@@ -89,7 +91,7 @@ After the engine, read the request for task signals (three **additive** categori
   `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
   `accessibility`, `performance-optimization`, `animation-systems`, `multiplayer-netcode`,
-  `game-economy`, `game-balance`, `quest-design`, `procedural-audio`, `editor-tooling`, `ui-architecture`,
+  `game-economy`, `game-balance`, `quest-design`, `tutorial-design`, `procedural-audio`, `editor-tooling`, `ui-architecture`,
   `matchmaking`, `modding-and-tools`, `liveops`, `analytics`, `co-op-design`,
   `localization-qa`, `accessibility-testing`.
   Triggered by concept words ("sprite sheet", "art direction", "texture", "pathfinding",
@@ -98,7 +100,7 @@ After the engine, read the request for task signals (three **additive** categori
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
   `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`, `sports-game`, `mmorpg`, `idle-incremental`, `stealth-game`,
-  `horror-game`, `rts-game`, `management-sim`. Triggered by genre words ("make a roguelike", "deckbuilder").
+  `horror-game`, `bullet-hell`, `rts-game`, `management-sim`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
   `itch-publish`, `playtest-qa`, `platform-cert`. Triggered by process words ("publish on Steam",
   "vertical slice", "playtest", "bug triage", "console certification").
@@ -136,7 +138,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `phaser-ui`, `phaser-animation`, `phaser-audio`; `pixijs-rendering` (+ `pixijs-ui`,
   `pixijs-animation`); `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`,
   `threejs-ui`.
-- **Other** (`skills/other-engines/`): `gamemaker-core` (GML objects/events, rooms/layers,
+- **Other** (`skills/other-engines/`): `monogame-core` (C# game loop, SpriteBatch, Content Builder,
+  input, collision, audio, publishing); `gamemaker-core` (GML objects/events, rooms/layers,
   collisions, drawing, JSON saves); `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`,
   `bevy-audio`), `pygame-core` (+ `pygame-tilemap`, `pygame-save`, `pygame-camera`), `love2d-core`
   (+ `love2d-tilemap`, `love2d-save`, `love2d-camera`); Defold

@@ -10,7 +10,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 154 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 157 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -167,7 +167,10 @@
         "./skills/workflows/platform-cert",
         "./skills/disciplines/game-balance",
         "./skills/genres/rts-game",
-        "./skills/genres/management-sim"
+        "./skills/genres/management-sim",
+        "./skills/other-engines/monogame-core",
+        "./skills/genres/bullet-hell",
+        "./skills/disciplines/tutorial-design"
       ]
     },
     {
@@ -285,7 +288,7 @@
       "name": "other-engines",
       "source": "./",
       "strict": false,
-      "description": "GameMaker, Bevy, pygame, LÖVE, Defold, and production-focused Roblox engine skills.",
+      "description": "MonoGame, GameMaker, Bevy, pygame, LÖVE, Defold, and production-focused Roblox engine skills.",
       "skills": [
         "./skills/other-engines/bevy-ecs",
         "./skills/other-engines/bevy-save",
@@ -319,14 +322,15 @@
         "./skills/other-engines/roblox-characters",
         "./skills/other-engines/roblox-physics",
         "./skills/other-engines/roblox-studio-workflow",
-        "./skills/other-engines/roblox-simulator-economy"
+        "./skills/other-engines/roblox-simulator-economy",
+        "./skills/other-engines/monogame-core"
       ]
     },
     {
       "name": "disciplines",
       "source": "./",
       "strict": false,
-      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
+      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, tutorial design, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
       "skills": [
         "./skills/disciplines/create-game-assets",
         "./skills/disciplines/game-ai",
@@ -359,14 +363,15 @@
         "./skills/disciplines/co-op-design",
         "./skills/disciplines/localization-qa",
         "./skills/disciplines/accessibility-testing",
-        "./skills/disciplines/game-balance"
+        "./skills/disciplines/game-balance",
+        "./skills/disciplines/tutorial-design"
       ]
     },
     {
       "name": "genres",
       "source": "./",
       "strict": false,
-      "description": "Compositional genre templates: platformer, roguelike, RPG, FPS, tower defense, card, visual novel, survival, puzzle, rhythm, racing, fighting, battle royale, extraction, sports, MMO, idle, stealth, horror.",
+      "description": "Compositional genre templates: platformer, roguelike, RPG, FPS, tower defense, card, visual novel, survival, puzzle, rhythm, racing, fighting, battle royale, extraction, sports, MMO, idle, stealth, horror, bullet-hell.",
       "skills": [
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
@@ -388,7 +393,8 @@
         "./skills/genres/survival-crafting",
         "./skills/genres/puzzle",
         "./skills/genres/rts-game",
-        "./skills/genres/management-sim"
+        "./skills/genres/management-sim",
+        "./skills/genres/bullet-hell"
       ]
     },
     {

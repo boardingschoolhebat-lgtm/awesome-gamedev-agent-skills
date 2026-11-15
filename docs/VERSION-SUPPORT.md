@@ -17,6 +17,8 @@ metadata unless the user explicitly asks for migration.
 | PixiJS | 8.22 | `package.json` + lockfile; [PixiJS releases](https://pixijs.com/blog) |
 | three.js | r187 (npm 0.187.0 at last check) | `package.json` + lockfile; [three.js releases](https://github.com/mrdoob/three.js/releases) |
 | Bevy | 0.20 | `Cargo.toml` + `Cargo.lock`; [Bevy 0.20](https://bevy.org/news/bevy-0-20/) and [migration guide](https://bevy.org/learn/migration-guides/0-19-to-0-20/) |
+| MonoGame | 3.8.6.1 / .NET 10 SDK | `PackageReference` in the platform `.csproj`; [releases](https://github.com/MonoGame/MonoGame/releases) and [3.8.6 notes](https://monogame.net/blog/2026-10-26-3.8.6-release-2026) |
+| GameMaker | LTS 2026.0 | `*.yyp`; [release notes](https://gamemaker.io/en/blog) |
 | pygame-ce | 2.5.8 | Python dependency/lockfile; [pygame-ce releases](https://github.com/pygame-community/pygame-ce/releases) |
 | LÖVE | 11.5 (12.0 not yet released) | `conf.lua` / `main.lua`; [LÖVE releases](https://love2d.org/wiki/Version_History) |
 | Defold | 1.14.0 (examples built with Bob 1.14.0 and run on the 1.14.0 headless engine; checked 2026-10-23) | `game.project` has no version key: the editor/`bob.jar` version the project is built with, `library.defold_min_version`; [stable release info](https://d.defold.com/stable/info.json), [1.14.0 release](https://github.com/defold/defold/releases/tag/1.14.0) and [Bob manual](https://defold.com/manuals/bob/) |

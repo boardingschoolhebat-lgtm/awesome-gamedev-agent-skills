@@ -3,7 +3,7 @@
 Cross-engine Agent Skills organized by game-development discipline — for example
 art direction and asset production, gameplay programming, physics, AI, audio,
 shaders/graphics, UI/UX, localization, tools, performance optimization, animation
-architecture, netcode, economy and combat balancing, quest structure, procedural audio, editor tooling,
+architecture, netcode, economy and combat balancing, quest structure, tutorial/onboarding design, procedural audio, editor tooling,
 UI architecture, matchmaking, mod support, live operations, analytics, co-op design, localization QA, and accessibility testing.
 
 Each subdirectory is one skill: a folder containing a `SKILL.md` (and optional

@@ -21,6 +21,8 @@ Scan for the highest-confidence signal and stop at the first match in this prece
 | 10 | LÖVE | `conf.lua`, or `main.lua` calling `love.*` | `*.love` | `skills/other-engines/love2d-core/` |
 | 11 | pygame | `*.py` with `import pygame` | `pygame.init()`, `pygame.display.set_mode` | `skills/other-engines/pygame-core/` |
 | 12 | Roblox | `*.rbxl` / `*.rbxlx`, or `*.project.json` (Rojo) | `*.luau`, `DataStoreService`, `game:GetService` | `skills/other-engines/roblox-*` (`roblox-luau` first, then the focused Roblox skill) |
+| 13 | GameMaker | `*.yyp` | `*.yy`, `*.gml`, `obj_*`/`rm_*` resources, `instance_create_layer` | `skills/other-engines/gamemaker-core/` |
+| 14 | MonoGame | `.csproj` referencing `MonoGame.Framework.*` | `Game1.cs`, `GraphicsDeviceManager`, `SpriteBatch`, `Content.RootDirectory`, `Content.mgcb` or a Content Builder project | `skills/other-engines/monogame-core/` |
 
 ## Detect the installed version
 
@@ -38,6 +40,8 @@ Engine identity is not enough. Read the version source before using version-sens
 | Defold | `game.project` has no engine version key: use the editor or `bob.jar` version the project is built with (a release or sha1 pinned in CI or docs; `java -jar bob.jar --version`), and `library.defold_min_version` when present |
 | LÖVE | `conf.lua` version when declared, then the installed runtime |
 | Roblox | platform APIs are rolling; inspect current Creator Hub documentation for unstable APIs |
+| GameMaker | `*.yyp` `IDEVersion` / resource format, or the LTS release the project targets |
+| MonoGame | `PackageReference` version in the platform `.csproj`, then `dotnet --version` for the SDK |
 
 For a new project use the baseline stated in the engine skill (the catalog-wide table is
 `docs/VERSION-SUPPORT.md` in the source repository). For an existing project,
@@ -45,10 +49,11 @@ preserve the detected version unless the user explicitly requests migration.
 
 ## Disambiguation rules (must-handle ambiguities)
 
-- **Godot C# vs Unity vs Bevy** — all may contain a `.csproj` or `Cargo.toml`. The presence of
+- **Godot C# vs Unity vs Bevy vs MonoGame** — all may contain a `.csproj` or `Cargo.toml`. The presence of
   `project.godot` means **Godot** (route `godot-csharp` for C# work) even when a `.csproj`
   exists. Unity requires the `Assets/` + `ProjectSettings/` pair, not just any `.cs`. Bevy
-  requires a `bevy` dependency, not just any Rust crate.
+  requires a `bevy` dependency, not just any Rust crate. MonoGame requires a
+  `MonoGame.Framework.*` package reference, not just any C# project.
 - **Ebitengine vs unrelated Go code** — a generic `go.mod` is not an engine signal. Require
   the Ebitengine v2 dependency or imports and confirm the requested package is the game;
   an editor/tool or another engine's project can use the dependency without being an

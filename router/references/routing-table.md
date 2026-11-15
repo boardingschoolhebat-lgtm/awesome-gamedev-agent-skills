@@ -98,6 +98,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
+| `monogame-core` | MonoGame, XNA, FNA, `.csproj` with `MonoGame.Framework`, Game1, SpriteBatch, Content Builder, MGCB, `.mgcb`, Content.Load, DesktopGL | `game-feel` / `level-design` + engine-independent disciplines |
 | `gamemaker-core` | GameMaker, GML, `.yyp`/`.yy`/`.gml`, object events, `instance_create_layer`, `place_meeting`, rooms/layers, draw event, GameMaker save | `game-feel` / `level-design` + engine-independent disciplines |
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `bevy-save` | "Bevy save", save file, save slots, serde, RON, save migration, corrupt save; `*.json`/`*.ron` save files |
@@ -148,6 +149,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `shader-programming` | shader, fragment shader, dissolve/outline effect, GLSL/HLSL; `*.gdshader`/`*.shader`/`*.hlsl` | `godot-shaders` / engine material docs |
 | `physics-tuning` | physics feel, jitter/tunneling, fixed timestep, collision tuning | `godot-physics` / `unity-physics` |
 | `level-design` | level design, whitebox/blockout, tilemap layout, pacing | `godot-tilemap` / `unity-tilemap-2d` / `godot-3d-essentials` (GridMap) |
+| `tutorial-design` | tutorial, onboarding, teach the player, first 10 minutes, prompt, tooltip, tutorial skip, comprehension, new-player drop-off | `level-design` + `game-ui-ux` + `playtest-qa` + `accessibility` |
 | `input-systems` | input mapping, rebind controls, gamepad support, input buffering; `*.inputactions`/IMC | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
 | `game-feel` | game feel, juice, screen shake, hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |
@@ -177,6 +179,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `roguelike` | roguelike, procedural dungeon, permadeath, turn-based grid | `procedural-gen` + `godot-tilemap`/`unity-tilemap-2d` + `game-ai` + `save-systems` + `game-feel` |
 | `rpg` | RPG, stats/leveling, inventory, quest system | `godot-resources`/`unity-scriptableobjects` + `dialogue-systems` + `save-systems` + `game-ui-ux` |
 | `fps-shooter` | FPS, first-person shooter, hitscan, aim/shoot | `godot-3d-essentials`/`unity-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |
+| `bullet-hell` | bullet hell, bullet-hell, danmaku, shmup, shoot-em-up, tiny hitbox, grazing, boss pattern, spell card, bullet curtain | `game-feel` + `audio-design` + `performance-optimization` + `level-design` |
 | `tower-defense` | tower defense, wave spawner, enemy path, tower targeting | `game-ai` + `godot-2d-movement`/engine movement + `level-design` + `game-ui-ux` |
 | `card-game` | card game, deckbuilder, hand/deck/discard, TCG | `godot-resources`/`unity-scriptableobjects` + `game-ui-ux` + `godot-ui-control` (engine UI) |
 | `visual-novel` | visual novel, VN, branching story, choice menu, Ren'Py; `*.ink`/`*.yarn`/`*.rpy` | `dialogue-systems` + `save-systems` + `game-ui-ux` |
