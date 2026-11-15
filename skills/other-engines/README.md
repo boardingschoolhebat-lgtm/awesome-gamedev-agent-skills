@@ -1,6 +1,8 @@
 # Other engine skills
 
-Thirty-two Agent Skills for Bevy 0.20, pygame-ce 2.5.8, LÖVE 11.5, Defold 1.14.0, and Roblox.
+Thirty-three Agent Skills for GameMaker LTS 2026.0, Bevy 0.20, pygame-ce 2.5.8, LÖVE 11.5,
+Defold 1.14.0, and Roblox. GameMaker coverage starts with GML objects, events, rooms, collisions,
+drawing and JSON saves.
 Bevy adds serde save files and a texture-atlas tilemap on top of the ECS core; LÖVE and pygame coverage includes tile levels
 on top of their core loop, and both add saves (LÖVE through `love.filesystem`, pygame through
 stdlib JSON) and cameras; Defold coverage includes core game structure, GUI scenes, tile levels, collision

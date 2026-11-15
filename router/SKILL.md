@@ -97,7 +97,8 @@ After the engine, read the request for task signals (three **additive** categori
   "optimize/low FPS", "animation state machine", "netcode/prediction", "economy/sinks").
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
-  `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`, `sports-game`, `mmorpg`, `idle-incremental`. Triggered by genre words ("make a roguelike", "deckbuilder").
+  `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`, `sports-game`, `mmorpg`, `idle-incremental`, `stealth-game`,
+  `horror-game`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
   `itch-publish`, `playtest-qa`, `platform-cert`. Triggered by process words ("publish on Steam",
   "vertical slice", "playtest", "bug triage", "console certification").
@@ -135,7 +136,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `phaser-ui`, `phaser-animation`, `phaser-audio`; `pixijs-rendering` (+ `pixijs-ui`,
   `pixijs-animation`); `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`,
   `threejs-ui`.
-- **Other** (`skills/other-engines/`): `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`,
+- **Other** (`skills/other-engines/`): `gamemaker-core` (GML objects/events, rooms/layers,
+  collisions, drawing, JSON saves); `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`,
   `bevy-audio`), `pygame-core` (+ `pygame-tilemap`, `pygame-save`, `pygame-camera`), `love2d-core`
   (+ `love2d-tilemap`, `love2d-save`, `love2d-camera`); Defold
   `defold-core` (collections, game objects, scripts, input, messages, factories, proxies,

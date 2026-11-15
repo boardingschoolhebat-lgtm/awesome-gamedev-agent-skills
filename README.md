@@ -4,24 +4,24 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 148 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 151 skills and a router across 12 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**148 game-dev skills for your AI coding agent — install once, and a router loads the
+**151 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-148%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-151%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **148 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **151 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
-- **Cross-engine.** Godot, Unity, Unreal, Ebitengine, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Defold, Roblox.
+- **Cross-engine.** Godot, Unity, Unreal, Ebitengine, Phaser, PixiJS, three.js, GameMaker, Bevy, pygame, LÖVE, Defold, Roblox.
 - **You don't pick skills.** The router detects your engine and task and loads only what fits.
 - **Art direction, not one-off generations.** The asset workflow locks a visual target, builds
   families, normalizes outputs deterministically, and checks them inside the game.
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 148 skills into the right place:
+coding agent you already use and installs the router plus all 151 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-148 skills across 9 categories — each links to its `SKILL.md` below.
+151 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -230,10 +230,11 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`threejs-materials-lighting`](skills/web-engines/threejs-materials-lighting/SKILL.md) | Materials (PBR), lights, shadows, environment maps |
 | [`threejs-ui`](skills/web-engines/threejs-ui/SKILL.md) | HTML HUD overlays, CSS2D/CSS3D renderers, raycasted 3D buttons, responsive layering |
 
-#### Other engines — 32 ([`skills/other-engines/`](skills/other-engines/)) · Bevy · pygame · LÖVE · Defold · Roblox
+#### Other engines — 33 ([`skills/other-engines/`](skills/other-engines/)) · GameMaker · Bevy · pygame · LÖVE · Defold · Roblox
 
 | Skill | Scope |
 |-------|-------|
+| [`gamemaker-core`](skills/other-engines/gamemaker-core/SKILL.md) | GameMaker LTS 2026.0: GML objects/events, rooms/layers, structs, collisions, drawing, JSON saves |
 | [`bevy-ecs`](skills/other-engines/bevy-ecs/SKILL.md) | Bevy app + ECS: components, systems, queries, resources, plugins (Bevy 0.20) |
 | [`bevy-save`](skills/other-engines/bevy-save/SKILL.md) | Bevy saves: serde resources, atomic temp-file writes, versions/migrations, backup recovery |
 | [`bevy-tilemap`](skills/other-engines/bevy-tilemap/SKILL.md) | Bevy tile levels: `TextureAtlasLayout` sprites, chunk culling, grid collision, runtime edits |
@@ -305,7 +306,7 @@ Cross-engine concepts that load alongside the detected engine skill.
 | [`localization-qa`](skills/disciplines/localization-qa/SKILL.md) | String freeze/context, ICU plurals, pseudo-loc, expansion, fonts, RTL, LQA severity |
 | [`accessibility-testing`](skills/disciplines/accessibility-testing/SKILL.md) | Contrast math, colorblind/motion checks, captions, input-only audit, screen-reader limits |
 
-### Genres — 17 ([`skills/genres/`](skills/genres/))
+### Genres — 19 ([`skills/genres/`](skills/genres/))
 
 Compositional templates that orchestrate engine + discipline skills; they never re-teach
 primitives.
@@ -329,6 +330,8 @@ primitives.
 | [`sports-game`](skills/genres/sports-game/SKILL.md) | Ball physics, rules engine/officials, team AI roles, match clock, broadcast camera, replays |
 | [`mmorpg`](skills/genres/mmorpg/SKILL.md) | Shards/zones, persistence, interest management, chat/moderation, guilds, auction, cadence |
 | [`idle-incremental`](skills/genres/idle-incremental/SKILL.md) | Generators/multipliers, cost curves, offline earnings, prestige, automation, big numbers |
+| [`stealth-game`](skills/genres/stealth-game/SKILL.md) | Vision cones, hearing/light, suspicion meters, patrol/search AI, takedowns, level routes |
+| [`horror-game`](skills/genres/horror-game/SKILL.md) | Vulnerability, resource scarcity, monster rules, chase/hide, pacing, restrained scares |
 
 ### Workflows — 6 ([`skills/workflows/`](skills/workflows/))
 
@@ -413,7 +416,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        148 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        151 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

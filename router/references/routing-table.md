@@ -98,6 +98,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
+| `gamemaker-core` | GameMaker, GML, `.yyp`/`.yy`/`.gml`, object events, `instance_create_layer`, `place_meeting`, rooms/layers, draw event, GameMaker save | `game-feel` / `level-design` + engine-independent disciplines |
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `bevy-save` | "Bevy save", save file, save slots, serde, RON, save migration, corrupt save; `*.json`/`*.ron` save files |
 | `bevy-audio` | "Bevy audio", `AudioPlayer`, `PlaybackSettings`, `AudioSink`, spatial audio, `AudioListener`, music |
@@ -187,6 +188,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `sports-game` | sports game, soccer, football, basketball, hockey, ball physics, team AI, match rules, replay | `physics-tuning` + `game-ai` + `multiplayer-netcode` + `camera-systems` |
 | `mmorpg` | MMORPG, MMO, shard, persistent world, guild, auction house, chat moderation, group finder | `multiplayer-netcode` + `game-economy` + `quest-design` + `liveops` |
 | `idle-incremental` | idle game, incremental, clicker, tycoon, offline earnings, prestige, automation, big numbers | `game-economy` + `save-systems` + `game-ui-ux` |
+| `stealth-game` | stealth, stealth game, vision cone, detection meter, suspicion, patrol AI, takedown, hiding | `game-ai` + `level-design` + `audio-design` + `game-ui-ux` |
+| `horror-game` | horror game, survival horror, monster chase, hide, jumpscare, resource scarcity, atmosphere | `audio-design` + `level-design` + `game-ai` + `accessibility-testing` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 
 ## Workflows (`skills/workflows/`) — process & shipping, engine-independent
