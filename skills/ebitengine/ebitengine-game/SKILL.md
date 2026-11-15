@@ -24,6 +24,17 @@ public API before using newer or experimental APIs. References contain patterns
 to adapt; only the bundled scripts and starter are executable deliverables.
 Their checks do not validate every reference snippet.
 
+## When to use
+
+- Use for Ebitengine game requests: a new playable game, a complete loop, input, rendering,
+  text, audio, scenes, gameplay tests, or desktop, browser and mobile packaging.
+- Use when fixing or extending one of those systems in an existing Ebitengine project.
+- Use when the project imports `github.com/hajimehoshi/ebiten/v2`.
+
+**When *not* to use:** unrelated Go software that merely depends on Ebitengine → its own domain
+skill; engine-internal patches; a focused subsystem with its own skill → `ebitengine-ui`,
+`ebitengine-audio`, `ebitengine-save`.
+
 ## Delivery workflow
 
 1. **Inspect and decide.** Read repository instructions, `go.mod`, the `RunGame`

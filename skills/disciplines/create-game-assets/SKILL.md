@@ -8,6 +8,17 @@ description: Plan, generate, source, normalize, and validate cohesive visual gam
 Turn a game's visual intent into a consistent, engine-ready asset set. Treat image generation as
 one production tool inside a controlled pipeline, never as proof that an asset is shippable.
 
+## When to use
+
+- Use when planning or producing a cohesive visual set: art direction, a style bible, sprites,
+  tilesets, backgrounds, UI art, icons, textures, concept art, or a 3D asset brief.
+- Use when generated or sourced assets must be normalized, validated, and imported consistently.
+- Use when an existing art set needs a manifest, provenance, or a quality gate before shipping.
+
+**When *not* to use:** engine import/runtime rendering code → the detected engine skill
+(`godot-*`, `unity-*`, `unreal-*`, …); audio assets → `audio-design`; animation state machines
+→ `animation-systems`; one disposable image with no pipeline → the image tool directly.
+
 ## Core workflow
 
 1. **Inspect before inventing.** Find existing screenshots, concept art, sprites, models, fonts,
