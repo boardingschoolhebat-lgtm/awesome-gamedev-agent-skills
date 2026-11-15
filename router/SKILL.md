@@ -2,7 +2,7 @@
 name: router
 description: >
   Routes any game-development request to the right specialized skill(s): it detects the engine
-  (Godot, Unity, Unreal, Ebitengine, Bevy, Phaser, PixiJS, three.js, Defold, LÖVE, pygame, Roblox, GameMaker, MonoGame) and the task, then
+  (Godot, Unity, Unreal, Ebitengine, Bevy, Phaser, PixiJS, three.js, Defold, LÖVE, pygame, Roblox, GameMaker, MonoGame, Flame) and the task, then
   reads the chosen skill before acting. Use to make a game or to decide which skill applies — for
   players, levels, enemies, shaders, art direction, sprites, tiles, textures, 3D assets, UI/UX,
   cameras, game feel, physics, input, audio, saving, multiplayer, AI, dialogue, procedural
@@ -73,6 +73,7 @@ Check the target's build and runtime entry point before treating a bundled libra
 | 12 | Roblox | `*.rbxl(x)` / `*.project.json` (Rojo) | `skills/other-engines/roblox-*` |
 | 13 | GameMaker | `*.yyp` | `skills/other-engines/gamemaker-core/` |
 | 14 | MonoGame | `.csproj` referencing `MonoGame.Framework.*` | `skills/other-engines/monogame-core/` |
+| 15 | Flame | `pubspec.yaml` dep `flame` | `skills/other-engines/flame-engine/` |
 
 For secondary signals, the Godot-C#/Unity/Bevy, Defold/LÖVE/Lua and multi-web disambiguation
 rules, monorepos, and plain-text engine mentions, read `references/engine-detection.md`.
@@ -139,7 +140,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
   `pixijs-animation`); `threejs-scene-setup`, `threejs-gltf-loading`, `threejs-materials-lighting`,
   `threejs-ui`.
 - **Other** (`skills/other-engines/`): `monogame-core` (C# game loop, SpriteBatch, Content Builder,
-  input, collision, audio, publishing); `gamemaker-core` (GML objects/events, rooms/layers,
+  input, collision, audio, publishing); `flame-engine` (Dart/Flutter components, world/camera,
+  collision, builds); `gamemaker-core` (GML objects/events, rooms/layers,
   collisions, drawing, JSON saves); `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`,
   `bevy-audio`), `pygame-core` (+ `pygame-tilemap`, `pygame-save`, `pygame-camera`), `love2d-core`
   (+ `love2d-tilemap`, `love2d-save`, `love2d-camera`); Defold

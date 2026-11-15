@@ -98,6 +98,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
+| `flame-engine` | Flame, Flutter game, FlameGame, `pubspec.yaml` flame, PositionComponent, FlameGame camera, CollisionCallbacks, SpriteAnimationComponent | `game-feel` / `level-design` + engine-independent disciplines |
 | `monogame-core` | MonoGame, XNA, FNA, `.csproj` with `MonoGame.Framework`, Game1, SpriteBatch, Content Builder, MGCB, `.mgcb`, Content.Load, DesktopGL | `game-feel` / `level-design` + engine-independent disciplines |
 | `gamemaker-core` | GameMaker, GML, `.yyp`/`.yy`/`.gml`, object events, `instance_create_layer`, `place_meeting`, rooms/layers, draw event, GameMaker save | `game-feel` / `level-design` + engine-independent disciplines |
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
@@ -150,6 +151,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `physics-tuning` | physics feel, jitter/tunneling, fixed timestep, collision tuning | `godot-physics` / `unity-physics` |
 | `level-design` | level design, whitebox/blockout, tilemap layout, pacing | `godot-tilemap` / `unity-tilemap-2d` / `godot-3d-essentials` (GridMap) |
 | `tutorial-design` | tutorial, onboarding, teach the player, first 10 minutes, prompt, tooltip, tutorial skip, comprehension, new-player drop-off | `level-design` + `game-ui-ux` + `playtest-qa` + `accessibility` |
+| `narrative-design` | narrative design, story structure, premise, theme, character arc, beat sheet, branching story, choice and consequence, environmental storytelling, ludonarrative | `dialogue-systems` + `quest-design` + `level-design` |
+| `boss-design` | boss fight, boss design, encounter design, phase transition, telegraph, moveset, arena, adds, checkpoint, boss metrics | `game-ai` + `game-balance` + `level-design` + `audio-design` |
 | `input-systems` | input mapping, rebind controls, gamepad support, input buffering; `*.inputactions`/IMC | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
 | `game-feel` | game feel, juice, screen shake, hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |

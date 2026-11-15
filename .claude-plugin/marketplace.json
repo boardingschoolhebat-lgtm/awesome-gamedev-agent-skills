@@ -10,7 +10,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 157 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 160 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -170,7 +170,10 @@
         "./skills/genres/management-sim",
         "./skills/other-engines/monogame-core",
         "./skills/genres/bullet-hell",
-        "./skills/disciplines/tutorial-design"
+        "./skills/disciplines/tutorial-design",
+        "./skills/other-engines/flame-engine",
+        "./skills/disciplines/narrative-design",
+        "./skills/disciplines/boss-design"
       ]
     },
     {
@@ -288,7 +291,7 @@
       "name": "other-engines",
       "source": "./",
       "strict": false,
-      "description": "MonoGame, GameMaker, Bevy, pygame, LÖVE, Defold, and production-focused Roblox engine skills.",
+      "description": "MonoGame, Flame, GameMaker, Bevy, pygame, LÖVE, Defold, and production-focused Roblox engine skills.",
       "skills": [
         "./skills/other-engines/bevy-ecs",
         "./skills/other-engines/bevy-save",
@@ -323,14 +326,15 @@
         "./skills/other-engines/roblox-physics",
         "./skills/other-engines/roblox-studio-workflow",
         "./skills/other-engines/roblox-simulator-economy",
-        "./skills/other-engines/monogame-core"
+        "./skills/other-engines/monogame-core",
+        "./skills/other-engines/flame-engine"
       ]
     },
     {
       "name": "disciplines",
       "source": "./",
       "strict": false,
-      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, tutorial design, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
+      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, tutorial design, narrative, boss encounters, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
       "skills": [
         "./skills/disciplines/create-game-assets",
         "./skills/disciplines/game-ai",
@@ -364,7 +368,9 @@
         "./skills/disciplines/localization-qa",
         "./skills/disciplines/accessibility-testing",
         "./skills/disciplines/game-balance",
-        "./skills/disciplines/tutorial-design"
+        "./skills/disciplines/tutorial-design",
+        "./skills/disciplines/narrative-design",
+        "./skills/disciplines/boss-design"
       ]
     },
     {

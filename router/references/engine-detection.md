@@ -23,6 +23,7 @@ Scan for the highest-confidence signal and stop at the first match in this prece
 | 12 | Roblox | `*.rbxl` / `*.rbxlx`, or `*.project.json` (Rojo) | `*.luau`, `DataStoreService`, `game:GetService` | `skills/other-engines/roblox-*` (`roblox-luau` first, then the focused Roblox skill) |
 | 13 | GameMaker | `*.yyp` | `*.yy`, `*.gml`, `obj_*`/`rm_*` resources, `instance_create_layer` | `skills/other-engines/gamemaker-core/` |
 | 14 | MonoGame | `.csproj` referencing `MonoGame.Framework.*` | `Game1.cs`, `GraphicsDeviceManager`, `SpriteBatch`, `Content.RootDirectory`, `Content.mgcb` or a Content Builder project | `skills/other-engines/monogame-core/` |
+| 15 | Flame | `pubspec.yaml` dep `flame` | `FlameGame`, `GameWidget`, `PositionComponent`, `HasCollisionDetection`, `flame_audio` | `skills/other-engines/flame-engine/` |
 
 ## Detect the installed version
 
@@ -42,6 +43,7 @@ Engine identity is not enough. Read the version source before using version-sens
 | Roblox | platform APIs are rolling; inspect current Creator Hub documentation for unstable APIs |
 | GameMaker | `*.yyp` `IDEVersion` / resource format, or the LTS release the project targets |
 | MonoGame | `PackageReference` version in the platform `.csproj`, then `dotnet --version` for the SDK |
+| Flame | `pubspec.yaml` + `pubspec.lock` for `flame`, then the Flutter/Dart SDK constraint |
 
 For a new project use the baseline stated in the engine skill (the catalog-wide table is
 `docs/VERSION-SUPPORT.md` in the source repository). For an existing project,
@@ -49,7 +51,8 @@ preserve the detected version unless the user explicitly requests migration.
 
 ## Disambiguation rules (must-handle ambiguities)
 
-- **Godot C# vs Unity vs Bevy vs MonoGame** — all may contain a `.csproj` or `Cargo.toml`. The presence of
+- **Flutter app vs Flame game** — a `pubspec.yaml` with `flame` is a Flame game; a plain
+  Flutter app without a game loop is not. **Godot C# vs Unity vs Bevy vs MonoGame** — all may contain a `.csproj` or `Cargo.toml`. The presence of
   `project.godot` means **Godot** (route `godot-csharp` for C# work) even when a `.csproj`
   exists. Unity requires the `Assets/` + `ProjectSettings/` pair, not just any `.cs`. Bevy
   requires a `bevy` dependency, not just any Rust crate. MonoGame requires a

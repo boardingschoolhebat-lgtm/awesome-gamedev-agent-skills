@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 157 skills and a router across 14 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 160 skills and a router across 15 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**157 game-dev skills for your AI coding agent — install once, and a router loads the
+**160 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-157%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-160%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **157 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **160 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 157 skills into the right place:
+coding agent you already use and installs the router plus all 160 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-157 skills across 9 categories — each links to its `SKILL.md` below.
+160 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -230,11 +230,12 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`threejs-materials-lighting`](skills/web-engines/threejs-materials-lighting/SKILL.md) | Materials (PBR), lights, shadows, environment maps |
 | [`threejs-ui`](skills/web-engines/threejs-ui/SKILL.md) | HTML HUD overlays, CSS2D/CSS3D renderers, raycasted 3D buttons, responsive layering |
 
-#### Other engines — 34 ([`skills/other-engines/`](skills/other-engines/)) · MonoGame · GameMaker · Bevy · pygame · LÖVE · Defold · Roblox
+#### Other engines — 35 ([`skills/other-engines/`](skills/other-engines/)) · MonoGame · Flame · GameMaker · Bevy · pygame · LÖVE · Defold · Roblox
 
 | Skill | Scope |
 |-------|-------|
 | [`monogame-core`](skills/other-engines/monogame-core/SKILL.md) | MonoGame 3.8.6 (C#/.NET 10): Game loop, SpriteBatch, Content Builder, input, collision, audio, publishing |
+| [`flame-engine`](skills/other-engines/flame-engine/SKILL.md) | Flame 1.38 (Dart/Flutter): components, world/camera, sprites, collision, input, audio, web/mobile builds |
 | [`gamemaker-core`](skills/other-engines/gamemaker-core/SKILL.md) | GameMaker LTS 2026.0: GML objects/events, rooms/layers, structs, collisions, drawing, JSON saves |
 | [`bevy-ecs`](skills/other-engines/bevy-ecs/SKILL.md) | Bevy app + ECS: components, systems, queries, resources, plugins (Bevy 0.20) |
 | [`bevy-save`](skills/other-engines/bevy-save/SKILL.md) | Bevy saves: serde resources, atomic temp-file writes, versions/migrations, backup recovery |
@@ -269,7 +270,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`roblox-studio-workflow`](skills/other-engines/roblox-studio-workflow/SKILL.md) | Explorer-first place editing, structure preservation, multi-context Studio verification |
 | [`roblox-simulator-economy`](skills/other-engines/roblox-simulator-economy/SKILL.md) | Simulator/tycoon/idle economy: cost curves, buy max, rebirths, offline earnings, big-number display, server-owned purchases, paid random item odds (Lune 0.11.0 pacing calculator) |
 
-### Disciplines — 33 ([`skills/disciplines/`](skills/disciplines/))
+### Disciplines — 35 ([`skills/disciplines/`](skills/disciplines/))
 
 Cross-engine concepts that load alongside the detected engine skill.
 
@@ -291,6 +292,8 @@ Cross-engine concepts that load alongside the detected engine skill.
 | [`game-feel`](skills/disciplines/game-feel/SKILL.md) | Juice: screen shake, hit-stop, tweening/easing, squash & stretch, feedback tiers |
 | [`game-ui-ux`](skills/disciplines/game-ui-ux/SKILL.md) | Cross-engine HUD/menus: anchors, resolution scaling, safe areas, focus navigation |
 | [`tutorial-design`](skills/disciplines/tutorial-design/SKILL.md) | Onboarding beats, one-mechanic teaching, contextual prompts, safe practice, comprehension metrics |
+| [`narrative-design`](skills/disciplines/narrative-design/SKILL.md) | Premise/theme, character arcs, beat sheets, pacing, branching/foldback, choices and consequences |
+| [`boss-design`](skills/disciplines/boss-design/SKILL.md) | Encounter phases, telegraphed movesets, arena/camera, adds, checkpoints, difficulty and metrics |
 | [`camera-systems`](skills/disciplines/camera-systems/SKILL.md) | 2D follow/deadzone/look-ahead + bounds, 3D orbit/first-person, screen-shake hook |
 | [`performance-optimization`](skills/disciplines/performance-optimization/SKILL.md) | Profile-first: frame budget, CPU/GPU triage, draw calls, pooling, GC, asset budgets |
 | [`animation-systems`](skills/disciplines/animation-systems/SKILL.md) | State machines, blend trees/spaces, layers/masks, root motion, event markers, IK |
@@ -422,7 +425,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        157 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        160 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template
