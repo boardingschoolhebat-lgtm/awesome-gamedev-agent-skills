@@ -17,6 +17,7 @@ metadata unless the user explicitly asks for migration.
 | PixiJS | 8.22 | `package.json` + lockfile; [PixiJS releases](https://pixijs.com/blog) |
 | three.js | r187 (npm 0.187.0 at last check) | `package.json` + lockfile; [three.js releases](https://github.com/mrdoob/three.js/releases) |
 | Bevy | 0.20 | `Cargo.toml` + `Cargo.lock`; [Bevy 0.20](https://bevy.org/news/bevy-0-20/) and [migration guide](https://bevy.org/learn/migration-guides/0-19-to-0-20/) |
+| Ren'Py | 8.5.3 ("We Can Go to the Moon") | SDK/launcher version and `config.version`; [releases](https://www.renpy.org/release_list.html) and [docs](https://www.renpy.org/doc/html/) |
 | Flame | 1.38.2 / Dart 3.11+ | `pubspec.yaml` + `pubspec.lock`; [pub.dev](https://pub.dev/packages/flame) and [docs](https://docs.flame-engine.org/) |
 | MonoGame | 3.8.6.1 / .NET 10 SDK | `PackageReference` in the platform `.csproj`; [releases](https://github.com/MonoGame/MonoGame/releases) and [3.8.6 notes](https://monogame.net/blog/2026-10-26-3.8.6-release-2026) |
 | GameMaker | LTS 2026.0 | `*.yyp`; [release notes](https://gamemaker.io/en/blog) |

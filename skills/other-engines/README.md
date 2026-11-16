@@ -1,9 +1,10 @@
 # Other engine skills
 
-Thirty-five Agent Skills for MonoGame 3.8.6, Flame 1.38, GameMaker LTS 2026.0, Bevy 0.20,
-pygame-ce 2.5.8, LÖVE 11.5, Defold 1.14.0, and Roblox. MonoGame coverage starts with the C# game
+Thirty-six Agent Skills for MonoGame 3.8.6, Flame 1.38, Ren'Py 8.5, GameMaker LTS 2026.0,
+Bevy 0.20, pygame-ce 2.5.8, LÖVE 11.5, Defold 1.14.0, and Roblox. MonoGame coverage starts with the C# game
 loop, SpriteBatch, the 3.8.6 Content Builder, input, collision and publishing; Flame coverage
-starts with the component tree, world/camera, collision and Flutter builds; GameMaker coverage
+starts with the component tree, world/camera, collision and Flutter builds; Ren'Py coverage
+starts with script labels, menus, screen language, persistent data and builds; GameMaker coverage
 starts with GML objects, events, rooms, collisions, drawing and JSON saves.
 Bevy adds serde save files and a texture-atlas tilemap on top of the ECS core; LÖVE and pygame coverage includes tile levels
 on top of their core loop, and both add saves (LÖVE through `love.filesystem`, pygame through

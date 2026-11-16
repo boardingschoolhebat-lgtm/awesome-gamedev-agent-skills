@@ -24,6 +24,7 @@ Scan for the highest-confidence signal and stop at the first match in this prece
 | 13 | GameMaker | `*.yyp` | `*.yy`, `*.gml`, `obj_*`/`rm_*` resources, `instance_create_layer` | `skills/other-engines/gamemaker-core/` |
 | 14 | MonoGame | `.csproj` referencing `MonoGame.Framework.*` | `Game1.cs`, `GraphicsDeviceManager`, `SpriteBatch`, `Content.RootDirectory`, `Content.mgcb` or a Content Builder project | `skills/other-engines/monogame-core/` |
 | 15 | Flame | `pubspec.yaml` dep `flame` | `FlameGame`, `GameWidget`, `PositionComponent`, `HasCollisionDetection`, `flame_audio` | `skills/other-engines/flame-engine/` |
+| 16 | Ren'Py | `game/` with `*.rpy`, `script.rpy` | `label start`, `define Character`, `screen`, `renpy.` calls, `options.rpy` | `skills/other-engines/renpy-engine/` |
 
 ## Detect the installed version
 
@@ -44,6 +45,7 @@ Engine identity is not enough. Read the version source before using version-sens
 | GameMaker | `*.yyp` `IDEVersion` / resource format, or the LTS release the project targets |
 | MonoGame | `PackageReference` version in the platform `.csproj`, then `dotnet --version` for the SDK |
 | Flame | `pubspec.yaml` + `pubspec.lock` for `flame`, then the Flutter/Dart SDK constraint |
+| Ren'Py | `renpy/` version in the project or the launcher build, `config.version` in `options.rpy` |
 
 For a new project use the baseline stated in the engine skill (the catalog-wide table is
 `docs/VERSION-SUPPORT.md` in the source repository). For an existing project,
