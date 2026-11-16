@@ -98,6 +98,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
+| `twine-engine` | Twine, `.twee`, passage, Harlowe, SugarCube, StoryInit, Twine save, `tw-storydata` | `visual-novel` + `narrative-design` |
 | `renpy-engine` | Ren'Py, `.rpy`, `label start`, Ren'Py screen, say/menu, persistent, `renpy.save`, Ren'Py build | `visual-novel` + `narrative-design` + `dialogue-systems` |
 | `flame-engine` | Flame, Flutter game, FlameGame, `pubspec.yaml` flame, PositionComponent, FlameGame camera, CollisionCallbacks, SpriteAnimationComponent | `game-feel` / `level-design` + engine-independent disciplines |
 | `monogame-core` | MonoGame, XNA, FNA, `.csproj` with `MonoGame.Framework`, Game1, SpriteBatch, Content Builder, MGCB, `.mgcb`, Content.Load, DesktopGL | `game-feel` / `level-design` + engine-independent disciplines |
@@ -155,6 +156,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `narrative-design` | narrative design, story structure, premise, theme, character arc, beat sheet, branching story, choice and consequence, environmental storytelling, ludonarrative | `dialogue-systems` + `quest-design` + `level-design` |
 | `boss-design` | boss fight, boss design, encounter design, phase transition, telegraph, moveset, arena, adds, checkpoint, boss metrics | `game-ai` + `game-balance` + `level-design` + `audio-design` |
 | `combat-design` | combat design, melee combat, frame data, startup/active/recovery, hitstop, hitstun, poise, parry, dodge i-frames, attack cancel, enemy tell | `game-feel` + `game-ai` + `game-balance` + `animation-systems` |
+| `puzzle-design` | puzzle design, puzzle mechanic, rule set, level grammar, teach without text, hint ladder, solvability, softlock, solver | `level-design` + `tutorial-design` + `game-ui-ux` |
 | `input-systems` | input mapping, rebind controls, gamepad support, input buffering; `*.inputactions`/IMC | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
 | `game-feel` | game feel, juice, screen shake, hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |
@@ -182,6 +184,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 |-------------|------------------|---------------------------------------------|
 | `platformer` | platformer, jump mechanic, double jump, wall jump, wall slide, Mario-like | `godot-2d-movement`/`unity-2d-movement` (or engine physics) + `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `camera-systems` + `game-feel` |
 | `metroidvania` | metroidvania, ability gate, lock and key, backtracking, shortcut, map fog, sequence break, save room, interconnected map | `platformer` + `level-design` + `save-systems` + `game-ai` + `ui-architecture` |
+| `soulslike` | soulslike, souls-like, stamina combat, bonfire, checkpoint respawn, currency drop, corpse run, shortcut loop, punishing action RPG | `combat-design` + `boss-design` + `level-design` + `game-economy` |
 | `roguelike` | roguelike, procedural dungeon, permadeath, turn-based grid | `procedural-gen` + `godot-tilemap`/`unity-tilemap-2d` + `game-ai` + `save-systems` + `game-feel` |
 | `rpg` | RPG, stats/leveling, inventory, quest system | `godot-resources`/`unity-scriptableobjects` + `dialogue-systems` + `save-systems` + `game-ui-ux` |
 | `fps-shooter` | FPS, first-person shooter, hitscan, aim/shoot | `godot-3d-essentials`/`unity-3d-essentials`/`unreal-cpp-gameplay` + `input-systems` + `game-ai` + `camera-systems` + `game-feel` |

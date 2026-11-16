@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 163 skills and a router across 16 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 166 skills and a router across 17 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**163 game-dev skills for your AI coding agent — install once, and a router loads the
+**166 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-163%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-166%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **163 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **166 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 163 skills into the right place:
+coding agent you already use and installs the router plus all 166 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-163 skills across 9 categories — each links to its `SKILL.md` below.
+166 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -230,13 +230,14 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`threejs-materials-lighting`](skills/web-engines/threejs-materials-lighting/SKILL.md) | Materials (PBR), lights, shadows, environment maps |
 | [`threejs-ui`](skills/web-engines/threejs-ui/SKILL.md) | HTML HUD overlays, CSS2D/CSS3D renderers, raycasted 3D buttons, responsive layering |
 
-#### Other engines — 36 ([`skills/other-engines/`](skills/other-engines/)) · MonoGame · Flame · Ren'Py · GameMaker · Bevy · pygame · LÖVE · Defold · Roblox
+#### Other engines — 37 ([`skills/other-engines/`](skills/other-engines/)) · MonoGame · Flame · Ren'Py · Twine · GameMaker · Bevy · pygame · LÖVE · Defold · Roblox
 
 | Skill | Scope |
 |-------|-------|
 | [`monogame-core`](skills/other-engines/monogame-core/SKILL.md) | MonoGame 3.8.6 (C#/.NET 10): Game loop, SpriteBatch, Content Builder, input, collision, audio, publishing |
 | [`flame-engine`](skills/other-engines/flame-engine/SKILL.md) | Flame 1.38 (Dart/Flutter): components, world/camera, sprites, collision, input, audio, web/mobile builds |
 | [`renpy-engine`](skills/other-engines/renpy-engine/SKILL.md) | Ren'Py 8.5: script labels/menus, images/transitions, screen language, persistent data, saves, builds |
+| [`twine-engine`](skills/other-engines/twine-engine/SKILL.md) | Twine 2.12: passages/links, Harlowe/SugarCube variables, saves, styling, HTML publishing |
 | [`gamemaker-core`](skills/other-engines/gamemaker-core/SKILL.md) | GameMaker LTS 2026.0: GML objects/events, rooms/layers, structs, collisions, drawing, JSON saves |
 | [`bevy-ecs`](skills/other-engines/bevy-ecs/SKILL.md) | Bevy app + ECS: components, systems, queries, resources, plugins (Bevy 0.20) |
 | [`bevy-save`](skills/other-engines/bevy-save/SKILL.md) | Bevy saves: serde resources, atomic temp-file writes, versions/migrations, backup recovery |
@@ -271,7 +272,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`roblox-studio-workflow`](skills/other-engines/roblox-studio-workflow/SKILL.md) | Explorer-first place editing, structure preservation, multi-context Studio verification |
 | [`roblox-simulator-economy`](skills/other-engines/roblox-simulator-economy/SKILL.md) | Simulator/tycoon/idle economy: cost curves, buy max, rebirths, offline earnings, big-number display, server-owned purchases, paid random item odds (Lune 0.11.0 pacing calculator) |
 
-### Disciplines — 36 ([`skills/disciplines/`](skills/disciplines/))
+### Disciplines — 37 ([`skills/disciplines/`](skills/disciplines/))
 
 Cross-engine concepts that load alongside the detected engine skill.
 
@@ -296,6 +297,7 @@ Cross-engine concepts that load alongside the detected engine skill.
 | [`narrative-design`](skills/disciplines/narrative-design/SKILL.md) | Premise/theme, character arcs, beat sheets, pacing, branching/foldback, choices and consequences |
 | [`boss-design`](skills/disciplines/boss-design/SKILL.md) | Encounter phases, telegraphed movesets, arena/camera, adds, checkpoints, difficulty and metrics |
 | [`combat-design`](skills/disciplines/combat-design/SKILL.md) | Commitment/cancel windows, frame data, hit-stop/hitstun, block/parry/dodge, enemy tells, crowds |
+| [`puzzle-design`](skills/disciplines/puzzle-design/SKILL.md) | Rule-first puzzles, level grammar, teaching without text, hint ladder, solvability and metrics |
 | [`camera-systems`](skills/disciplines/camera-systems/SKILL.md) | 2D follow/deadzone/look-ahead + bounds, 3D orbit/first-person, screen-shake hook |
 | [`performance-optimization`](skills/disciplines/performance-optimization/SKILL.md) | Profile-first: frame budget, CPU/GPU triage, draw calls, pooling, GC, asset budgets |
 | [`animation-systems`](skills/disciplines/animation-systems/SKILL.md) | State machines, blend trees/spaces, layers/masks, root motion, event markers, IK |
@@ -314,7 +316,7 @@ Cross-engine concepts that load alongside the detected engine skill.
 | [`localization-qa`](skills/disciplines/localization-qa/SKILL.md) | String freeze/context, ICU plurals, pseudo-loc, expansion, fonts, RTL, LQA severity |
 | [`accessibility-testing`](skills/disciplines/accessibility-testing/SKILL.md) | Contrast math, colorblind/motion checks, captions, input-only audit, screen-reader limits |
 
-### Genres — 23 ([`skills/genres/`](skills/genres/))
+### Genres — 24 ([`skills/genres/`](skills/genres/))
 
 Compositional templates that orchestrate engine + discipline skills; they never re-teach
 primitives.
@@ -323,6 +325,7 @@ primitives.
 |-------|-------|
 | [`platformer`](skills/genres/platformer/SKILL.md) | 2D platformer: run/jump/coyote-time, tiled levels, hazards, goals |
 | [`metroidvania`](skills/genres/metroidvania/SKILL.md) | Ability-gated map, lock-and-key regions, shortcuts, map/fog, sequence breaks, save rooms |
+| [`soulslike`](skills/genres/soulslike/SKILL.md) | Stamina/commitment combat, checkpoint respawn, currency drop/recovery, shortcuts, boss gates |
 | [`roguelike`](skills/genres/roguelike/SKILL.md) | Grid/turn movement, procedural dungeons, permadeath, FOV, loot |
 | [`rpg`](skills/genres/rpg/SKILL.md) | Stats/leveling, inventory, quests, dialogue, save/load, combat |
 | [`fps-shooter`](skills/genres/fps-shooter/SKILL.md) | First-person controller, camera, shooting/hitscan, enemy AI |
@@ -428,7 +431,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        163 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        166 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template
