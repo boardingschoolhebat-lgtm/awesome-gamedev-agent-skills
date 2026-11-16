@@ -98,6 +98,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
+| `haxeflixel` | HaxeFlixel, Flixel, Haxe game, `Project.xml`, FlxState, FlxSprite, `FlxG.collide`, lime build | `game-feel` / `level-design` + engine-independent disciplines |
 | `twine-engine` | Twine, `.twee`, passage, Harlowe, SugarCube, StoryInit, Twine save, `tw-storydata` | `visual-novel` + `narrative-design` |
 | `renpy-engine` | Ren'Py, `.rpy`, `label start`, Ren'Py screen, say/menu, persistent, `renpy.save`, Ren'Py build | `visual-novel` + `narrative-design` + `dialogue-systems` |
 | `flame-engine` | Flame, Flutter game, FlameGame, `pubspec.yaml` flame, PositionComponent, FlameGame camera, CollisionCallbacks, SpriteAnimationComponent | `game-feel` / `level-design` + engine-independent disciplines |
@@ -157,6 +158,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `boss-design` | boss fight, boss design, encounter design, phase transition, telegraph, moveset, arena, adds, checkpoint, boss metrics | `game-ai` + `game-balance` + `level-design` + `audio-design` |
 | `combat-design` | combat design, melee combat, frame data, startup/active/recovery, hitstop, hitstun, poise, parry, dodge i-frames, attack cancel, enemy tell | `game-feel` + `game-ai` + `game-balance` + `animation-systems` |
 | `puzzle-design` | puzzle design, puzzle mechanic, rule set, level grammar, teach without text, hint ladder, solvability, softlock, solver | `level-design` + `tutorial-design` + `game-ui-ux` |
+| `game-architecture` | game architecture, code architecture, engine-agnostic core, event bus, ECS, data-driven, update order, determinism, headless test | `save-systems` + `performance-optimization` + engine skill |
 | `input-systems` | input mapping, rebind controls, gamepad support, input buffering; `*.inputactions`/IMC | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
 | `game-feel` | game feel, juice, screen shake, hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |
@@ -204,6 +206,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `stealth-game` | stealth, stealth game, vision cone, detection meter, suspicion, patrol AI, takedown, hiding | `game-ai` + `level-design` + `audio-design` + `game-ui-ux` |
 | `horror-game` | horror game, survival horror, monster chase, hide, jumpscare, resource scarcity, atmosphere | `audio-design` + `level-design` + `game-ai` + `accessibility-testing` |
 | `rts-game` | RTS, real-time strategy, unit selection, control group, fog of war, build order, base building, lockstep | `game-ai` + `multiplayer-netcode` + `level-design` + `game-balance` + `ui-architecture` |
+| `4x-game` | 4X, civilization-like, empire builder, turn-based strategy, tech tree, civics, diplomacy, victory condition | `game-economy` + `game-ai` + `ui-architecture` + `procedural-gen` + `save-systems` |
 | `management-sim` | management sim, tycoon, city builder, colony sim, simulation tick, needs, budget, zoning, park management | `game-economy` + `game-ui-ux` + `save-systems` + `game-ai` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 

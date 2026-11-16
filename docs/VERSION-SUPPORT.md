@@ -17,6 +17,7 @@ metadata unless the user explicitly asks for migration.
 | PixiJS | 8.22 | `package.json` + lockfile; [PixiJS releases](https://pixijs.com/blog) |
 | three.js | r187 (npm 0.187.0 at last check) | `package.json` + lockfile; [three.js releases](https://github.com/mrdoob/three.js/releases) |
 | Bevy | 0.20 | `Cargo.toml` + `Cargo.lock`; [Bevy 0.20](https://bevy.org/news/bevy-0-20/) and [migration guide](https://bevy.org/learn/migration-guides/0-19-to-0-20/) |
+| HaxeFlixel | 6.2.1 (flixel 6.2.1) / Haxe 4.3+ | `Project.xml` + haxelib lock; [lib.haxe.org/p/flixel](https://lib.haxe.org/p/flixel/) and [docs](https://haxeflixel.com/documentation/) |
 | Twine | 2.12.1 (Harlowe 3.3.9, SugarCube 2.37.3, Chapbook 2.2.0) | `tw-storydata` format/version or `StoryData`; [Twine](https://twinery.org/) and [cookbook](https://twinery.org/cookbook/) |
 | Ren'Py | 8.5.3 ("We Can Go to the Moon") | SDK/launcher version and `config.version`; [releases](https://www.renpy.org/release_list.html) and [docs](https://www.renpy.org/doc/html/) |
 | Flame | 1.38.2 / Dart 3.11+ | `pubspec.yaml` + `pubspec.lock`; [pub.dev](https://pub.dev/packages/flame) and [docs](https://docs.flame-engine.org/) |

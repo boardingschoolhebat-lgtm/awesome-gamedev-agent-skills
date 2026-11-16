@@ -2,7 +2,7 @@
 name: router
 description: >
   Routes any game-development request to the right specialized skill(s): it detects the engine
-  (Godot, Unity, Unreal, Ebitengine, Bevy, Phaser, PixiJS, three.js, Defold, LÖVE, pygame, Roblox, GameMaker, MonoGame, Flame, Ren'Py, Twine) and the task, then
+  (Godot, Unity, Unreal, Ebitengine, Bevy, Phaser, PixiJS, three.js, Defold, LÖVE, pygame, Roblox, GameMaker, MonoGame, Flame, Ren'Py, Twine, HaxeFlixel) and the task, then
   reads the chosen skill before acting. Use to make a game or to decide which skill applies — for
   players, levels, enemies, shaders, art direction, sprites, tiles, textures, 3D assets, UI/UX,
   cameras, game feel, physics, input, audio, saving, multiplayer, AI, dialogue, procedural
@@ -76,6 +76,7 @@ Check the target's build and runtime entry point before treating a bundled libra
 | 15 | Flame | `pubspec.yaml` dep `flame` | `skills/other-engines/flame-engine/` |
 | 16 | Ren'Py | `game/*.rpy` / `script.rpy` | `skills/other-engines/renpy-engine/` |
 | 17 | Twine | `*.twee`, or HTML containing `tw-storydata` | `skills/other-engines/twine-engine/` |
+| 18 | HaxeFlixel | `Project.xml` with `flixel`, `source/Main.hx` | `skills/other-engines/haxeflixel/` |
 
 For secondary signals, the Godot-C#/Unity/Bevy, Defold/LÖVE/Lua and multi-web disambiguation
 rules, monorepos, and plain-text engine mentions, read `references/engine-detection.md`.
@@ -103,7 +104,7 @@ After the engine, read the request for task signals (three **additive** categori
 - **genres** (whole-game templates): `platformer`, `roguelike`, `rpg`, `fps-shooter`,
   `tower-defense`, `card-game`, `visual-novel`, `survival-crafting`, `puzzle`, `rhythm-game`,
   `racing-game`, `fighting-game`, `battle-royale`, `extraction-shooter`, `sports-game`, `mmorpg`, `idle-incremental`, `stealth-game`,
-  `horror-game`, `bullet-hell`, `metroidvania`, `soulslike`, `rts-game`, `management-sim`. Triggered by genre words ("make a roguelike", "deckbuilder").
+  `horror-game`, `bullet-hell`, `metroidvania`, `soulslike`, `rts-game`, `4x-game`, `management-sim`. Triggered by genre words ("make a roguelike", "deckbuilder").
 - **workflows** (process/shipping): `game-jam`, `prototype-fast`, `steam-publish`,
   `itch-publish`, `playtest-qa`, `platform-cert`. Triggered by process words ("publish on Steam",
   "vertical slice", "playtest", "bug triage", "console certification").
@@ -144,7 +145,8 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 - **Other** (`skills/other-engines/`): `monogame-core` (C# game loop, SpriteBatch, Content Builder,
   input, collision, audio, publishing); `flame-engine` (Dart/Flutter components, world/camera,
   collision, builds); `renpy-engine` (visual-novel script, screens, saves, builds); `twine-engine` (hypertext
-  passages, story formats, HTML publishing); `gamemaker-core` (GML objects/events, rooms/layers,
+  passages, story formats, HTML publishing); `haxeflixel` (Haxe states, sprites, collision,
+  Lime builds); `gamemaker-core` (GML objects/events, rooms/layers,
   collisions, drawing, JSON saves); `bevy-ecs` (+ `bevy-save`, `bevy-tilemap`, `bevy-ui`,
   `bevy-audio`), `pygame-core` (+ `pygame-tilemap`, `pygame-save`, `pygame-camera`), `love2d-core`
   (+ `love2d-tilemap`, `love2d-save`, `love2d-camera`); Defold

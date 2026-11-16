@@ -10,7 +10,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 166 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 169 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -179,7 +179,10 @@
         "./skills/disciplines/combat-design",
         "./skills/other-engines/twine-engine",
         "./skills/genres/soulslike",
-        "./skills/disciplines/puzzle-design"
+        "./skills/disciplines/puzzle-design",
+        "./skills/other-engines/haxeflixel",
+        "./skills/genres/4x-game",
+        "./skills/disciplines/game-architecture"
       ]
     },
     {
@@ -297,7 +300,7 @@
       "name": "other-engines",
       "source": "./",
       "strict": false,
-      "description": "MonoGame, Flame, Ren'Py, Twine, GameMaker, Bevy, pygame, LÖVE, Defold, and production-focused Roblox engine skills.",
+      "description": "MonoGame, Flame, Ren'Py, Twine, HaxeFlixel, GameMaker, Bevy, pygame, LÖVE, Defold, and production-focused Roblox engine skills.",
       "skills": [
         "./skills/other-engines/bevy-ecs",
         "./skills/other-engines/bevy-save",
@@ -335,14 +338,15 @@
         "./skills/other-engines/monogame-core",
         "./skills/other-engines/flame-engine",
         "./skills/other-engines/renpy-engine",
-        "./skills/other-engines/twine-engine"
+        "./skills/other-engines/twine-engine",
+        "./skills/other-engines/haxeflixel"
       ]
     },
     {
       "name": "disciplines",
       "source": "./",
       "strict": false,
-      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, tutorial design, narrative, boss encounters, combat, puzzles, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
+      "description": "Cross-engine concepts: visual assets, AI, procedural gen, dialogue, saves, audio synthesis, shaders, physics, level design, input, animation, netcode, economy, quests, matchmaking, tutorial design, narrative, boss encounters, combat, puzzles, architecture, mod support, live ops, analytics, co-op, localization QA, and accessibility testing.",
       "skills": [
         "./skills/disciplines/create-game-assets",
         "./skills/disciplines/game-ai",
@@ -380,14 +384,15 @@
         "./skills/disciplines/narrative-design",
         "./skills/disciplines/boss-design",
         "./skills/disciplines/combat-design",
-        "./skills/disciplines/puzzle-design"
+        "./skills/disciplines/puzzle-design",
+        "./skills/disciplines/game-architecture"
       ]
     },
     {
       "name": "genres",
       "source": "./",
       "strict": false,
-      "description": "Compositional genre templates: platformer, metroidvania, soulslike, roguelike, RPG, FPS, tower defense, card, visual novel, survival, puzzle, rhythm, racing, fighting, battle royale, extraction, sports, MMO, idle, stealth, horror, bullet-hell.",
+      "description": "Compositional genre templates: platformer, metroidvania, soulslike, 4X, roguelike, RPG, FPS, tower defense, card, visual novel, survival, puzzle, rhythm, racing, fighting, battle royale, extraction, sports, MMO, idle, stealth, horror, bullet-hell.",
       "skills": [
         "./skills/genres/platformer",
         "./skills/genres/roguelike",
@@ -412,7 +417,8 @@
         "./skills/genres/management-sim",
         "./skills/genres/bullet-hell",
         "./skills/genres/metroidvania",
-        "./skills/genres/soulslike"
+        "./skills/genres/soulslike",
+        "./skills/genres/4x-game"
       ]
     },
     {

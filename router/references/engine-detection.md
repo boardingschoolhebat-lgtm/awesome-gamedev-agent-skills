@@ -26,6 +26,7 @@ Scan for the highest-confidence signal and stop at the first match in this prece
 | 15 | Flame | `pubspec.yaml` dep `flame` | `FlameGame`, `GameWidget`, `PositionComponent`, `HasCollisionDetection`, `flame_audio` | `skills/other-engines/flame-engine/` |
 | 16 | Ren'Py | `game/` with `*.rpy`, `script.rpy` | `label start`, `define Character`, `screen`, `renpy.` calls, `options.rpy` | `skills/other-engines/renpy-engine/` |
 | 17 | Twine | `*.twee`, or `.html` containing `tw-storydata` | `tw-passagedata`, Harlowe/SugarCube macros, `StoryInit` | `skills/other-engines/twine-engine/` |
+| 18 | HaxeFlixel | `Project.xml` with a `flixel` haxelib | `source/Main.hx`, `FlxState`, `FlxSprite`, `FlxG`, `lime` build files | `skills/other-engines/haxeflixel/` |
 
 ## Detect the installed version
 
@@ -48,6 +49,7 @@ Engine identity is not enough. Read the version source before using version-sens
 | Flame | `pubspec.yaml` + `pubspec.lock` for `flame`, then the Flutter/Dart SDK constraint |
 | Ren'Py | `renpy/` version in the project or the launcher build, `config.version` in `options.rpy` |
 | Twine | `tw-storydata` format/format-version attributes, or the `.twee` `StoryData` passage |
+| HaxeFlixel | `Project.xml` + `haxelib.json`/`haxelib` lock, then `FlxG.VERSION` at runtime |
 
 For a new project use the baseline stated in the engine skill (the catalog-wide table is
 `docs/VERSION-SUPPORT.md` in the source repository). For an existing project,
