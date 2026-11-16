@@ -98,6 +98,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 
 | Skill | Pick it when |
 |-------|--------------|
+| `pico-8` | PICO-8, `.p8`, `.p8.png`, fantasy console, 8192 tokens, `btnp`, `spr`, `cartdata`, `dset` | `game-feel` / `level-design` + engine-independent disciplines |
 | `haxeflixel` | HaxeFlixel, Flixel, Haxe game, `Project.xml`, FlxState, FlxSprite, `FlxG.collide`, lime build | `game-feel` / `level-design` + engine-independent disciplines |
 | `twine-engine` | Twine, `.twee`, passage, Harlowe, SugarCube, StoryInit, Twine save, `tw-storydata` | `visual-novel` + `narrative-design` |
 | `renpy-engine` | Ren'Py, `.rpy`, `label start`, Ren'Py screen, say/menu, persistent, `renpy.save`, Ren'Py build | `visual-novel` + `narrative-design` + `dialogue-systems` |
@@ -159,6 +160,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `combat-design` | combat design, melee combat, frame data, startup/active/recovery, hitstop, hitstun, poise, parry, dodge i-frames, attack cancel, enemy tell | `game-feel` + `game-ai` + `game-balance` + `animation-systems` |
 | `puzzle-design` | puzzle design, puzzle mechanic, rule set, level grammar, teach without text, hint ladder, solvability, softlock, solver | `level-design` + `tutorial-design` + `game-ui-ux` |
 | `game-architecture` | game architecture, code architecture, engine-agnostic core, event bus, ECS, data-driven, update order, determinism, headless test | `save-systems` + `performance-optimization` + engine skill |
+| `game-production` | game production, scope, milestone, vertical slice, alpha/beta, risk register, backlog, estimate, content lock, launch plan | `prototype-fast` + `playtest-qa` + `platform-cert` + `steam-publish` |
 | `input-systems` | input mapping, rebind controls, gamepad support, input buffering; `*.inputactions`/IMC | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
 | `game-feel` | game feel, juice, screen shake, hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |
@@ -207,6 +209,7 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `horror-game` | horror game, survival horror, monster chase, hide, jumpscare, resource scarcity, atmosphere | `audio-design` + `level-design` + `game-ai` + `accessibility-testing` |
 | `rts-game` | RTS, real-time strategy, unit selection, control group, fog of war, build order, base building, lockstep | `game-ai` + `multiplayer-netcode` + `level-design` + `game-balance` + `ui-architecture` |
 | `4x-game` | 4X, civilization-like, empire builder, turn-based strategy, tech tree, civics, diplomacy, victory condition | `game-economy` + `game-ai` + `ui-architecture` + `procedural-gen` + `save-systems` |
+| `auto-battler` | auto battler, autochess, shared pool, shop odds, interest economy, trait synergy, positioning, reroll | `game-economy` + `game-ai` + `ui-architecture` + `game-balance` |
 | `management-sim` | management sim, tycoon, city builder, colony sim, simulation tick, needs, budget, zoning, park management | `game-economy` + `game-ui-ux` + `save-systems` + `game-ai` |
 | `puzzle` | puzzle game, match-3, grid logic, tile-matching | `godot-tilemap`/`unity-tilemap-2d` + `level-design` + `game-feel` |
 
