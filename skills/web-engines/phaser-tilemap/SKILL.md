@@ -24,8 +24,8 @@ tests against.
 
 **When *not* to use:** bodies, colliders and overlap basics → `phaser-arcade-physics`; game
 config, scenes and the loader → `phaser-core`; level layout and pacing → `level-design`;
-generating maps from noise → `procedural-gen`; Matter physics tile conversion is a different
-path and is out of scope here.
+cross-engine tilemap model → `tilemap-systems`; generating maps from noise → `procedural-gen`;
+Matter physics tile conversion is a different path and is out of scope here.
 
 ## Core workflow
 

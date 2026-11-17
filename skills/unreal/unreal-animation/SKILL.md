@@ -20,7 +20,8 @@ variables, plays montages and listens for notifies. Targets **Unreal Engine 5.8*
 
 **When *not* to use:** character movement → `unreal-2d-movement` / `unreal-cpp-gameplay`;
 replication fundamentals → `unreal-replication`; skeletal mesh import → the asset pipeline;
-engine-neutral animation concepts → `game-feel`.
+engine-neutral state/blend/root-motion concepts → `animation-systems`; impact feedback →
+`game-feel`.
 
 ## Core workflow
 

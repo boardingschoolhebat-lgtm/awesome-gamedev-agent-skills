@@ -18,7 +18,8 @@ Phaser animation is frame-based: the `AnimationManager` owns named animations, e
 - Use when animations restart every frame, never fire `animationcomplete`, or ignore hit frames.
 
 **When *not* to use:** tweened movement/scale/alpha → Phaser tweens; loading assets →
-`phaser-core`; audio cues → `phaser-audio`; UI → `phaser-ui`; design → `game-feel`.
+`phaser-core`; cross-engine state/blend/root-motion concepts → `animation-systems`; audio cues →
+`phaser-audio`; UI → `phaser-ui`; impact feedback → `game-feel`.
 
 ## Core workflow
 

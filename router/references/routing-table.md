@@ -15,17 +15,17 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `godot-nodes-scenes` | "scene", "node tree", "instance a scene", autoloads, `PackedScene`; `*.tscn` |
 | `godot-signals-groups` | "signal", "emit", "connect", "groups", decoupling/observer |
 | `godot-2d-movement` | "2D movement", "platformer controller", `CharacterBody2D`, `move_and_slide` |
-| `godot-tilemap` | "tilemap", "tileset", "autotile", `TileMapLayer`; tileset `*.tres` |
+| `godot-tilemap` | "Godot tilemap", "Godot tileset", "Godot autotile", `TileMapLayer`; tileset `*.tres` |
 | `godot-physics` | "rigidbody", "area2d", "collision layer", "raycast" (2D + 3D) |
-| `godot-ui-control` | "UI", "Control node", "anchors", "theme", "HUD" |
+| `godot-ui-control` | "UI", "Control node", "anchors", "theme", "Godot HUD" |
 | `godot-animation` | `AnimationPlayer`, `AnimationTree`, "blend", `Tween` |
 | `godot-shaders` | "Godot shader", "gdshader", fragment/vertex, screen-reading; `*.gdshader` |
 | `godot-3d-essentials` | "3D", `Camera3D`, `WorldEnvironment`, `GridMap`; `Node3D` |
 | `godot-save` | "Godot save", save game/progress/settings, `FileAccess`, `user://`, `JSON.stringify`, `ConfigFile`, `ResourceSaver`, save migration |
 | `godot-resources` | "custom Resource", "data resource", `.tres`, `ResourceLoader` |
-| `godot-camera` | "Godot camera", `Camera2D`, follow camera, drag margin, camera limits, screen shake, camera zoom |
+| `godot-camera` | "Godot camera", `Camera2D`, follow camera, drag margin, camera limits, "Godot camera shake", camera zoom |
 | `godot-audio` | "Godot audio", "audio bus", "play sound/music", sync-to-beat |
-| `godot-multiplayer` | "multiplayer", "RPC", "networked", `MultiplayerSpawner`; `@rpc` |
+| `godot-multiplayer` | "Godot multiplayer", "RPC", "networked", `MultiplayerSpawner`; `@rpc` |
 | `godot-export` | "export Godot", "build for web/windows", `export_presets.cfg` |
 | `godot-csharp` | "Godot C#", "GodotSharp", "C# signals in Godot"; `*.cs` + `*.csproj` in a Godot project |
 | `godot-gdscript-headless-testing` | "headless test", "run tests from CLI", `godot --headless --script`, CI job for `.gd` tests |
@@ -45,9 +45,9 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unity-tilemap-2d` | "Unity tilemap", "tile palette", "rule tile" |
 | `unity-navmesh` | `NavMesh`, `NavMeshAgent`, "pathfinding in Unity" |
 | `unity-build-pipeline` | "build Unity", "player settings", "IL2CPP", "Addressables" |
-| `unity-ui` | "Unity UI", Canvas, CanvasScaler, uGUI, UI Toolkit, HUD, health bar, safe area, `EventSystem` |
+| `unity-ui` | "Unity UI", Canvas, CanvasScaler, uGUI, UI Toolkit, "Unity HUD", "Unity health bar", safe area, `EventSystem` |
 | `unity-audio` | "Unity audio", AudioSource, AudioMixer, mixer group, exposed volume, snapshot, spatial audio, music crossfade |
-| `unity-networking` | "Unity networking", multiplayer, netcode, `NetworkVariable`, `ServerRpc`, `NetworkObject`, `NetworkManager`, client authority |
+| `unity-networking` | "Unity networking", "Unity multiplayer", netcode, `NetworkVariable`, `ServerRpc`, `NetworkObject`, `NetworkManager`, client authority |
 
 ### Unreal (`skills/unreal/`, target UE 5.8)
 
@@ -57,11 +57,11 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `unreal-cpp-gameplay` | "Unreal C++", `GameMode`, `Pawn`, `ACharacter`; `Source/**/*.cpp` + `*.Build.cs` |
 | `unreal-2d-movement` | "Unreal 2D", "Paper2D", `PaperCharacter`, `PaperFlipbook`, plane constraint, 2D platformer/top-down character in Unreal; Paper 2D assets |
 | `unreal-enhanced-input` | "Enhanced Input", "Input Mapping Context", `IA_`/`IMC_` |
-| `unreal-behavior-trees` | "Behavior Tree", "Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
+| `unreal-behavior-trees` | "Unreal Behavior Tree", "Unreal Blackboard", `AIController`, `BTTask`; `BT_`/`BB_` |
 | `unreal-niagara` | "Niagara", "VFX", "particle system"; `NS_`/`NE_` |
 | `unreal-animation` | "Unreal animation", AnimBP, `UAnimInstance`, montage, `PlayAnimMontage`, blend space, AnimNotify, root motion |
 | `unreal-audio` | "Unreal audio", MetaSounds, `PlaySoundAtLocation`, sound class, sound mix, attenuation, audio component |
-| `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, HUD, pause menu, `BindWidget` |
+| `unreal-ui` | "Unreal UI", UMG, widget, `CreateWidget`, `AddToViewport`, "Unreal HUD", "Unreal pause menu", `BindWidget` |
 | `unreal-tilemap` | "Unreal tilemap", Paper2D, tile set, tile map, `SetTile`, `CreateNewTileMap`, `RebuildCollision`, tile collision |
 | `unreal-replication` | "Unreal replication", `DOREPLIFETIME`, `RepNotify`, Server RPC, `Replicated`, authority, net relevancy |
 | `unreal-save` | "Unreal save", save slot, `USaveGame`, `SaveGameToSlot`, `LoadGameFromSlot`, `DoesSaveGameExist`, `AsyncSaveGameToSlot`, `.sav` |
@@ -72,8 +72,8 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | Skill | Pick it when |
 |-------|--------------|
 | `ebitengine-game` | "Ebitengine", "Ebiten", "2D game in Go", `Update`/`Draw`/`Layout`, action input, sprites, text, scenes, testing or builds in an Ebitengine game; `go.mod` requiring `github.com/hajimehoshi/ebiten/v2` plus game imports |
-| `ebitengine-ui` | "Ebitengine UI", menu, HUD, clickable button, `text/v2`, `CursorPositionF`, focus ring, modal |
-| `ebitengine-audio` | "Ebitengine audio", music, SFX, `audio.NewPlayerFromBytes`, `NewInfiniteLoopF32`, `vorbis.DecodeF32`, volume slider |
+| `ebitengine-ui` | "Ebitengine UI", menu, "Ebitengine HUD", clickable button, `text/v2`, `CursorPositionF`, focus ring, modal |
+| `ebitengine-audio` | "Ebitengine audio", music, "Ebitengine SFX", `audio.NewPlayerFromBytes`, `NewInfiniteLoopF32`, `vorbis.DecodeF32`, volume slider |
 | `ebitengine-save` | "Ebitengine save", `os.UserConfigDir`, JSON save, atomic write, save slot, migrate save |
 
 ### Web engines (`skills/web-engines/`) — detected from `package.json` + imports
@@ -85,13 +85,13 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `phaser-tilemap` | "Phaser tilemap", Tiled map, `createLayer`, `setCollisionByProperty`, tile collision, `addTilesetImage`, `putTileAt`; `*.json` Tiled maps |
 | `phaser-animation` | "Phaser animation", sprite animation, `this.anims`, `generateFrameNumbers`, `play`, `animationcomplete`, `chain` |
 | `phaser-audio` | "Phaser audio", `this.sound`, sound effect, music loop, audio sprite, sound marker, mute |
-| `phaser-ui` | "Phaser UI", HUD, health bar, scroll factor, DOM element, container, menu, `setScrollFactor`, NineSlice |
+| `phaser-ui` | "Phaser UI", "Phaser HUD", "Phaser health bar", scroll factor, DOM element, container, menu, `setScrollFactor`, NineSlice |
 | `pixijs-animation` | "PixiJS animation", `AnimatedSprite`, spritesheet animation, animationSpeed, frame callback |
-| `pixijs-ui` | "PixiJS UI", menu, HUD, clickable button, `eventMode`, `hitArea`, `pointertap`, modal |
+| `pixijs-ui` | "PixiJS UI", menu, "PixiJS HUD", clickable button, `eventMode`, `hitArea`, `pointertap`, modal |
 | `pixijs-rendering` | "PixiJS", "Pixi sprite", "stage", `Container`; dep `pixi.js` |
 | `threejs-scene-setup` | "three.js", `THREE.Scene`, `WebGLRenderer`, render loop; dep `three` |
 | `threejs-gltf-loading` | "load gltf", `GLTFLoader`, `AnimationMixer`; `*.gltf`/`*.glb` |
-| `threejs-ui` | "three.js UI", HUD, CSS2DRenderer, CSS3DObject, HTML overlay, raycast button, label, tooltip |
+| `threejs-ui` | "three.js UI", "three.js HUD", CSS2DRenderer, CSS3DObject, HTML overlay, raycast button, label, tooltip |
 | `threejs-materials-lighting` | `MeshStandardMaterial`, "lighting", "shadows", env maps |
 
 ### Other engines (`skills/other-engines/`)
@@ -108,52 +108,53 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `bevy-ecs` | "Bevy", "ECS system/query", `Commands`, "Bevy plugin"; `Cargo.toml` dep `bevy` |
 | `bevy-save` | "Bevy save", save file, save slots, serde, RON, save migration, corrupt save; `*.json`/`*.ron` save files |
 | `bevy-audio` | "Bevy audio", `AudioPlayer`, `PlaybackSettings`, `AudioSink`, spatial audio, `AudioListener`, music |
-| `bevy-ui` | "Bevy UI", menu, HUD, `Node`, `ui_widgets`, `Activate`, `Interaction`, `TabIndex`, flex layout |
-| `bevy-tilemap` | "Bevy tilemap", texture atlas, `TextureAtlasLayout`, grid level, tile collision, sprite sheet, chunk |
+| `bevy-ui` | "Bevy UI", menu, "Bevy HUD", `Node`, `ui_widgets`, `Activate`, `Interaction`, `TabIndex`, flex layout |
+| `bevy-tilemap` | "Bevy tilemap", texture atlas, `TextureAtlasLayout`, grid level, tile collision, sprite sheet, "Bevy chunk" |
 | `pygame-core` | "pygame", "blit", "sprite group", game loop; `import pygame` |
-| `pygame-tilemap` | "pygame tilemap", "blitting tiles", "tileset", tile collision, layer surface, camera offset, `subsurface`, `pytmx` |
-| `pygame-camera` | "pygame camera", follow camera, camera offset, world to screen, parallax, camera shake, camera zoom |
+| `pygame-tilemap` | "pygame tilemap", "blitting tiles", "pygame tileset", tile collision, layer surface, "pygame camera offset", `subsurface`, `pytmx` |
+| `pygame-camera` | "pygame camera", follow camera, "pygame camera offset", world to screen, parallax, "pygame camera shake", camera zoom |
 | `pygame-save` | "pygame save", save file, save slots, JSON save, settings file, save migration, corrupt save |
 | `love2d-core` | "LÖVE", "love2d", `love.draw`, `love.update(dt)`; `main.lua`/`conf.lua`/`*.love` |
-| `love2d-tilemap` | "LÖVE tilemap", "sprite batch", "quad", "tileset", tile layers, tile collision, scrolling tile level, `newSpriteBatch`, `newQuad`; `*.lua` + tileset image |
-| `love2d-camera` | "love2d camera", LÖVE camera, `love.graphics.translate`, parallax, camera shake, world coordinates |
+| `love2d-tilemap` | "LÖVE tilemap", "sprite batch", "quad", "LÖVE tileset", tile layers, tile collision, scrolling tile level, `newSpriteBatch`, `newQuad`; `*.lua` + tileset image |
+| `love2d-camera` | "love2d camera", LÖVE camera, `love.graphics.translate`, parallax, "love2d camera shake", world coordinates |
 | `love2d-save` | "LÖVE save", save file, save slots, `love.filesystem`, `getSaveDirectory`, settings file, save migration, corrupt save |
 | `defold-core` | "Defold", collection/game object/component, `msg.post`, `on_message`, `on_input`, `acquire_input_focus`, `go.property`, `factory.create`, collection proxy, `bob.jar`, Defold build error; `game.project` + `*.collection`/`*.go`/`*.script` (target Defold 1.14.0) |
 | `defold-ui` | "Defold GUI", "Defold HUD", menu/dialog/inventory screen, `.gui`, `gui_script`, `gui.new_text_node`, `gui.animate`, `gui.pick_node`, `gui.clone`, layout, anchor, adjust mode; `*.gui`/`*.gui_script` |
 | `defold-tilemap` | "Defold tilemap", paint tiles, tile layers, tile collision, tilesource collision group, `tilemap.get_tile`, `tilemap.set_tile`, `tilemap.get_bounds`, world-to-tile; `*.tilemap`/`*.tilesource` |
 | `defold-collision` | "Defold collision", `.collisionobject`, collision shape, collision group/mask, `collision_response`, `contact_point_response`, `trigger_response`, `physics.raycast`, falls through floor, trigger zone |
-| `defold-camera` | "Defold camera", follow camera, dead zone, camera shake, zoom, `screen_to_world`, `world_to_screen` |
+| `defold-camera` | "Defold camera", follow camera, dead zone, "Defold camera shake", zoom, `screen_to_world`, `world_to_screen` |
 | `defold-save` | "Defold save", `sys.save`, `sys.load`, `get_save_file`, save file, corrupt save, migrate save |
 | `defold-sprite` | "Defold sprite", flipbook animation, atlas animation, `sprite.play_flipbook`, `animation_done`, `set_hflip`, pivot, sprite offset, playback rate; `*.sprite`/`*.atlas` |
 | `roblox-luau` | "Roblox", "Luau", `RemoteEvent`, services; `*.luau` + `*.rbxl(x)` / Rojo |
 | `roblox-datastores` | "DataStore", "save player data", `GetDataStore`; `DataStoreService` |
-| `roblox-camera` | "Roblox camera", `CurrentCamera`, `CameraType`, `CFrame`, cutscene, `ScreenPointToRay`, camera shake |
+| `roblox-camera` | "Roblox camera", `CurrentCamera`, `CameraType`, `CFrame`, cutscene, `ScreenPointToRay`, "Roblox camera shake" |
 | `roblox-animation` | "Roblox animation", `Animator`, `AnimationTrack`, `LoadAnimation`, animation priority, marker event |
 | `roblox-audio` | "Roblox audio", `Sound`, `SoundGroup`, `PlayLocalSound`, RollOff, music, SFX volume |
 | `roblox-ui` | Roblox HUD/menu/inventory/shop, `ScreenGui`, `PlayerGui`, `UDim2`, `AutomaticSize`, `GuiService`, UI clipping/respawn, touch/gamepad focus, generic generated UI |
-| `roblox-tilemap` | "Roblox tilemap", grid level, parts, `Terrain`, `FillBlock`, chunk, streaming, Tiled map, `PivotTo` |
+| `roblox-tilemap` | "Roblox tilemap", "Roblox grid level", parts, `Terrain`, `FillBlock`, "Roblox chunk", "Roblox streaming", "Roblox Tiled map", `PivotTo` |
 | `roblox-networking` | Roblox remotes/security/replication, `RemoteEvent`, `RemoteFunction`, `UnreliableRemoteEvent`, exploit, request spam, server authority, desync |
 | `roblox-characters` | Roblox character/respawn/rig/movement/animation, `CharacterAdded`, `Humanoid`, `Animator`, R6/R15, Tool, stale character reference |
 | `roblox-physics` | Roblox assembly/constraint/collision/query/ownership, `RaycastParams`, overlap, `CanQuery`, impulse, BodyMover, projectile/vehicle/knockback |
-| `roblox-studio-workflow` | edit/inspect/test a Roblox place in Studio, Explorer, Script/LocalScript/ModuleScript placement, tags/Attributes, duplicate remotes/systems, Server & Clients, Output |
-| `roblox-simulator-economy` | Roblox simulator/tycoon/clicker/idle economy, upgrade cost curve, `costGrowth`, buy max, income per second, rebirth/prestige requirement or multiplier, offline earnings, big-number suffixes (K/M/B/Qa), "1000K" display bug, currency exploit, save repair, paid eggs/crates/spins odds, `PolicyService` paid random items; pairs with `roblox-networking` + `roblox-datastores` |
+| `roblox-studio-workflow` | edit/inspect/test a Roblox place in Studio, Explorer, Script/LocalScript/ModuleScript placement, tags/Attributes, "duplicate remotes", "duplicate systems", Server & Clients, Output |
+| `roblox-simulator-economy` | "Roblox simulator", "Roblox tycoon", "Roblox clicker", "Roblox idle economy", upgrade cost curve, `costGrowth`, buy max, income per second, rebirth/prestige requirement or multiplier, offline earnings, big-number suffixes (K/M/B/Qa), "1000K" display bug, currency exploit, save repair, paid eggs/crates/spins odds, `PolicyService` paid random items; pairs with `roblox-networking` + `roblox-datastores` |
 
 ## Disciplines (`skills/disciplines/`) — cross-engine concepts, load **with** the engine skill
 
 | Concept skill | `says:` triggers | Pairs with (engine API skill) |
 |---------------|------------------|-------------------------------|
 | `create-game-assets` | art direction, game assets, sprite/sprite sheet, tileset, texture, icon, concept art, 3D prop, consistent style | engine importer/rendering skill; installed `imagegen` for raster generation when available |
-| `game-ai` | enemy AI, behavior tree, state machine, steering, pathfinding | `unity-navmesh` / `unreal-behavior-trees` / Godot nav (`godot-nodes-scenes` + `godot-physics`) |
-| `ai-behavior-trees-utility-ai` | behavior tree runtime, blackboard, action/condition node, selector/sequence/parallel, decorator, utility AI, scoring/response curve, consideration, hybrid AI | `game-ai` (FSM/BT/steering choice) / `unreal-behavior-trees` (engine BT/Blackboard assets) |
+| `game-ai` | enemy AI, AI state machine, decision model, steering, pathfinding | `unity-navmesh` / `unreal-behavior-trees` / Godot nav (`godot-nodes-scenes` + `godot-physics`) |
+| `ai-behavior-trees-utility-ai` | behavior tree, behavior tree runtime, blackboard, action/condition node, selector/sequence/parallel, decorator, utility AI, scoring/response curve, consideration, hybrid AI | `game-ai` (FSM/BT/steering choice) / `unreal-behavior-trees` (engine BT/Blackboard assets) |
 | `procedural-gen` | procedural generation, perlin/simplex noise, random seed, dungeon generator, wave function collapse (WFC) | engine tilemap/grid: `godot-tilemap` / `unity-tilemap-2d` / `godot-3d-essentials` |
 | `dialogue-systems` | dialogue system, branching dialogue, Yarn Spinner, Ink, conversation tree; `*.yarn`/`*.ink` | engine UI: `godot-ui-control` / Unity UI |
 | `save-systems` | save system, save/load, persistence, save slots; `save*.json`/`*.sav` | `roblox-datastores` / Godot IO / engine serialization |
 | `localization` | localization, translate, i18n, locale, string table, RTL, plural rules, text expansion | engine UI + string table: `unity-ui` / `unreal-ui` / `godot-ui-control` / `phaser-ui` |
-| `accessibility` | accessibility, colorblind, subtitles, captions, remap, screen shake, reduce motion, contrast, assist mode | `game-ui-ux` + `input-systems` + `audio-design` |
+| `accessibility` | accessibility, colorblind, subtitles, captions, remap, "reduce screen shake", reduce motion, contrast, assist mode | `game-ui-ux` + `input-systems` + `audio-design` |
 | `audio-design` | audio design, adaptive music, audio mixer, ducking, SFX | `godot-audio` / Unity AudioMixer |
 | `shader-programming` | shader, fragment shader, dissolve/outline effect, GLSL/HLSL; `*.gdshader`/`*.shader`/`*.hlsl` | `godot-shaders` / engine material docs |
 | `physics-tuning` | physics feel, jitter/tunneling, fixed timestep, collision tuning | `godot-physics` / `unity-physics` |
 | `level-design` | level design, whitebox/blockout, tilemap layout, pacing | `godot-tilemap` / `unity-tilemap-2d` / `godot-3d-essentials` (GridMap) |
+| `tilemap-systems` | tilemap systems, grid coordinate model, chunk streaming, autotile rules, tile collision layers | engine tilemap skill + `level-design` / `create-game-assets` |
 | `tutorial-design` | tutorial, onboarding, teach the player, first 10 minutes, prompt, tooltip, tutorial skip, comprehension, new-player drop-off | `level-design` + `game-ui-ux` + `playtest-qa` + `accessibility` |
 | `narrative-design` | narrative design, story structure, premise, theme, character arc, beat sheet, branching story, choice and consequence, environmental storytelling, ludonarrative | `dialogue-systems` + `quest-design` + `level-design` |
 | `boss-design` | boss fight, boss design, encounter design, phase transition, telegraph, moveset, arena, adds, checkpoint, boss metrics | `game-ai` + `game-balance` + `level-design` + `audio-design` |
@@ -162,12 +163,12 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `game-architecture` | game architecture, code architecture, engine-agnostic core, event bus, ECS, data-driven, update order, determinism, headless test | `save-systems` + `performance-optimization` + engine skill |
 | `game-production` | game production, scope, milestone, vertical slice, alpha/beta, risk register, backlog, estimate, content lock, launch plan | `prototype-fast` + `playtest-qa` + `platform-cert` + `steam-publish` |
 | `input-systems` | input mapping, rebind controls, gamepad support, input buffering; `*.inputactions`/IMC | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
-| `game-feel` | game feel, juice, screen shake, hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
+| `game-feel` | game feel, juice, "screen shake", "camera shake", hit-stop/freeze frame, squash & stretch, knockback, "make it punchy/satisfying" | engine animation/tween (`godot-animation`/`unity-animation`) + `camera-systems` (shake) + `audio-design` |
 | `camera-systems` | camera follow, follow camera, deadzone, look-ahead, camera bounds/limits, third-person/orbit camera, first-person look, Cinemachine, camera jitter | `godot-2d-movement`/`godot-3d-essentials` / Unity Cinemachine 3 / Godot `Camera2D`/`Camera3D` |
 | `game-ui-ux` | HUD, health bar, main/pause/settings menu, UI layout, anchors, UI scaling, aspect ratio, safe area, controller/keyboard menu nav | `godot-ui-control` / Unity UI (UGUI/UI Toolkit) |
 | `performance-optimization` | performance, optimize, low/dropping FPS, frame drops, stutter, lag, frame budget, draw calls, batching, GC spikes, object pooling, profiler | engine profiler (Godot Monitors / Unity Profiler / Unreal `stat unit`) + `physics-tuning` |
 | `animation-systems` | animation state machine, blend tree/blend space, animation layer/mask, root motion, animation event/notify, foot sliding, retarget | `godot-animation` / `unity-animation` / `unreal-animation` / `roblox-animation` |
-| `multiplayer-netcode` | netcode, client prediction, server reconciliation, interpolation, lag compensation, desync, rubber-banding, authoritative server, rollback | `godot-multiplayer` / `unity-networking` / `unreal-replication` / `roblox-networking` |
+| `multiplayer-netcode` | multiplayer, netcode, client prediction, server reconciliation, interpolation, lag compensation, desync, rubber-banding, authoritative server, rollback | `godot-multiplayer` / `unity-networking` / `unreal-replication` / `roblox-networking` |
 | `game-economy` | game economy, faucet/sink, currency sink, upgrade cost curve, inflation, idle income, reward schedule, prestige, premium currency | `roblox-simulator-economy` / `save-systems` + `game-ui-ux` |
 | `game-balance` | game balance, balance weapon damage, TTK, time to kill, DPS, effective HP, armor curve, counter matrix, win rate, power creep | `game-economy` + `playtest-qa` + `analytics` |
 | `quest-design` | quest system, objective tracking, quest journal, quest state machine, quest reward, side quest, mission objective | `dialogue-systems` + `save-systems` + `game-ui-ux` |
@@ -195,16 +196,16 @@ a real folder at `skills/<category>/<name>/SKILL.md`. Trigger words (`says:`) an
 | `bullet-hell` | bullet hell, bullet-hell, danmaku, shmup, shoot-em-up, tiny hitbox, grazing, boss pattern, spell card, bullet curtain | `game-feel` + `audio-design` + `performance-optimization` + `level-design` |
 | `tower-defense` | tower defense, wave spawner, enemy path, tower targeting | `game-ai` + `godot-2d-movement`/engine movement + `level-design` + `game-ui-ux` |
 | `card-game` | card game, deckbuilder, hand/deck/discard, TCG | `godot-resources`/`unity-scriptableobjects` + `game-ui-ux` + `godot-ui-control` (engine UI) |
-| `visual-novel` | visual novel, VN, branching story, choice menu, Ren'Py; `*.ink`/`*.yarn`/`*.rpy` | `dialogue-systems` + `save-systems` + `game-ui-ux` |
+| `visual-novel` | visual novel, VN, "VN branching story", choice menu, Ren'Py; `*.ink`/`*.yarn`/`*.rpy` | `dialogue-systems` + `save-systems` + `game-ui-ux` |
 | `survival-crafting` | survival game, crafting system, inventory, resource gathering | `save-systems` + `godot-resources`/`unity-scriptableobjects` + `procedural-gen` + `game-ui-ux` |
 | `rhythm-game` | rhythm game, beat-synced, judgement window, chart/BPM, audio clock, calibration | `audio-design` + engine audio skill + engine UI + `input-systems` |
 | `racing-game` | racing game, car handling, lap time, checkpoint, drift, racing AI | `physics-tuning` + `camera-systems` + `game-ui-ux` + `level-design` |
-| `fighting-game` | fighting game, frame data, hitbox/hurtbox, combo, rollback, motion input | `input-systems` + `game-feel` + `game-ai` + `godot-multiplayer`/`unity-networking` |
+| `fighting-game` | fighting game, "versus frame data", hitbox/hurtbox, combo, rollback, motion input | `input-systems` + `game-feel` + `game-ai` + `godot-multiplayer`/`unity-networking` |
 | `battle-royale` | battle royale, shrinking zone, storm circle, last player standing, drop/loot, backfill bots | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `level-design` + `ui-architecture` |
 | `extraction-shooter` | extraction shooter, raid, stash, loot loss on death, extract point, insurance, wipe season | `multiplayer-netcode` + `fps-shooter` + `game-economy` + `quest-design` + `save-systems` |
 | `sports-game` | sports game, soccer, football, basketball, hockey, ball physics, team AI, match rules, replay | `physics-tuning` + `game-ai` + `multiplayer-netcode` + `camera-systems` |
 | `mmorpg` | MMORPG, MMO, shard, persistent world, guild, auction house, chat moderation, group finder | `multiplayer-netcode` + `game-economy` + `quest-design` + `liveops` |
-| `idle-incremental` | idle game, incremental, clicker, tycoon, offline earnings, prestige, automation, big numbers | `game-economy` + `save-systems` + `game-ui-ux` |
+| `idle-incremental` | idle game, incremental, clicker, "idle tycoon", offline earnings, prestige, automation, big numbers | `game-economy` + `save-systems` + `game-ui-ux` |
 | `stealth-game` | stealth, stealth game, vision cone, detection meter, suspicion, patrol AI, takedown, hiding | `game-ai` + `level-design` + `audio-design` + `game-ui-ux` |
 | `horror-game` | horror game, survival horror, monster chase, hide, jumpscare, resource scarcity, atmosphere | `audio-design` + `level-design` + `game-ai` + `accessibility-testing` |
 | `rts-game` | RTS, real-time strategy, unit selection, control group, fog of war, build order, base building, lockstep | `game-ai` + `multiplayer-netcode` + `level-design` + `game-balance` + `ui-architecture` |
@@ -247,7 +248,11 @@ the detected engine lacks, load the closest skill(s) and **state the gap** plain
 - **Tilemap coverage spans the catalogued 2D engines.** `godot-tilemap`,
   `unity-tilemap-2d`, `unreal-tilemap` (Paper 2D), `defold-tilemap`, `phaser-tilemap`,
   `love2d-tilemap`, `pygame-tilemap`, `roblox-tilemap` and `bevy-tilemap` each own their
-  engine's grid level; no engine-specific tilemap gap remains.
+  engine's grid level; no engine-specific tilemap gap remains. Keep those APIs
+  **engine-local**: load the detected engine's tilemap skill and add `tilemap-systems` for
+  the shared grid/layer/chunk/autotile model. Use `level-design` for layout and pacing and
+  `create-game-assets` for tileset art. Clarify a generic "tilemap" request without an
+  engine before choosing an engine API.
 - **Engine-specific save skills exist for Godot, Unity, Unreal, LÖVE, pygame, Bevy and
   Roblox.** `godot-save` covers `user://` and FileAccess formats, `unity-save` covers
   `persistentDataPath` and JsonUtility, `unreal-save` covers `USaveGame` slots, `love2d-save`

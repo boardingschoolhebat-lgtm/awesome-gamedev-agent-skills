@@ -2,7 +2,7 @@
 name: boss-design
 description: >
   Design boss encounters: purpose and fantasy, phase structure, telegraphed movesets, arena and
-  camera, adds and hazards, checkpoints, difficulty and accessibility, rewards and playtest
+  camera, adds and hazards, boss checkpoints, difficulty and accessibility, rewards and playtest
   metrics. Use when building or fixing a boss fight.
 ---
 

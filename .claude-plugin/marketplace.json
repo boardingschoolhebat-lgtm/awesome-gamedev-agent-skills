@@ -10,7 +10,7 @@
     {
       "name": "gamedev",
       "source": "./",
-      "description": "Everything: the master router plus all 172 game-dev skills across every engine, discipline, genre, and workflow.",
+      "description": "Everything: the master router plus all 173 game-dev skills across every engine, discipline, genre, and workflow.",
       "strict": false,
       "skills": [
         "./router",
@@ -120,6 +120,7 @@
         "./skills/disciplines/shader-programming",
         "./skills/disciplines/physics-tuning",
         "./skills/disciplines/level-design",
+        "./skills/disciplines/tilemap-systems",
         "./skills/disciplines/input-systems",
         "./skills/disciplines/game-feel",
         "./skills/disciplines/game-ui-ux",
@@ -363,6 +364,7 @@
         "./skills/disciplines/shader-programming",
         "./skills/disciplines/physics-tuning",
         "./skills/disciplines/level-design",
+        "./skills/disciplines/tilemap-systems",
         "./skills/disciplines/input-systems",
         "./skills/disciplines/game-feel",
         "./skills/disciplines/game-ui-ux",

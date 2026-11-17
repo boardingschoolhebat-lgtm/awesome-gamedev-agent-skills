@@ -22,7 +22,8 @@ require a separate "easy mode" rewrite.
 
 **When *not* to use:** general UI layout and feedback → `game-ui-ux`; input architecture
 implementation → `input-systems`; localization of the text itself → `localization`; color palette
-production → `create-game-assets`.
+production → `create-game-assets`; auditing the result against a test plan →
+`accessibility-testing`.
 
 ## Start with the four blockers
 

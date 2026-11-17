@@ -28,7 +28,8 @@ scripts are pure Luau and were run with **Lune 0.11.0**, outside Studio.
 **When not to use:** DataStore reads, writes, session locking and retries → `roblox-datastores`.
 Remote protocol design and rate limiting in depth → `roblox-networking`. Shop and HUD layout →
 `roblox-ui` + `game-ui-ux`. A wave-defense economy → `tower-defense`. Engine-neutral save format
-questions → `save-systems`.
+questions → `save-systems`. Cross-engine economy theory, faucet/sink balance, or a non-Roblox
+platform → `game-economy`.
 
 ## Workflow
 

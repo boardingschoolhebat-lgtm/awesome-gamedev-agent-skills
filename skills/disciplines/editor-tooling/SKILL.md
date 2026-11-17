@@ -18,7 +18,8 @@ and safe to run on every selection change. This is a **compositional** skill.
 - Use when designers hand-edit JSON/CSV and make mistakes, or a workflow is repeated manually.
 
 **When *not* to use:** runtime debug UI → `game-ui-ux`; in-game level editor for players →
-gameplay systems; CI pipeline configuration → the project's CI docs.
+gameplay systems; mod/UGC authoring, manifest and load-order pipelines →
+`modding-and-tools`; CI pipeline configuration → the project's CI docs.
 
 ## Principles
 

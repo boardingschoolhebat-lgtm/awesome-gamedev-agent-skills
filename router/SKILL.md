@@ -93,7 +93,7 @@ each engine skill states its new-project baseline, and the catalog-wide table is
 After the engine, read the request for task signals (three **additive** categories):
 
 - **disciplines** (cross-engine concepts): `create-game-assets`, `game-ai`, `ai-behavior-trees-utility-ai`, `procedural-gen`, `dialogue-systems`,
-  `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`,
+  `save-systems`, `audio-design`, `shader-programming`, `physics-tuning`, `level-design`, `tilemap-systems`,
   `input-systems`, `game-feel`, `camera-systems`, `game-ui-ux`, `localization`,
   `accessibility`, `performance-optimization`, `animation-systems`, `multiplayer-netcode`,
   `game-economy`, `game-balance`, `quest-design`, `tutorial-design`, `procedural-audio`, `editor-tooling`, `ui-architecture`,
@@ -168,7 +168,7 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 | Concept (`says:`) | Discipline skill | Pairs with (engine API) |
 |-------------------|------------------|-------------------------|
 | art direction, game assets, sprites, tilesets, textures, icons, 3D props | `create-game-assets` | engine importer/rendering skill; `imagegen` when available |
-| enemy AI, behavior tree, pathfinding, steering | `game-ai` | `unity-navmesh` / `unreal-behavior-trees` / Godot nav |
+| enemy AI, decision model, AI state machine, pathfinding, steering | `game-ai` | `unity-navmesh` / `unreal-behavior-trees` / Godot nav |
 | BT runtime, blackboard, decorator, selector/sequence, utility AI, response curve, consideration | `ai-behavior-trees-utility-ai` | `game-ai` (model choice) / `unreal-behavior-trees` (engine assets) |
 | procedural, noise, seed, dungeon generator, WFC | `procedural-gen` | engine tilemap/grid skill |
 | dialogue, Yarn, Ink, conversation tree | `dialogue-systems` | engine UI skill |
@@ -178,10 +178,12 @@ File signals sharpen this: `*.yarn`/`*.ink` → `dialogue-systems`/`visual-novel
 | shader, fragment, dissolve/outline | `shader-programming` | `godot-shaders` / engine material |
 | jitter, tunneling, fixed timestep | `physics-tuning` | `godot-physics` / `unity-physics` |
 | whitebox, blockout, tile layout, pacing | `level-design` | `godot-tilemap` / `unity-tilemap-2d` |
+| tilemap systems, grid model, chunk streaming, autotile rules, collision layers | `tilemap-systems` | engine tilemap skill + `level-design` / `create-game-assets` |
 | rebind, gamepad, input buffering | `input-systems` | `unity-input-system` / `unreal-enhanced-input` / Godot InputMap |
-| screen shake, hit-stop, juice, squash & stretch, "make it punchy" | `game-feel` | engine animation/tween + `camera-systems` (shake) |
+| screen shake, camera shake, hit-stop, juice, squash & stretch, "make it punchy" | `game-feel` | engine animation/tween + `camera-systems` (shake) |
 | camera follow, deadzone, look-ahead, orbit, first-person | `camera-systems` | `godot-2d-movement` / `godot-3d-essentials` / Cinemachine |
-| HUD, menu, UI layout, scaling, safe area, focus nav | `game-ui-ux` | `godot-ui-control` / Unity UI (UGUI/UI Toolkit) |
+| HUD, menu, UI layout, scaling, safe area, focus presentation | `game-ui-ux` | `godot-ui-control` / Unity UI (UGUI/UI Toolkit) |
+| screen stack, UI routing, data binding, theme tokens, focus routing, UI performance | `ui-architecture` | `game-ui-ux` + `localization` + engine UI skill |
 | low FPS, optimize, draw calls, GC spike, pooling, profiler | `performance-optimization` | engine profiler + `physics-tuning` |
 
 For Roblox, compose cross-engine concepts with the focused engine skill: HUD/menu requests use

@@ -19,7 +19,8 @@ Choose and drive the right animation tool: `AnimationPlayer` (clips), `Animation
   sprite sheet, or tweening UI/objects in code.
 
 **When *not* to use:** the movement *logic* that decides which state to play →
-`godot-2d-movement`; UI layout (vs. UI tweening) → `godot-ui-control`; shader-driven
+`godot-2d-movement`; cross-engine state/blend/root-motion concepts →
+`animation-systems`; UI layout (vs. UI tweening) → `godot-ui-control`; shader-driven
 effects → `godot-shaders`.
 
 ## Core workflow

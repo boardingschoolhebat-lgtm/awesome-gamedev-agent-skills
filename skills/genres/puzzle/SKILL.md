@@ -20,8 +20,9 @@ deterministic resolution, undo) that keep a puzzle fair and bug-free.
 - Use when designing match/cascade resolution, undo, level progression, or solvability.
 
 **When *not* to use:** real-time grid action with permadeath → `roguelike`. Card zones/turns →
-`card-game`. Physics-based "puzzle platformer" → `platformer` + `physics-tuning`. For the tile
-rendering, use `godot-tilemap` / `unity-tilemap-2d`.
+`card-game`. Physics-based "puzzle platformer" → `platformer` + `physics-tuning`. For puzzle
+flow, teaching, hint ladders and difficulty, use `puzzle-design`. For the tile rendering, use
+`godot-tilemap` / `unity-tilemap-2d`.
 
 ## Core loop
 

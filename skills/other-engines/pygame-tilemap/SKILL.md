@@ -21,8 +21,8 @@ collision. This skill builds that stack. Targets **pygame-ce 2.5.8**.
 - Use when the project ships a tileset image or a Tiled map and imports `pygame`.
 
 **When *not* to use:** the main loop, `Sprite`/`Group` basics and input → `pygame-core`; level
-pacing → `level-design`; cross-engine persistence → `save-systems`; physics tuning of a
-non-tile world → `physics-tuning`.
+pacing → `level-design`; cross-engine tilemap model → `tilemap-systems`; cross-engine
+persistence → `save-systems`; physics tuning of a non-tile world → `physics-tuning`.
 
 ## Core workflow
 

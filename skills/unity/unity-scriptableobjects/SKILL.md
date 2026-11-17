@@ -22,7 +22,8 @@ hard-wired into scenes or singletons. Targets **Unity 6.3 LTS (6000.3)**.
 
 **When _not_ to use:** per-instance runtime state that differs per GameObject (that belongs on
 a MonoBehaviour) — a ScriptableObject asset is _shared_ by everyone who references it. Saving
-player progress to disk → `save-systems`. Plain DTOs that never need to be an asset can just be
+player progress to disk → `save-systems`. Engine-neutral architecture, update-order or event-bus
+trade-offs → `game-architecture`. Plain DTOs that never need to be an asset can just be
 `[System.Serializable]` classes.
 
 ## Core workflow

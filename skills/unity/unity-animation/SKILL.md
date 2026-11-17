@@ -4,7 +4,7 @@ description: >
   Drive Unity 6.3 LTS character animation with Animator Controllers: states, transitions,
   parameters, blend trees, animation layers, and humanoid Avatar IK. Use when wiring an
   Animator, setting parameters from script (SetFloat/SetBool/SetTrigger), building blend
-  trees, or when the user mentions Animator, Mecanim, state machine, blend tree, or .controller.
+  trees, or when the user mentions Animator, Mecanim, animation state machine, blend tree, or .controller.
 ---
 
 # Unity Animation (Animator / Mecanim)
@@ -21,8 +21,9 @@ transitions, blend trees, layers, and humanoid IK. Targets **Unity 6.3 LTS (6000
   rigged model with an Avatar.
 
 **When *not* to use:** simple non-skeletal value tweens (UI fades, position lerps) are better
-done with a tween/coroutine — see `unity-csharp-scripting`. Timeline cutscenes are a separate
-tool. 2D sprite frame animation also uses the Animator but with sprite keyframes.
+done with a tween/coroutine — see `unity-csharp-scripting`. Cross-engine state/blend/root-motion
+concepts → `animation-systems`. Timeline cutscenes are a separate tool. 2D sprite frame
+animation also uses the Animator but with sprite keyframes.
 
 ## Core workflow
 

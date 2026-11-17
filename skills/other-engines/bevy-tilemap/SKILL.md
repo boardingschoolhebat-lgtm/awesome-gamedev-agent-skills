@@ -20,8 +20,9 @@ Targets **Bevy 0.20**.
 - Use when `Cargo.toml` depends on `bevy` and the level is a grid of sprite-sheet tiles.
 
 **When *not* to use:** ECS structure, scheduling and queries → `bevy-ecs`; level pacing →
-`level-design`; saving edited levels → `bevy-save`; very large maps where a third-party tilemap
-crate is justified (see the note below); 3D grids → Bevy 3D mesh work, not this skill.
+`level-design`; cross-engine tilemap model → `tilemap-systems`; saving edited levels →
+`bevy-save`; very large maps where a third-party tilemap crate is justified (see the note
+below); 3D grids → Bevy 3D mesh work, not this skill.
 
 ## Core workflow
 

@@ -1,7 +1,7 @@
 ---
 name: narrative-design
 description: >
-  Design game story and structure: premise, theme, character want/need, beat sheets, pacing,
+  Design game story and structure: premise, story theme, character want/need, beat sheets, pacing,
   branching and foldback, meaningful choices and consequences, environmental storytelling, and
   ludonarrative consonance. Use when shaping a plot, questline or branching narrative.
 ---

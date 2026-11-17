@@ -21,8 +21,9 @@ rendered and collided through `UPaperTileMapComponent`. Targets **Unreal Engine 
   missing after edits.
 
 **When *not* to use:** character movement on the level → `unreal-2d-movement`; level pacing →
-`level-design`; 3D landscapes → Landscape/World Partition; UMG → `unreal-ui`; Blueprint-only
-gameplay → `unreal-blueprints`.
+`level-design`; cross-engine tilemap model → `tilemap-systems`; 3D landscapes →
+Landscape/World Partition; UMG → `unreal-ui`;
+Blueprint-only gameplay → `unreal-blueprints`.
 
 ## How Paper 2D tilemaps fit together
 

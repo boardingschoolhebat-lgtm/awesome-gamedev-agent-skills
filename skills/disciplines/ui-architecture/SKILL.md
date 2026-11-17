@@ -2,7 +2,7 @@
 name: ui-architecture
 description: >
   Architect runtime UI: screen stack and routing, data binding, list virtualization, theming
-  tokens, focus/navigation, localization expansion and UI performance. Engine bindings for Unity
+  tokens, focus routing, localization expansion and UI performance. Engine bindings for Unity
   UI Toolkit, Godot Control, Unreal UMG and web. Use for menus/HUD that grow into spaghetti.
 ---
 
@@ -18,8 +18,8 @@ It is **compositional**: pair with `game-ui-ux`, `localization` and `accessibili
   frame.
 - Use when UI state desyncs from gameplay, or opening a menu tanks FPS.
 
-**When *not* to use:** layout, spacing, contrast and visual hierarchy → `game-ui-ux`; input
-rebinding → `input-systems`; HUD art → `create-game-assets`.
+**When *not* to use:** layout, spacing, contrast, visual hierarchy or focus styling →
+`game-ui-ux`; input rebinding → `input-systems`; HUD art → `create-game-assets`.
 
 ## Principles
 

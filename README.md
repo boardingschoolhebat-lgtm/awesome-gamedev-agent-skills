@@ -4,20 +4,20 @@
 
 <p align="center">
   <img src="docs/assets/awesome-gamedev-agent-skills-banner.png" width="820"
-       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 172 skills and a router across 19 engines, including an art-direction and asset-production workflow.">
+       alt="awesome-gamedev-agent-skills — game-dev skills for AI coding agents. 173 skills and a router across 19 engines, including an art-direction and asset-production workflow.">
 </p>
 
-**172 game-dev skills for your AI coding agent — install once, and a router loads the
+**173 game-dev skills for your AI coding agent — install once, and a router loads the
 right skill for whatever you're building.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-172%20%2B%20router-brightgreen)](skills/)
+[![Skills](https://img.shields.io/badge/skills-173%20%2B%20router-brightgreen)](skills/)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-informational)](docs/SKILL-FORMAT.md)
 [![Last commit](https://img.shields.io/github/last-commit/gamedev-skills/awesome-gamedev-agent-skills)](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/commits/main)
 [![Sponsor](https://img.shields.io/badge/sponsor-this%20project-ea4aaa)](#sponsors)
 
 [Agent Skills](docs/SKILL-FORMAT.md) are small capability files an AI agent loads only when it
-needs them. This repo gives your agent **172 game-dev skills** and a **router** that picks the
+needs them. This repo gives your agent **173 game-dev skills** and a **router** that picks the
 right ones for you. You describe what you're building; the agent loads the matching engine and
 task skills before it writes code.
 
@@ -59,7 +59,7 @@ Sponsored entries are labelled as sponsored and have no effect on which skills t
 ## Quick start
 
 **One command, any agent.** The [`skills`](https://www.npmjs.com/package/skills) CLI detects the
-coding agent you already use and installs the router plus all 172 skills into the right place:
+coding agent you already use and installs the router plus all 173 skills into the right place:
 
 ```bash
 npx skills add gamedev-skills/awesome-gamedev-agent-skills
@@ -139,7 +139,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 
 ## Catalog
 
-172 skills across 9 categories — each links to its `SKILL.md` below.
+173 skills across 9 categories — each links to its `SKILL.md` below.
 
 ### Engines
 
@@ -274,7 +274,7 @@ engine), while disciplines, genres, and workflows are additive on top.
 | [`roblox-studio-workflow`](skills/other-engines/roblox-studio-workflow/SKILL.md) | Explorer-first place editing, structure preservation, multi-context Studio verification |
 | [`roblox-simulator-economy`](skills/other-engines/roblox-simulator-economy/SKILL.md) | Simulator/tycoon/idle economy: cost curves, buy max, rebirths, offline earnings, big-number display, server-owned purchases, paid random item odds (Lune 0.11.0 pacing calculator) |
 
-### Disciplines — 39 ([`skills/disciplines/`](skills/disciplines/))
+### Disciplines — 40 ([`skills/disciplines/`](skills/disciplines/))
 
 Cross-engine concepts that load alongside the detected engine skill.
 
@@ -292,6 +292,7 @@ Cross-engine concepts that load alongside the detected engine skill.
 | [`shader-programming`](skills/disciplines/shader-programming/SKILL.md) | Cross-engine shader concepts: vertex/fragment, UVs, common effects |
 | [`physics-tuning`](skills/disciplines/physics-tuning/SKILL.md) | Tuning feel: fixed timestep, mass/drag, CCD, stability, layers |
 | [`level-design`](skills/disciplines/level-design/SKILL.md) | Whitebox/blockout structure, tile/grid layout, pacing |
+| [`tilemap-systems`](skills/disciplines/tilemap-systems/SKILL.md) | Grid/world contracts, layers, chunks, autotile rules, collision mapping, culling, serialization |
 | [`input-systems`](skills/disciplines/input-systems/SKILL.md) | Input architecture: action mapping, rebinding, multi-device, buffering |
 | [`game-feel`](skills/disciplines/game-feel/SKILL.md) | Juice: screen shake, hit-stop, tweening/easing, squash & stretch, feedback tiers |
 | [`game-ui-ux`](skills/disciplines/game-ui-ux/SKILL.md) | Cross-engine HUD/menus: anchors, resolution scaling, safe areas, focus navigation |
@@ -437,7 +438,7 @@ func _physics_process(delta: float) -> void:
 ## Repository layout
 
 ```
-skills/        172 specialized skills, grouped by engine / discipline / genre / workflow
+skills/        173 specialized skills, grouped by engine / discipline / genre / workflow
 router/        the master router skill (+ references/)
 docs/          authoring standard, installation, compatibility
 templates/     SKILL.md template

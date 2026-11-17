@@ -19,7 +19,8 @@ shared ticker. Spritesheets provide named animations and are the efficient path.
 - Use when animations run too fast/slow, ignore `loop`, or fire callbacks late.
 
 **When *not* to use:** tweens of position/scale/alpha → a tween library; loading assets →
-`pixijs-rendering`; UI → `pixijs-ui`; audio → `phaser-audio` (Phaser-specific).
+`pixijs-rendering`; cross-engine state/blend/root-motion concepts → `animation-systems`; UI →
+`pixijs-ui`; audio → `phaser-audio` (Phaser-specific).
 
 ## Core workflow
 

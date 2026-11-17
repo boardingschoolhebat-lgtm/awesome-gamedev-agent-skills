@@ -20,9 +20,10 @@ Targets **LÖVE 11.5**.
   tiles at runtime in a LÖVE project.
 - Use when the project ships a tileset image or a Tiled/LDtk export and `main.lua` calls `love.*`.
 
-**When *not* to use:** level pacing and layout → `level-design`; Box2D bodies and joints →
-`love.physics`/`physics-tuning`; flipbook animation → `love2d-core` plus `game-feel`; saving
-progress → `love2d-save`; cross-engine save design → `save-systems`.
+**When *not* to use:** level pacing and layout → `level-design`; cross-engine tilemap model →
+`tilemap-systems`; Box2D bodies and joints → `love.physics`/`physics-tuning`; flipbook
+animation → `love2d-core` plus `game-feel`; saving progress → `love2d-save`; cross-engine save
+design → `save-systems`.
 
 ## Core workflow
 

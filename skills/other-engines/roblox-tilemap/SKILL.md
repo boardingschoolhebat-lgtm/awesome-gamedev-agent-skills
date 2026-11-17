@@ -22,7 +22,8 @@ them and builds the pipeline on the server. Targets Roblox's **rolling platform 
 
 **When *not* to use:** physics of moving assemblies → `roblox-physics`; character movement →
 `roblox-characters`; remote validation → `roblox-networking`; UI → `roblox-ui`; cross-engine
-level design → `level-design`; data persistence → `roblox-datastores`.
+level design → `level-design`; cross-engine tilemap model → `tilemap-systems`; data
+persistence → `roblox-datastores`.
 
 ## Choose the representation first
 

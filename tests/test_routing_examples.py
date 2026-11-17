@@ -221,6 +221,7 @@ PROMPT_CASES = (
     ("add adaptive music and ducking to my audio mixer", ("audio-design",)),
     ("fix jitter and tunneling with a fixed timestep", ("physics-tuning",)),
     ("blockout the level design and pacing", ("level-design",)),
+    ("design a tilemap systems model with chunk streaming and autotile rules", ("tilemap-systems",)),
 )
 
 # Off-topic requests must not pick up game-dev skills, or every trigger would be
@@ -273,10 +274,30 @@ def _rows() -> list[tuple[str, str]]:
 
 
 def triggers_by_skill() -> dict[str, list[str]]:
-    triggers: dict[str, list[str]] = {}
-    for name, cell in _rows():
-        triggers.setdefault(name, []).extend(trigger_phrases(cell))
-    return triggers
+    return {name: trigger_phrases(cell) for name, cell in direct_trigger_cells().items()}
+
+
+def direct_trigger_cells() -> dict[str, str]:
+    """Return only the trigger column, excluding composition/engine-binding cells."""
+    cells: dict[str, str] = {}
+    for line in TABLE_PATH.read_text(encoding="utf-8").splitlines():
+        match = SKILL_ROW_RE.match(line)
+        if not match:
+            continue
+        parts = line.strip().strip("|").split("|")
+        if len(parts) >= 2:
+            cells[match.group(1)] = parts[1]
+    return cells
+
+
+def direct_routed_skills(prompt: str) -> set[str]:
+    """Trigger matches without composition hops, for ownership-boundary tests."""
+    present = stems(prompt)
+    return {
+        name
+        for name, cell in direct_trigger_cells().items()
+        if any(stems(phrase) and stems(phrase) <= present for phrase in trigger_phrases(cell))
+    }
 
 
 def compositions(known: set[str]) -> dict[str, set[str]]:
@@ -341,6 +362,65 @@ class RoutingTableShapeTests(unittest.TestCase):
                     name,
                     covered,
                     f"{category}/{name} has no example prompt in PROMPT_CASES",
+                )
+
+
+GENERIC_OWNED_TRIGGERS = {
+    "behavior tree",
+    "branching story",
+    "camera shake",
+    "frame data",
+    "health bar",
+    "hud",
+    "multiplayer",
+    "screen shake",
+    "sfx",
+    "tileset",
+    "tycoon",
+}
+
+
+def duplicate_trigger_groups() -> dict[str, set[str]]:
+    groups: dict[str, set[str]] = {}
+    for name, cell in direct_trigger_cells().items():
+        for phrase in trigger_phrases(cell):
+            groups.setdefault(phrase.casefold(), set()).add(name)
+    return {phrase: names for phrase, names in groups.items() if len(names) > 1}
+
+
+class DirectRoutingBoundaryTests(unittest.TestCase):
+    def test_generic_triggers_do_not_fan_out(self) -> None:
+        groups = duplicate_trigger_groups()
+        for phrase in sorted(GENERIC_OWNED_TRIGGERS):
+            with self.subTest(trigger=phrase):
+                self.assertNotIn(
+                    phrase,
+                    groups,
+                    f"generic trigger {phrase!r} has multiple owners: {groups.get(phrase)}",
+                )
+
+    def test_generic_prompts_have_exactly_one_owner(self) -> None:
+        cases = {
+            "make a HUD": {"game-ui-ux"},
+            "screen shake on hit": {"game-feel"},
+            "camera shake": {"game-feel"},
+            "health bar": {"game-ui-ux"},
+            "multiplayer": {"multiplayer-netcode"},
+            "sfx": {"audio-design"},
+            "tileset": {"create-game-assets"},
+            "frame data": {"combat-design"},
+            "branching story": {"narrative-design"},
+            "tycoon game": {"management-sim"},
+            "design a tilemap systems model with chunk streaming and autotile rules": {
+                "tilemap-systems"
+            },
+        }
+        for prompt, expected in cases.items():
+            with self.subTest(prompt=prompt):
+                self.assertEqual(
+                    direct_routed_skills(prompt),
+                    expected,
+                    f"{prompt!r} should have one explicit owner, not a fan-out",
                 )
 
 

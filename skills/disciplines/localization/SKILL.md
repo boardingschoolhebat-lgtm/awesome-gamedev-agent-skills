@@ -3,9 +3,9 @@ name: localization
 description: >
   Localize a game: externalize strings into keyed tables, handle placeholders, plurals, gender and
   rich text, switch locales at runtime, fit expanded text and right-to-left scripts, localize
-  fonts, audio and images, and run pseudo-localization QA. Use when a game must support more than
-  one language, when UI text is hardcoded, or when translations overflow, break markup, or show
-  the wrong plural. Pairs with any engine's UI and save skills.
+  fonts, audio and images, and prepare strings for translation QA. Use when a game must support
+  more than one language, when UI text is hardcoded, or when translations overflow, break markup,
+  or show the wrong plural. Pairs with any engine's UI and save skills.
 ---
 
 # Game localization
@@ -22,7 +22,8 @@ real translators touch it.
 
 **When *not* to use:** general UI layout → `game-ui-ux`; engine UI implementation →
 `unity-ui` / `unreal-ui` / `godot-ui-control` / `phaser-ui`; font asset creation →
-`create-game-assets`; save-file schema → `save-systems`.
+`create-game-assets`; save-file schema → `save-systems`; pseudo-locale, string-freeze or LQA
+sign-off → `localization-qa`.
 
 ## Core workflow
 

@@ -25,7 +25,8 @@ already pins another release, keep that release and use its matching migration g
   `add_systems`, `Query`, or `Commands`.
 
 **When *not* to use:** this is the ECS core. Deep rendering, custom shaders/
-pipelines, UI layout, and audio are separate concerns. For engine-agnostic AI or
+pipelines, UI layout, and audio are separate concerns. Engine-neutral architecture,
+update-order or event-bus trade-offs → `game-architecture`. For engine-agnostic AI or
 procedural algorithms, pair with `game-ai` / `procedural-gen`.
 
 ## Core workflow

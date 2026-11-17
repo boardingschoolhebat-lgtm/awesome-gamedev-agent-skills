@@ -2,7 +2,7 @@
 name: racing-game
 description: >
   Build a racing game: arcade vs sim handling, raycast suspension or wheel colliders, steering
-  and drift, checkpoints and lap timing, respawn, AI racing lines and rubber-banding, camera and
+  and drift, lap checkpoints and timing, respawn, AI racing lines and rubber-banding, camera and
   HUD. Use for a racing/driving game or for tuning vehicle feel and lap logic.
 ---
 

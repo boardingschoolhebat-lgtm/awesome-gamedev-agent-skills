@@ -18,9 +18,10 @@ values, and load/save them as `.tres`/`.res`. Targets **Godot 4.7**.
 - Use when representing items, stats, enemy configs, dialogue lines, or level metadata as
   data; authoring `.tres` files in the Inspector; or loading/saving custom resources.
 
-**When *not* to use:** nodes/scene structure → `godot-nodes-scenes`; saving the player's
-*runtime progress* (engine-agnostic save format/slots) → `save-systems`; the C# variant of
-this pattern → `godot-csharp`.
+**When *not* to use:** nodes/scene structure → `godot-nodes-scenes`; engine-neutral data or
+architecture trade-offs → `game-architecture`; saving the player's *runtime progress*
+(engine-agnostic save format/slots) → `save-systems`; the C# variant of this pattern →
+`godot-csharp`.
 
 ## Core workflow
 

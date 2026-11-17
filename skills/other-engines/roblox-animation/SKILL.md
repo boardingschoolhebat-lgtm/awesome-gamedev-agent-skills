@@ -19,8 +19,9 @@ engine APIs.
 - Use when adding walk/run/idle overrides, attacks, emotes, hit reactions or animated props.
 - Use when animations do not play, fight each other, or only play for one player.
 
-**When *not* to use:** character movement/state → `roblox-characters`; UI → `roblox-ui`; audio →
-`roblox-audio`; remotes for triggering emotes → `roblox-networking`.
+**When *not* to use:** character movement/state → `roblox-characters`; cross-engine
+state/blend/root-motion concepts → `animation-systems`; UI → `roblox-ui`; audio → `roblox-audio`;
+remotes for triggering emotes → `roblox-networking`.
 
 ## Core workflow
 

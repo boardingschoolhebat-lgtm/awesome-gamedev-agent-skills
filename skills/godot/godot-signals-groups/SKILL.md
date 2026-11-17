@@ -21,8 +21,9 @@ Decouple nodes with the observer pattern (signals) and act on many nodes at once
   "save every checkpoint").
 
 **When *not* to use:** raw signal *syntax* basics → `godot-gdscript`; scene structure
-and instancing → `godot-nodes-scenes`. For cross-scene global events, emit from an
-autoload (see `godot-nodes-scenes`).
+and instancing → `godot-nodes-scenes`; engine-neutral event-bus or update-order trade-offs →
+`game-architecture`. For cross-scene global events, emit from an autoload (see
+`godot-nodes-scenes`).
 
 ## Core workflow
 

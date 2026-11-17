@@ -1,12 +1,13 @@
 ---
 name: game-ai
 description: >
-  Design NPC and enemy decision-making with finite state machines, behavior
-  trees, steering behaviors, and A* pathfinding — engine-neutral algorithms
-  that pair with the detected engine's navigation API. Use when building enemy
-  AI, an FSM or behavior tree, steering/flocking, or pathfinding, or when the
-  user mentions state machine, behavior tree, blackboard, A*, navmesh, seek, or
-  patrol/chase.
+  Choose and implement NPC decision layers: finite state machines, steering
+  behaviors, and A* pathfinding — engine-neutral algorithms that pair with the
+  detected engine's navigation API. Use when building enemy AI, choosing a
+  decision model, steering/flocking, or pathfinding, or when the user mentions
+  AI state machine, steering, A*, navmesh, seek, or patrol/chase. For a
+  production behavior-tree runtime or utility AI, use
+  ai-behavior-trees-utility-ai.
 ---
 
 # Game AI: decisions, steering, and pathfinding
@@ -26,10 +27,12 @@ algorithms; bind them to your engine via the related skills below.
 - Use when integrating pathfinding: A* on a grid/graph, or driving an engine
   navmesh agent.
 
-**When *not* to use:** for the engine's concrete navmesh/agent API and baking,
-use `unity-navmesh`, `unreal-behavior-trees`, or Godot's `NavigationAgent2D/3D`
-(see that engine skill). For movement/collision feel, use `physics-tuning`. For
-spawning waves along lanes, see the `tower-defense` genre skill.
+**When *not* to use:** to build a production behavior-tree runtime, blackboard,
+or utility scoring system, use `ai-behavior-trees-utility-ai`; for the engine's
+concrete navmesh/agent API and baking, use `unity-navmesh`,
+`unreal-behavior-trees`, or Godot's `NavigationAgent2D/3D` (see that engine
+skill). For movement/collision feel, use `physics-tuning`. For spawning waves
+along lanes, see the `tower-defense` genre skill.
 
 ## Core workflow
 
@@ -83,32 +86,13 @@ func tick(dt: float) -> void:
 Keep transition logic *inside* states (or in a table), never as a growing pile
 of `if` flags. One state owns one behavior; that is what keeps an FSM readable.
 
-### 2. Behavior tree tick (composite nodes return a status)
+### 2. Behavior trees are a separate implementation
 
-```gdscript
-# A node's tick() returns SUCCESS, FAILURE, or RUNNING (still working this frame).
-enum Status { SUCCESS, FAILURE, RUNNING }
-
-# Sequence: run children in order; stop at the first non-SUCCESS (logical AND).
-func sequence_tick(children, agent, dt) -> int:
-    for child in children:
-        var s = child.tick(agent, dt)
-        if s != Status.SUCCESS:
-            return s                 # FAILURE or RUNNING short-circuits the sequence
-    return Status.SUCCESS
-
-# Selector: try children until one succeeds or is RUNNING (logical OR / fallback).
-func selector_tick(children, agent, dt) -> int:
-    for child in children:
-        var s = child.tick(agent, dt)
-        if s != Status.FAILURE:
-            return s                 # SUCCESS or RUNNING stops the search
-    return Status.FAILURE
-```
-
-A guard AI reads top-down: `Selector[ Sequence[CanSeePlayer?, Chase], Patrol ]`
-— chase if visible, otherwise patrol. See `references/behavior-trees.md` for
-leaf nodes, decorators (Inverter, Cooldown), and a blackboard.
+This skill chooses between an FSM, a behavior tree, and steering; it does not
+build a BT runtime. When the decision is a behavior tree, load
+`ai-behavior-trees-utility-ai` for the blackboard, composites, decorators, and
+utility scoring. For Unreal's asset-based trees, use
+`unreal-behavior-trees`.
 
 ### 3. Steering: seek and arrive (smooth, frame-rate independent)
 
@@ -155,9 +139,9 @@ graphs) is in `references/pathfinding.md`.
 - **Inadmissible A\* heuristic** (e.g. Euclidean distance scaled up, or Manhattan
   on a diagonal grid) returns fast but *non-shortest* paths. Pick the heuristic
   that matches your allowed moves.
-- **Behavior tree leaves that never return RUNNING** for multi-frame actions
-  (walking, playing an animation) cause the tree to restart the action every
-  tick. Return RUNNING until the action completes.
+- **Choosing a behavior tree for a three-state enemy** adds indirection without
+  solving a real priority problem. Start with an FSM; escalate to a BT only when
+  behaviors interrupt, share, and reuse.
 - **FSM transition spaghetti**: scattering `if state == ...` checks everywhere
   recreates the mess an FSM exists to prevent. Keep transitions in the state.
 - **No line-of-sight or stuck check** → agents grind into walls forever. Add a
@@ -167,8 +151,8 @@ graphs) is in `references/pathfinding.md`.
 
 - `references/pathfinding.md` — complete A* (priority queue, reconstruction),
   grid vs waypoint graphs, when to defer to an engine navmesh.
-- `references/behavior-trees.md` — node taxonomy, leaf/decorator implementations,
-  blackboard, and FSM-vs-BT selection.
+- Behavior-tree runtime, blackboard, decorators, and utility scoring →
+  `ai-behavior-trees-utility-ai` (this skill only chooses the decision model).
 
 ## Related skills
 

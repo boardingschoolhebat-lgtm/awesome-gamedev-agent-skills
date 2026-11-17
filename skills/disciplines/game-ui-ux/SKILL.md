@@ -3,18 +3,20 @@ name: game-ui-ux
 description: >
   Design and build game UI/UX — HUDs, menus, and overlays — that survive every screen: anchor-
   based responsive layout, resolution/aspect scaling and safe areas, keyboard/gamepad focus
-  navigation, a screen/menu state stack, and event-driven (not polled) HUD updates. Engine-
-  neutral patterns that pair with the detected engine's UI skill. Use when the user mentions
-  HUD, health bar, main menu, pause menu, settings screen, UI layout, anchors, UI scaling,
-  aspect ratio, safe area, controller/keyboard menu navigation, or wiring UI to game state.
+  presentation, and event-driven (not polled) HUD updates. Engine-neutral patterns that pair
+  with the detected engine's UI skill and defer screen-stack/routing to `ui-architecture`. Use
+  when the user mentions HUD, health bar, main menu, pause menu, settings screen, UI layout,
+  anchors, UI scaling, aspect ratio, safe area, controller/keyboard menu navigation, or wiring
+  UI to game state.
 ---
 
 # Game UI/UX
 
 Build HUDs and menus that stay correct on a phone, an ultrawide monitor, and a TV across a
-gamepad and a mouse. This skill owns the engine-neutral UI architecture — responsive layout,
-scaling, focus navigation, screen flow, and how UI talks to game state — and defers the
-concrete widget API to the engine UI skill.
+gamepad and a mouse. This skill owns the engine-neutral UI design — responsive layout,
+scaling, focus presentation, HUD/menu composition, and how UI talks to game state — and
+defers the concrete widget API to the engine UI skill and screen-stack/routing to
+`ui-architecture`.
 
 ## When to use
 
@@ -25,10 +27,12 @@ concrete widget API to the engine UI skill.
 - Use to structure screen flow (title → game → pause → settings) as a stack, not flag soup.
 
 **When *not* to use:** for the engine's concrete UI nodes/components and styling, use
-`godot-ui-control` or Unity UI (UGUI/UI Toolkit). For *visual* punch (button pop, damage
-numbers, shake) use `game-feel`. For branching conversation UI use `dialogue-systems`. For
-translating UI strings, that is localization (see `references/` and `input-systems` for
-rebinding screens). For card/board layout specifics, the `card-game` genre composes this skill.
+`godot-ui-control` or Unity UI (UGUI/UI Toolkit). For screen-stack/routing, data binding,
+focus routing, theming tokens, or UI performance, use `ui-architecture`. For *visual* punch
+(button pop, damage numbers, shake) use `game-feel`. For branching conversation UI use
+`dialogue-systems`. For translating UI strings, that is localization (see `references/` and
+`input-systems` for rebinding screens). For card/board layout specifics, the `card-game`
+genre composes this skill.
 
 ## Core workflow
 
@@ -42,8 +46,8 @@ rebinding screens). For card/board layout specifics, the `card-game` genre compo
    and TV overscan don't clip it.
 4. **Make every screen keyboard/gamepad navigable.** Set an initial focused control per screen,
    define focus order/neighbors, and show a clear focus highlight. Mouse and focus must coexist.
-5. **Model screens as a stack.** Push (pause over game), pop (resume), with input + visibility
-   handed to the top screen. This makes overlays and "back" trivial.
+5. **Model screens as a stack.** Define the UX — push (pause over game), pop (resume), return
+   focus — and implement the stack/routing with `ui-architecture`.
 6. **Drive the HUD from events, not polling.** The HUD subscribes to `health_changed`,
    `score_changed`, etc. and updates only when they fire — it does not read game state every
    frame.

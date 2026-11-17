@@ -23,7 +23,8 @@ custom data, autotile with terrains, and manipulate cells at runtime. Targets
 
 **When *not* to use:** moving the player across the tiles → `godot-2d-movement`; general
 physics bodies/raycasts → `godot-physics`; procedural map *generation* algorithms →
-`procedural-gen`; level *design* practice → `level-design`.
+`procedural-gen`; level *design* practice → `level-design`. Cross-engine tilemap model →
+`tilemap-systems`.
 
 ## Core workflow
 
